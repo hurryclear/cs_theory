@@ -1,12 +1,12 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Motivation}{5}{0}{2}
-\beamer@sectionintoc {3}{Footnote examples}{9}{0}{3}
-\beamer@subsectionintoc {3}{1}{Subsection-1}{10}{0}{3}
-\beamer@subsectionintoc {3}{2}{Subsection-2}{11}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{1}{Subsubsection-1}{12}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{2}{Subsubsection-2}{13}{0}{3}
-\beamer@sectionintoc {4}{Citation examples}{14}{0}{4}
-\beamer@subsectionintoc {4}{1}{Subsection-1}{15}{0}{4}
-\beamer@subsectionintoc {4}{2}{Subsection-2}{16}{0}{4}
-\beamer@sectionintoc {6}{Summary}{20}{0}{5}
-\beamer@sectionintoc {7}{Acknowledgements}{22}{0}{6}
+\beamer@sectionintoc {2}{Entropy Coding}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Huffman Coding}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Arithmetic Coding}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Asymmetric Numeral System}{8}{0}{2}
+\beamer@sectionintoc {3}{Asymmetric Numeral System}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Basic Idea}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{rANS}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{tANS}{11}{0}{3}
+\beamer@subsectionintoc {3}{4}{Performance}{11}{0}{3}
+\beamer@sectionintoc {4}{Summary}{11}{0}{4}
+\beamer@sectionintoc {5}{Reference}{13}{0}{5}
