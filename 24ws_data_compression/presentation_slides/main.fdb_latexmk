@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1733303027 "main.bcf" "main.bbl" "main" 1733303648 0
+["biber main"] 1733303027 "main.bcf" "main.bbl" "main" 1733311584 0
   "./references.bib" 1733152088 7068 6687f488d3d32a90eda7968a6a8d1616 ""
-  "main.bcf" 1733303647 107610 d063964bad4b0d0de2437b963be06df9 "xelatex"
+  "main.bcf" 1733311583 107610 d063964bad4b0d0de2437b963be06df9 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1733303648 "main.xdv" "main.pdf" "main" 1733303648 0
-  "main.xdv" 1733303647 100116 65f2804847b645b3716d392c7f416320 "xelatex"
+["xdvipdfmx"] 1733311583 "main.xdv" "main.pdf" "main" 1733311584 0
+  "main.xdv" 1733311583 100116 8e96ba22efd0344da434ceeb74c48da1 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1733303646 "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" "main.xdv" "main" 1733303648 0
+["xelatex"] 1733311581 "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" "main.xdv" "main" 1733311584 0
   "./TitlePageInfo.tex" 1733248039 294 98c8a8cd26f61945e058ffdbed0ade3f ""
   "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" 1733303129 1322 e132f75b96c64f2dd2b7b20af43f7f5b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -246,16 +246,16 @@
   "TitlePageInfo.tex" 1733248039 294 98c8a8cd26f61945e058ffdbed0ade3f ""
   "beamerthemeLeipzigChemie.sty" 1733152088 9963 db66f69f49f192aae75847e2472d353d ""
   "imglib/logo_leipzig.eps" 1733152090 514490 5b5a02d4cd19da1e514a1aa8f00321e0 ""
-  "main.aux" 1733303647 6772 efea0b0f788dc4433815fc275f2ebb50 "xelatex"
+  "main.aux" 1733311583 6772 efea0b0f788dc4433815fc275f2ebb50 "xelatex"
   "main.bbl" 1733303030 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.nav" 1733303647 3107 e95f11084f458d4cf11ff9c2ff167680 "xelatex"
-  "main.out" 1733303647 1404 66290047f52f3d7ce9f929ed8ff9ae03 "xelatex"
-  "main.run.xml" 1733303647 2412 2baf21f7cfc8d2b24a37b4288cd43ff7 "xelatex"
+  "main.nav" 1733311583 3107 e95f11084f458d4cf11ff9c2ff167680 "xelatex"
+  "main.out" 1733311583 1404 66290047f52f3d7ce9f929ed8ff9ae03 "xelatex"
+  "main.run.xml" 1733311583 2412 2baf21f7cfc8d2b24a37b4288cd43ff7 "xelatex"
   "main.tex" 1733303129 1322 e132f75b96c64f2dd2b7b20af43f7f5b ""
-  "main.toc" 1733303647 631 051cf022380c8a4c58c13442ffa471a0 "xelatex"
-  "main.vrb" 1733303647 254 327935e3fc5aeeb6f308e10802d03bc7 "xelatex"
+  "main.toc" 1733311583 631 051cf022380c8a4c58c13442ffa471a0 "xelatex"
+  "main.vrb" 1733311583 254 327935e3fc5aeeb6f308e10802d03bc7 "xelatex"
   "slides/ANS.tex" 1733303114 1386 79b8f7cbd7286915c011fa2951270095 ""
-  "slides/EntropyCoding.tex" 1733303646 1388 eea8fd85ebc876e3e4e34c08f51693ef ""
+  "slides/EntropyCoding.tex" 1733311581 1387 183dcbf0818014cb537547edddcde924 ""
   "slides/Introduction.tex" 1733152088 160 dd83a977d3f049b6deb9133052b245c5 ""
   "slides/Reference.tex" 1733247794 154 74bfa232c26d34380910600dda5a424d ""
   "slides/Summary.tex" 1733152088 148 a3bd58d4a634880c5e6d005908407994 ""
