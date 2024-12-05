@@ -1,3 +1,9 @@
+# Reference
+
+1. C. E. Shannon, "A mathematical theory of communication," in The Bell System Technical Journal, vol. 27, no. 3, pp. 379-423, July 1948, doi: 10.1002/j.1538-7305.1948.tb01338.x.
+2. J. Duda, K. Tahboub, N. J. Gadgil and E. J. Delp, "The use of asymmetric numeral systems as an accurate replacement for Huffman coding," 2015 Picture Coding Symposium (PCS), Cairns, QLD, Australia, 2015, pp. 65-69, doi: 10.1109/PCS.2015.7170048. keywords: {Decoding;Channel coding;Probability distribution;Entropy;Standards;Huffman coding;asymmetric numeral systems;entropy coding;data compression;Huffman coding;arithmetic coding},
+3. https://en.wikipedia.org/wiki/Asymmetric_numeral_systems
+
 # Introdution
 
 - a family of entropy encoding methods
@@ -5,19 +11,18 @@
   - Arithmetic coding
   - ANS: ANS combines the compression ratio of [arithmetic coding](https://en.wikipedia.org/wiki/Arithmetic_coding) (which uses a nearly accurate [probability distribution](https://en.wikipedia.org/wiki/Probability_distribution)), with a processing cost similar to that of [Huffman coding](https://en.wikipedia.org/wiki/Huffman_coding). ([Wiki](https://en.wikipedia.org/wiki/Asymmetric_numeral_systems))
 - introduced by [Jarosław (Jarek) Duda](https://en.wikipedia.org/wiki/Jarosław_Duda_(computer_scientist))[[3\]](https://en.wikipedia.org/wiki/Asymmetric_numeral_systems#cite_note-3) from [Jagiellonian University](https://en.wikipedia.org/wiki/Jagiellonian_University), 
-- 
 - Example: 
 
 # Entropy coding
 
-- Shannon entropy
-
-Source: [Reducible](https://www.youtube.com/watch?v=B3y0RsVCyrw) , 
+- Source: [Reducible](https://www.youtube.com/watch?v=B3y0RsVCyrw) 
 
 - 3 key problems
 
   - single symbol --> unique binary code
+
   - source message = received message
+
   - unique decodability
 
 - self information function (bits)
@@ -26,20 +31,21 @@ Source: [Reducible](https://www.youtube.com/watch?v=B3y0RsVCyrw) ,
   $$
 
   - with oberserving event $x$ and it's probability $P(x)$ we can know how many information it carries
+  - d
+  - <img src="24ws_ANS.assets/image-20241204112509360.png" alt="image-20241204112509360" style="zoom:30%;" />
 
 - give more probable symbols less bits
 
-- Information <u>entropy</u> $H(X)$  
+- Information <u>entropy</u> $H(X)$  of a distribution (Shannon Entropy 1948)
   $$
-  H(X) = \sum_{i=1}^n P(x_i)\cdot I(x_i)
+  H(X) = \sum_{i=1}^n P(x_i)\cdot I(x_i)= \sum P(x) \cdot log_2 (\frac{1}{P(x)}) = - \sum P(x) \cdot log_2 P(x)
   $$
-  
+
 - Shannon's Source Coding Theorem
   $$
   N \cdot H(X)
   $$
   is an achievable lower bound
-
 
 # Huffman Coding
 
@@ -64,17 +70,39 @@ Source: [Reducible](https://www.youtube.com/watch?v=B3y0RsVCyrw) ,
 
 ## motivation
 
+- ANS combines the compression ratio of [arithmetic coding](https://en.wikipedia.org/wiki/Arithmetic_coding) (which uses a nearly accurate [probability distribution](https://en.wikipedia.org/wiki/Probability_distribution)), with a processing cost similar to that of [Huffman coding](https://en.wikipedia.org/wiki/Huffman_coding). ^3^ 
+
+## example1: {2,0,2,5,1,8}
+
+- $\mathcal{A} = \{0,1,2,...,9\}$ 
+  - $s_0=s_1=...=s_9 = 1/10$ 
+- $S_{in}=\{2,0,2,5,1,8\}$ 
+- we want to encode this sequence of digits, what is the simplest way? --> $X=202518$ , represented with a single integer state
+- bits of representation of $X=202518$ is $log_2202518$ 
+- Encoding $C(x)$ 
+
+$$
+C(s_i, x_{i+1})= x_i \cdot 10 + s_i
+$$
 
 
-## basic idea
 
-- symmetric behavior
-  - uniform distribution
+- Decoding
+
+## example2: different Pr
+
+- $Pr(0)=1/4, Pr(1)=3/4$ 
+- 
+
+## basic/general idea
+
+- asymmetric behavior <--> symmetric behavior
+  - (non-) uniform distribution
 - ANS
-  - The basic concept of asymmetric numeral systems (ANS) is to change this symmetric behavior so that the information added to $x(lg(x)$ bits) by coding a new symbol depends on the probability distribution of the symbols, that is not necessarily a uniform distribution.
+  - The basic concept of asymmetric numeral systems (ANS) is to change this symmetric behavior so that the information added to $x(lg(x)$ bits) by coding a new symbol depends on the probability distribution of the symbols, that is not necessarily a uniform distribution. ^2^
   - the information contents of $x$ should be $lg(x) \rightarrow lg(x)+lg(1/p)=lg(x/p)$ 
 - add the information in the least significant position
-- symbol spread function for a standard base-b numeral system:
+- <u>symbol spread function</u> for a standard base-b numeral system:
   $$
   \bar{s}(x) = mod(x,b)
   $$
@@ -113,7 +141,7 @@ similar to the arithmetic encoding
 
   
 
-  - [post of kedar](https://kedartatwawadi.github.io/post--ANS/)
+  - [post of kedar](https://kedartatwawadi.github.io/post--ANS/) 
     $$
     x_t = \lfloor x_{t-1}/F_{s_t} \rfloor \cdot M + mod(x_{t-1}, F_{s_t}) + C_{s_t}
     $$
