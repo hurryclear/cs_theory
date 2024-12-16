@@ -1,28 +1,84 @@
 \section{Asymmetric Numeral System}
+
 \subsection{Basic Idea}
-\begin{frame}[fragile]{1st frame}
-    \begin{itemize}
-        \item This is one of the section\footnote{This is a long footnote. Here I am. Who am I?}. 
-        \item Let's check for 2nd footnote \footnote{This is a 2nd long footnote. Here I am. Who am I?}.
-        \item The footnotes will be added from the bottom. If you want to pull the footnotes towards red-black margin line then use \verb|\addfootspace{}| at the end of the \verb|\frame{}|.
-        \item \verb|\addfootspace{}| actually adds an additional vacant footnote (without counting that vacant footnote).
-        \item To add more foot space add more \verb|\addfootspace{}|. 
-    \end{itemize}
-\addfootspace{} %\addfootspace{}
-\end{frame}
+    \begin{frame}[fragile]{Motivation}
+        ANS combines the compression ratio of \href{https://en.wikipedia.org/wiki/Arithmetic_coding}{arithmetic coding} (which uses a nearly accurate \href{https://en.wikipedia.org/wiki/Probability_distribution}{probability distribution}), with a processing cost similar to that of \href{https://en.wikipedia.org/wiki/Huffman_coding}{Huffman coding} [3]
+    \end{frame}
+
+    \begin{frame}[fragile]{Basic Idea}
+        \begin{itemize}
+            \item<1-> Symbol spread function
+            \item<2-> Representation of information \\
+            (represents an entire message as a single number, similar to Arithmetic Coding) --> example: representation of \{2,0,2,5,1,8\}
+            \item<3-> Symmetric or Asymmetric
+            \item<4-> rANS and tANS
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}[fragile]{Symbol spread function}
+        \begin{itemize}
+            \item<1-> the function that determines the split of the $\mathbb{N}$ subsets corresponding to different symbols [1]
+            \item<2-> $\bar{s}: \mathbb{N} \rightarrow \mathcal{A}, \bar{s}(x) = \text{mod}(x,b)$
+            \item<3-> In the standard binary system example: $\bar{s}(x) = \text{mod}(x,2)$ \\ e.g. splits natural numbers into subsets of even/odd numbers [1]
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{Representation of information (Exa. 2)}
+        \begin{itemize}
+            \item<1-> a finite sequence of symbols/digits: $$\mathcal{A}=\{0,1,2,3,4,5,6,7,8,9\}$$
+            \item<2-> the sequence of symbols/digits to be encoded: $$S_{in}=(2,0,2,5,1,8)$$
+            \item<3-> \textcolor{red}{How can we represent this sequence as a single number?} 
+            \item<4-> The easiest way is to concatenate the symbols/digits: $$X_{out} = 202518$$
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{Representation of Information (Exa. 2)}
+        \begin{itemize}
+            \item<1-> encoding the sequence of digits (2,0,2,5,1,8)
+            \[
+            \begin{aligned}
+                X_{\text{init}} &= 0 \\
+                X_1 &= X_{\text{init}} \times 10 + 2 = 2 \\
+                X_2 &= X_1 \times 10 + 0 = 20 \\
+                X_3 &= X_2 \times 10 + 2 = 202 \\
+                X_4 &= X_3 \times 10 + 5 = 2025 \\
+                X_5 &= X_4 \times 10 + 1 = 20251 \\
+                X_{\text{out}} &= X_5 \times 10 + 8 = 202518
+            \end{aligned}
+            \]
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{Representation of Information (Exa. 2)}
+        \begin{itemize}
+            \item<1-> \textcolor{red}{What is the encoding function?}
+            \item<2-> Encoding function
+            $$X_{i+1} = X_i \times 10 + s_i$$
+            \item<3-> x-th appearance of symbol s
+            $$X_{i+1} = \textcolor{orange}{C(s_i, X_{i+1})= X_i \cdot 10 + s_i} $$
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{Symmetric or Asymmetric}
+    \end{frame}
+
 \subsection{rANS}
-\begin{frame}[fragile]{2nd frame}
-    $\bullet$ Here is the next section\footnote{This is a 2nd long footnote. Here I am. Who am I?}\\
-    $\bullet$ Here I used two \verb|\addfootspace{}|. Don't do \verb|\addfootspace{\vspace{1cm}}|.
-    % \addfootspace{}\addfootspace{}
-\end{frame}
-% \subsubsection{Subsubsection-1}
-% \begin{frame}{2nd frame: Subsubsection-1}
-% $\bullet$ This is a test for sub-sub-section.
-% \end{frame}
-% \subsubsection{Subsubsection-2}
-% \begin{frame}{2nd frame: Subsubsection-2}
-% $\bullet$ This is a test for sub-sub-section.
-% \end{frame}
-\subsection{tANS}
+    \begin{frame}[fragile]{rANS}
+        $\bullet$ Here is the next section\footnote{This is a 2nd long footnote. Here I am. Who am I?}\\
+        $\bullet$ Here I used two \verb|\addfootspace{}|. Don't do \verb|\addfootspace{\vspace{1cm}}|.
+        % \addfootspace{}\addfootspace{}
+    \end{frame}
+
+    \subsection{tANS}
+    \begin{frame}[fragile]{tANS}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{frame}
+
 \subsection{Performance}
+    \begin{frame}[fragile]{Performance}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{frame}

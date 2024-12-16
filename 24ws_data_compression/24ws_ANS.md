@@ -164,6 +164,8 @@ similar to the arithmetic encoding
 
 ### performance
 
+## streaming rANS
+
 
 
 ## tANS

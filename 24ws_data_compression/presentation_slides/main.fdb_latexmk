@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber main"] 1733303027 "main.bcf" "main.bbl" "main" 1733311584 0
+["biber main"] 1734345682 "main.bcf" "main.bbl" "main" 1734369129 0
   "./references.bib" 1733152088 7068 6687f488d3d32a90eda7968a6a8d1616 ""
-  "main.bcf" 1733311583 107610 d063964bad4b0d0de2437b963be06df9 "xelatex"
+  "main.bcf" 1734369128 107610 d063964bad4b0d0de2437b963be06df9 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1733311583 "main.xdv" "main.pdf" "main" 1733311584 0
-  "main.xdv" 1733311583 100116 8e96ba22efd0344da434ceeb74c48da1 "xelatex"
+["xdvipdfmx"] 1734369128 "main.xdv" "main.pdf" "main" 1734369129 0
+  "main.xdv" 1734369128 237988 bcccca6ae991562168fee14694d3713c "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1733311581 "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" "main.xdv" "main" 1733311584 0
+["xelatex"] 1734369126 "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" "main.xdv" "main" 1734369129 0
   "./TitlePageInfo.tex" 1733248039 294 98c8a8cd26f61945e058ffdbed0ade3f ""
-  "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" 1733303129 1322 e132f75b96c64f2dd2b7b20af43f7f5b ""
+  "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" 1733408426 1342 866344083a4bccf8dda0080f13bcc44c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -246,18 +246,18 @@
   "TitlePageInfo.tex" 1733248039 294 98c8a8cd26f61945e058ffdbed0ade3f ""
   "beamerthemeLeipzigChemie.sty" 1733152088 9963 db66f69f49f192aae75847e2472d353d ""
   "imglib/logo_leipzig.eps" 1733152090 514490 5b5a02d4cd19da1e514a1aa8f00321e0 ""
-  "main.aux" 1733311583 6772 efea0b0f788dc4433815fc275f2ebb50 "xelatex"
-  "main.bbl" 1733303030 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.nav" 1733311583 3107 e95f11084f458d4cf11ff9c2ff167680 "xelatex"
-  "main.out" 1733311583 1404 66290047f52f3d7ce9f929ed8ff9ae03 "xelatex"
-  "main.run.xml" 1733311583 2412 2baf21f7cfc8d2b24a37b4288cd43ff7 "xelatex"
-  "main.tex" 1733303129 1322 e132f75b96c64f2dd2b7b20af43f7f5b ""
-  "main.toc" 1733311583 631 051cf022380c8a4c58c13442ffa471a0 "xelatex"
-  "main.vrb" 1733311583 254 327935e3fc5aeeb6f308e10802d03bc7 "xelatex"
-  "slides/ANS.tex" 1733303114 1386 79b8f7cbd7286915c011fa2951270095 ""
-  "slides/EntropyCoding.tex" 1733311581 1387 183dcbf0818014cb537547edddcde924 ""
+  "main.aux" 1734369128 8982 e5744a8e1764b40e0639f638486315fd "xelatex"
+  "main.bbl" 1734345685 466 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.nav" 1734369128 3919 4041379945ddec84cf9c02f0a80dc4fa "xelatex"
+  "main.out" 1734369128 1404 ea34076d86c758cfda2bb958ac95c287 "xelatex"
+  "main.run.xml" 1734369128 2412 2baf21f7cfc8d2b24a37b4288cd43ff7 "xelatex"
+  "main.tex" 1733408426 1342 866344083a4bccf8dda0080f13bcc44c ""
+  "main.toc" 1734369128 631 c3a6c81d6e2e2144bf9e8c0fb02cc185 "xelatex"
+  "main.vrb" 1734369128 81 7f744de319b35fcd761dfa02a9c26ce2 "xelatex"
+  "slides/AsymmetricNumeralSystem.tex" 1734369125 3645 5b31636dd8b7287c7eb044bffb99e935 ""
+  "slides/EntropyCoding.tex" 1733311682 1387 183dcbf0818014cb537547edddcde924 ""
   "slides/Introduction.tex" 1733152088 160 dd83a977d3f049b6deb9133052b245c5 ""
-  "slides/Reference.tex" 1733247794 154 74bfa232c26d34380910600dda5a424d ""
+  "slides/Reference.tex" 1734345972 458 4cd2c6c2c627a42f14dfb3a59883cbdb ""
   "slides/Summary.tex" 1733152088 148 a3bd58d4a634880c5e6d005908407994 ""
   (generated)
   "main.aux"
