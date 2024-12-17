@@ -5,8 +5,8 @@
 \beamer@subsectionintoc {2}{3}{Asymmetric Numeral System}{8}{0}{2}
 \beamer@sectionintoc {3}{Asymmetric Numeral System}{8}{0}{3}
 \beamer@subsectionintoc {3}{1}{Basic Idea}{9}{0}{3}
-\beamer@subsectionintoc {3}{2}{rANS}{26}{0}{3}
-\beamer@subsectionintoc {3}{3}{tANS}{27}{0}{3}
-\beamer@subsectionintoc {3}{4}{Performance}{28}{0}{3}
-\beamer@sectionintoc {4}{Summary}{29}{0}{4}
-\beamer@sectionintoc {5}{Reference}{31}{0}{5}
+\beamer@subsectionintoc {3}{2}{rANS}{29}{0}{3}
+\beamer@subsectionintoc {3}{3}{tANS}{30}{0}{3}
+\beamer@subsectionintoc {3}{4}{Performance}{31}{0}{3}
+\beamer@sectionintoc {4}{Summary}{32}{0}{4}
+\beamer@sectionintoc {5}{Reference}{34}{0}{5}
