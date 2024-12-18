@@ -1,6 +1,7 @@
 \section{Asymmetric Numeral System}
 
 \subsection{Basic Idea}
+    \subsubsection{Motivation}
     \begin{frame}[fragile]{Motivation}
         ANS combines the compression ratio of \href{https://en.wikipedia.org/wiki/Arithmetic_coding}{arithmetic coding} (which uses a nearly accurate \href{https://en.wikipedia.org/wiki/Probability_distribution}{probability distribution}), with a processing cost similar to that of \href{https://en.wikipedia.org/wiki/Huffman_coding}{Huffman coding} [3]
     \end{frame}
@@ -105,17 +106,59 @@
         \end{itemize}
     \end{frame}
 
-\subsection{rANS}
-    \begin{frame}[fragile]{rANS}
-        $\bullet$ Here is the next section\footnote{This is a 2nd long footnote. Here I am. Who am I?}\\
-        $\bullet$ Here I used two \verb|\addfootspace{}|. Don't do \verb|\addfootspace{\vspace{1cm}}|.
-        % \addfootspace{}\addfootspace{}
+    \begin{frame}[fragile]{Exa. 3}
+        \begin{itemize}
+            \item Let $\mathcal{A} = \{0,1\}$
+            \item $Pr(0) = 1/4, Pr(1)= 3/4$ 
+            \item a cycle of length 4, which contains 1 zero and 3 ones
+            \item $X' = C(s,X) \approx X/p_s$
+            \item $C(0,X)=4X$, $C(1,X)=4\lfloor X/3 \rfloor + mod(X,3) + 1$
+        \end{itemize}
     \end{frame}
 
-    \subsection{tANS}
+\subsection{rANS}
+    \subsubsection{Key Concepts}
+    \begin{frame}[fragile]{rANS}
+        \begin{itemize}
+            \item range
+            \item 
+        \end{itemize}
+    \end{frame}
+
+    \subsubsection{Encoding Formula}
+    \begin{frame}[fragile]{}
+        \textbf{Encoding Formula:}
+        \[
+        x' = \left\lfloor \frac{x}{F_s} \right\rfloor \cdot m + \operatorname{mod}(x, F_s) + c_s
+        \]
+        \begin{itemize}
+            \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
+            \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
+            \item \textbf{Total frequency:} 
+            \[
+            m = \sum_{i=1}^{k} F_i
+            \]
+            \item \textbf{Probability of symbol \(s\):} 
+            \[
+            p_s = \frac{F_s}{m}
+            \]
+            \item \textbf{Cumulative frequency before \(s\):} 
+            \[
+            c_s := f_0 + f_1 + \dots + f_{s-1}
+            \]
+            % \item \textbf{Input sequence:} 
+            % \[
+            % S_{\text{in}} = (s_1, s_2, \dots, s_n)
+            % \]
+        \end{itemize}
+    
+        % \vspace{0.5cm}
+    \end{frame}
+
+\subsection{tANS}
     \begin{frame}[fragile]{tANS}
         \begin{itemize}
-            \item 
+            \item
         \end{itemize}
     \end{frame}
 
