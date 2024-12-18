@@ -14,29 +14,37 @@
             \item<4-> rANS and tANS
         \end{itemize}
     \end{frame}
-    
+
+    \subsubsection{Symbol spread function}
     \begin{frame}[fragile]{Symbol spread function}
         \begin{itemize}
             \item<1-> the function that determines the split of the $\mathbb{N}$ subsets corresponding to different symbols [1]
-            \item<2-> $\bar{s}: \mathbb{N} \rightarrow \mathcal{A}, \bar{s}(x) = \text{mod}(x,b)$
+            \item<2-> $\bar{s}: \mathbb{N} \rightarrow \mathcal{A}, \bar{s}(x) = \text{mod}(x,b) = s$
             \item<3-> In the standard binary system example: $\bar{s}(x) = \text{mod}(x,2)$ \\ e.g. splits natural numbers into subsets of even/odd numbers [1]
         \end{itemize}
     \end{frame}
 
     \begin{frame}[fragile]{Symbol spread function (Exa. 1)}
-        \includegraphics[width=0.9\textwidth]{../24ws_ANS.assets/exa1_2.png}
+        $S=\{0,1\}$
+        \begin{center}
+            \includegraphics[width=0.9\textwidth]{../24ws_ANS.assets/exa1_1.png}
+        \end{center}
     \end{frame}
 
     \begin{frame}[fragile]{Symbol spread function (Exa. 2)}
-        \includegraphics[width=0.78\textwidth]{../24ws_ANS.assets/exa2_1.drawio.png}
+        $S=\{0,1,2,3,4,5,6,7,8,9\}$
+        \begin{center}
+            \includegraphics[width=0.76\textwidth]{../24ws_ANS.assets/exa2_1.png}
+        \end{center}
     \end{frame}
 
+    \subsubsection{Representation of information}    
     \begin{frame}[fragile]{Representation of information (Exa. 2)}
         \begin{itemize}
             \item<1-> a finite sequence of symbols/digits: $$\mathcal{A}=\{0,1,2,3,4,5,6,7,8,9\}$$
-            \item<2-> the sequence of symbols/digits to be encoded: $$S_{in}=(2,0,2,5,1,8)$$
+            \item<2-> the sequence of symbols/digits to be encoded: $$S_{in}=(2,0,2,5)$$
             \item<3-> \textcolor{red}{How can we represent this sequence as a single number?} 
-            \item<4-> The easiest way is to concatenate the symbols/digits: $$X_{out} = 202518$$
+            \item<4-> The easiest way is to concatenate the symbols/digits: $$X_{out} = 2025$$
         \end{itemize}
     \end{frame}
 
@@ -49,9 +57,7 @@
                 X_1 &= X_{\text{init}} \times 10 + 2 = 2 \\
                 X_2 &= X_1 \times 10 + 0 = 20 \\
                 X_3 &= X_2 \times 10 + 2 = 202 \\
-                X_4 &= X_3 \times 10 + 5 = 2025 \\
-                X_5 &= X_4 \times 10 + 1 = 20251 \\
-                X_{\text{out}} &= X_5 \times 10 + 8 = 202518
+                X_{\text{out}} &= X_3 \times 10 + 5 = 2025
             \end{aligned}
             \]
         \end{itemize}
@@ -63,14 +69,39 @@
             \item<2-> Encoding function
             $$X_{i+1} = X_i \times 10 + s_i$$
             \item<3-> x-th appearance of symbol s
-            $$X_{i+1} = \textcolor{orange}{C(s_i, X_{i+1})= X_i \cdot 10 + s_i} $$
+            $$X' = \textcolor{orange}{C(s, X)= X \cdot 10 + s} $$
         \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{Representation of Information (Exa. 2)}
+        \begin{center}
+            \includegraphics[width=0.85\textwidth]{../24ws_ANS.assets/fig3.png}    
+        \end{center}
+    \end{frame}
+
+    \begin{frame}[fragile]{Representation of Information (Exa. 1)}
+        \begin{center}
+            \includegraphics[width=0.95\textwidth]{../24ws_ANS.assets/fig4.png}    
+        \end{center}
+    \end{frame}
+
+    \begin{frame}[fragile]{}
+        \begin{center}
+            \includegraphics[width=0.7\textwidth]{../24ws_ANS.assets/fig5.png}  
+        \end{center}
+    \end{frame}
+
+    \subsubsection{Symmetric or Asymmetric}
+    \begin{frame}[fragile]{}
+        \begin{center}
+            \includegraphics[width=0.7\textwidth]{../24ws_ANS.assets/fig6.png}  
+        \end{center}
     \end{frame}
 
     \begin{frame}[fragile]{Symmetric or Asymmetric}
         \begin{itemize}
-            \item<1-> Symmetric: 
-            \item<2-> Asymmetric: 
+            \item Symmetric: uniform distribution
+            \item Asymmetric: non-uniform distribution
         \end{itemize}
     \end{frame}
 

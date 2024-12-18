@@ -5,8 +5,11 @@
 \beamer@subsectionintoc {2}{3}{Asymmetric Numeral System}{8}{0}{2}
 \beamer@sectionintoc {3}{Asymmetric Numeral System}{8}{0}{3}
 \beamer@subsectionintoc {3}{1}{Basic Idea}{9}{0}{3}
-\beamer@subsectionintoc {3}{2}{rANS}{29}{0}{3}
-\beamer@subsectionintoc {3}{3}{tANS}{30}{0}{3}
-\beamer@subsectionintoc {3}{4}{Performance}{31}{0}{3}
-\beamer@sectionintoc {4}{Summary}{32}{0}{4}
-\beamer@sectionintoc {5}{Reference}{34}{0}{5}
+\beamer@subsubsectionintoc {3}{1}{1}{Symbol spread function}{14}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{2}{Representation of information}{19}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{3}{Symmetric or Asymmetric}{30}{0}{3}
+\beamer@subsectionintoc {3}{2}{rANS}{32}{0}{3}
+\beamer@subsectionintoc {3}{3}{tANS}{33}{0}{3}
+\beamer@subsectionintoc {3}{4}{Performance}{34}{0}{3}
+\beamer@sectionintoc {4}{Summary}{35}{0}{4}
+\beamer@sectionintoc {5}{Reference}{37}{0}{5}

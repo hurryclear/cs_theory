@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  17 DEC 2024 12:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  18 DEC 2024 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1138,7 +1138,11 @@ File: imglib/logo_leipzig.eps Graphic file (type eps)
 <imglib/logo_leipzig.eps>
  [1
 
-] (./main.toc) [2
+] (./main.toc)
+Overfull \vbox (14.00345pt too high) detected at line 19
+ []
+
+[2
 
 ] (./slides/Introduction.tex [3
 
@@ -1195,17 +1199,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `main.vrb'.
 
  (./main.vrb
-File: ../24ws_ANS.assets/exa1_2.png Graphic file (type bmp)
-<../24ws_ANS.assets/exa1_2.png>
+File: ../24ws_ANS.assets/exa1_1.png Graphic file (type bmp)
+<../24ws_ANS.assets/exa1_1.png>
 ) [17
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-File: ../24ws_ANS.assets/exa2_1.drawio.png Graphic file (type bmp)
-<../24ws_ANS.assets/exa2_1.drawio.png>
-) [18
+File: ../24ws_ANS.assets/exa2_1.png Graphic file (type bmp)
+<../24ws_ANS.assets/exa2_1.png>
+)
+Overfull \vbox (5.7391pt too high) detected at line 39
+ []
+
+[18
 
 ]
 \openout4 = `main.vrb'.
@@ -1235,32 +1243,74 @@ File: ../24ws_ANS.assets/exa2_1.drawio.png Graphic file (type bmp)
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [27
+ (./main.vrb
+File: ../24ws_ANS.assets/fig3.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig3.png>
+)
+Overfull \vbox (1.54237pt too high) detected at line 80
+ []
 
-] (./main.vrb) [28
+[27
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [29
+ (./main.vrb
+File: ../24ws_ANS.assets/fig4.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig4.png>
+) [28
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [30
+ (./main.vrb
+File: ../24ws_ANS.assets/fig5.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig5.png>
+)
+Overfull \vbox (9.6179pt too high) detected at line 92
+ []
+
+[29
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/fig6.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig6.png>
+)
+Overfull \vbox (9.6179pt too high) detected at line 99
+ []
+
+[30
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb) [31
 
-]) (./slides/Summary.tex [32
+]
+\openout4 = `main.vrb'.
 
-] [33
+ (./main.vrb) [32
 
-]) (./slides/Reference.tex [34
+]
+\openout4 = `main.vrb'.
 
-] [35
+ (./main.vrb) [33
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [34
+
+]) (./slides/Summary.tex [35
+
+] [36
+
+]) (./slides/Reference.tex [37
+
+] [38
 
 ])
 \tf@nav=\write7
@@ -1274,18 +1324,18 @@ File: ../24ws_ANS.assets/exa2_1.drawio.png Graphic file (type bmp)
 
  (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 73D12754B775CB4D5B0D303FD3E39C87;1404.
+(rerunfilecheck)             Checksum: E5CA3758E0B90D8F9DEC3BC82B4EC046;1404.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36360 strings out of 476683
- 784882 string characters out of 5804048
- 1855018 words of memory out of 5000000
- 55888 multiletter control sequences out of 15000+600000
- 519773 words of font info for 96 fonts, out of 8000000 for 9000
+ 36426 strings out of 476683
+ 786413 string characters out of 5804048
+ 1856018 words of memory out of 5000000
+ 55943 multiletter control sequences out of 15000+600000
+ 519781 words of font info for 97 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,1227b,1102s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (35 pages, 255100 bytes).
+Output written on main.xdv (38 pages, 277604 bytes).

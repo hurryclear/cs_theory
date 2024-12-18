@@ -1,19 +1,23 @@
 # Fdb version 4
-["biber main"] 1734431909 "main.bcf" "main.bbl" "main" 1734436418 0
+["biber main"] 1734552047 "main.bcf" "main.bbl" "main" 1734552216 0
   "./references.bib" 1733152088 7068 6687f488d3d32a90eda7968a6a8d1616 ""
-  "main.bcf" 1734436417 107610 d063964bad4b0d0de2437b963be06df9 "xelatex"
+  "main.bcf" 1734552214 107610 d063964bad4b0d0de2437b963be06df9 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1734436417 "main.xdv" "main.pdf" "main" 1734436418 0
-  "main.xdv" 1734436417 255100 a1415cb182c79421c294aaa9d358f924 "xelatex"
+["xdvipdfmx"] 1734552214 "main.xdv" "main.pdf" "main" 1734552216 0
+  "main.xdv" 1734552214 277604 ffe8a83f89df11bd0509bbeaa405da21 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1734436415 "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" "main.xdv" "main" 1734436418 0
-  "../24ws_ANS.assets/exa1_2.png" 1734433274 23627 e07113cccd32af165ebd65a54c4677ad ""
-  "../24ws_ANS.assets/exa2_1.drawio.png" 1734436344 334650 a7df78b3732da1fe94cad60d3f7d0951 ""
+["xelatex"] 1734552212 "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" "main.xdv" "main" 1734552216 0
+  "../24ws_ANS.assets/exa1_1.png" 1734433274 23627 e07113cccd32af165ebd65a54c4677ad ""
+  "../24ws_ANS.assets/exa2_1.png" 1734436344 334650 a7df78b3732da1fe94cad60d3f7d0951 ""
+  "../24ws_ANS.assets/fig3.png" 1734550449 736797 15cab0fe3dcfd9a6a9741dfd14672a5b ""
+  "../24ws_ANS.assets/fig4.png" 1734550352 658242 471df746a6d3341b5edb518d9a5e8832 ""
+  "../24ws_ANS.assets/fig5.png" 1734550996 966559 2dba4016a1535c8a61946177444df7f6 ""
+  "../24ws_ANS.assets/fig6.png" 1734551371 1169844 2d935693d964a5a7bf7b549460e13354 ""
   "./TitlePageInfo.tex" 1733248039 294 98c8a8cd26f61945e058ffdbed0ade3f ""
   "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" 1733408426 1342 866344083a4bccf8dda0080f13bcc44c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -246,17 +250,17 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "ProjectSpecificAdditionalPackages.sty" 1733152088 689 691828db19190b1fe6c85be413da1731 ""
   "TitlePageInfo.tex" 1733248039 294 98c8a8cd26f61945e058ffdbed0ade3f ""
-  "beamerthemeLeipzigChemie.sty" 1733152088 9963 db66f69f49f192aae75847e2472d353d ""
+  "beamerthemeLeipzigChemie.sty" 1734552084 9993 a8edb00e79d64f77912eff8080621de0 ""
   "imglib/logo_leipzig.eps" 1733152090 514490 5b5a02d4cd19da1e514a1aa8f00321e0 ""
-  "main.aux" 1734436417 9471 57f738b3c756bcb2b88f84acc08809ed "xelatex"
-  "main.bbl" 1734431912 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.nav" 1734436417 4123 caa4a4d3da25a8c88203900a25520d8d "xelatex"
-  "main.out" 1734436417 1404 73d12754b775cb4d5b0d303fd3e39c87 "xelatex"
-  "main.run.xml" 1734436417 2412 2baf21f7cfc8d2b24a37b4288cd43ff7 "xelatex"
+  "main.aux" 1734552214 10910 fed25d1b9583e07376da7ee2ee97d69d "xelatex"
+  "main.bbl" 1734552050 466 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.nav" 1734552214 4792 2dd338aedc099554e4536011528c3e40 "xelatex"
+  "main.out" 1734552214 1404 e5ca3758e0b90d8f9dec3bc82b4ec046 "xelatex"
+  "main.run.xml" 1734552214 2412 2baf21f7cfc8d2b24a37b4288cd43ff7 "xelatex"
   "main.tex" 1733408426 1342 866344083a4bccf8dda0080f13bcc44c ""
-  "main.toc" 1734436417 631 298e0bf776b8406b35f97715593f9eeb "xelatex"
-  "main.vrb" 1734436417 81 7f744de319b35fcd761dfa02a9c26ce2 "xelatex"
-  "slides/AsymmetricNumeralSystem.tex" 1734436414 4076 9a3b10a1c931d3e8cc0dff616338eaee ""
+  "main.toc" 1734552214 852 ee8e864f4aefa164b1fdc17c47185642 "xelatex"
+  "main.vrb" 1734552214 81 7f744de319b35fcd761dfa02a9c26ce2 "xelatex"
+  "slides/AsymmetricNumeralSystem.tex" 1734552212 5036 085e9b243fd5408f36708799b01cdd2b ""
   "slides/EntropyCoding.tex" 1733311682 1387 183dcbf0818014cb537547edddcde924 ""
   "slides/Introduction.tex" 1733152088 160 dd83a977d3f049b6deb9133052b245c5 ""
   "slides/Reference.tex" 1734345972 458 4cd2c6c2c627a42f14dfb3a59883cbdb ""
