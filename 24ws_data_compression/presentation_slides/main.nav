@@ -59,42 +59,57 @@
 \headcommand {\beamer@subsubsectionentry {0}{3}{1}{4}{30}{Symmetric or Asymmetric}}
 \headcommand {\slideentry {3}{1}{12}{30/30}{Basic Idea}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {3}{1}{13}{31/31}{Basic Idea}{0}}
-\headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {3}{1}{14}{32/32}{Basic Idea}{0}}
-\headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@subsectionpages {9}{32}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{33}{rANS}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{33}{Key Concepts}}
-\headcommand {\slideentry {3}{2}{1}{33/33}{rANS}{0}}
-\headcommand {\beamer@framepages {33}{33}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{2}{2}{34}{Encoding Formula}}
-\headcommand {\slideentry {3}{2}{2}{34/34}{rANS}{0}}
+\headcommand {\slideentry {3}{1}{13}{31/33}{Basic Idea}{0}}
+\headcommand {\beamer@framepages {31}{33}}
+\headcommand {\slideentry {3}{1}{14}{34/34}{Basic Idea}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\beamer@subsectionpages {33}{34}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{35}{tANS}}
-\headcommand {\slideentry {3}{3}{1}{35/35}{tANS}{0}}
+\headcommand {\slideentry {3}{1}{15}{35/35}{Basic Idea}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\beamer@subsectionpages {35}{35}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{36}{Performance}}
-\headcommand {\slideentry {3}{4}{1}{36/36}{Performance}{0}}
+\headcommand {\beamer@subsectionpages {9}{35}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{36}{rANS}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{36}{Key Concepts}}
+\headcommand {\slideentry {3}{2}{1}{36/36}{rANS}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\beamer@sectionpages {8}{36}}
-\headcommand {\beamer@subsectionpages {36}{36}}
-\headcommand {\sectionentry {4}{Summary}{37}{Summary}{0}}
-\headcommand {\slideentry {4}{0}{1}{37/37}{}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{2}{37}{Exa. 3}}
+\headcommand {\slideentry {3}{2}{2}{37/37}{rANS}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {4}{0}{2}{38/38}{}{0}}
+\headcommand {\slideentry {3}{2}{3}{38/38}{rANS}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\beamer@sectionpages {37}{38}}
-\headcommand {\beamer@subsectionpages {37}{38}}
-\headcommand {\sectionentry {5}{Intro}{39}{Reference}{0}}
-\headcommand {\slideentry {5}{0}{1}{39/39}{}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{3}{39}{Encoding Function}}
+\headcommand {\slideentry {3}{2}{4}{39/39}{rANS}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {5}{0}{2}{40/40}{}{0}}
+\headcommand {\slideentry {3}{2}{5}{40/40}{rANS}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@partpages {1}{40}}
-\headcommand {\beamer@subsectionpages {39}{40}}
-\headcommand {\beamer@sectionpages {39}{40}}
-\headcommand {\beamer@documentpages {40}}
-\headcommand {\gdef \inserttotalframenumber {30}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{4}{41}{Decoding Function}}
+\headcommand {\slideentry {3}{2}{6}{41/41}{rANS}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{5}{42}{Streaming-rANS}}
+\headcommand {\slideentry {3}{2}{7}{42/42}{rANS}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\beamer@subsectionpages {36}{42}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{43}{tANS}}
+\headcommand {\slideentry {3}{3}{1}{43/43}{tANS}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\beamer@subsectionpages {43}{43}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{44}{Performance}}
+\headcommand {\slideentry {3}{4}{1}{44/44}{Performance}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\beamer@sectionpages {8}{44}}
+\headcommand {\beamer@subsectionpages {44}{44}}
+\headcommand {\sectionentry {4}{Summary}{45}{Summary}{0}}
+\headcommand {\slideentry {4}{0}{1}{45/45}{}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {4}{0}{2}{46/46}{}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@sectionpages {45}{46}}
+\headcommand {\beamer@subsectionpages {45}{46}}
+\headcommand {\sectionentry {5}{Intro}{47}{Reference}{0}}
+\headcommand {\slideentry {5}{0}{1}{47/47}{}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {5}{0}{2}{48/48}{}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\beamer@partpages {1}{48}}
+\headcommand {\beamer@subsectionpages {47}{48}}
+\headcommand {\beamer@sectionpages {47}{48}}
+\headcommand {\beamer@documentpages {48}}
+\headcommand {\gdef \inserttotalframenumber {36}}
