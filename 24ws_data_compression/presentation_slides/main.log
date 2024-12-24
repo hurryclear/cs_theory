@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  24 DEC 2024 15:41
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  24 DEC 2024 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1140,7 +1140,7 @@ File: imglib/logo_leipzig.eps Graphic file (type eps)
 
 ] (./main.toc) [2
 
-] (./slides/Introduction.tex [3
+] (./slides/1Introduction.tex [3
 
 ]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
@@ -1152,14 +1152,14 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [4
 
-]) (./slides/EntropyCoding.tex [5
+]) (./slides/2EntropyCoding.tex [5
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb) [6
 
-]) (./slides/AsymmetricNumeralSystem.tex [7
+]) (./slides/3AsymmetricNumeralSystem.tex [7
 
 ] (./main.toc) [8
 
@@ -1252,7 +1252,7 @@ File: ../24ws_ANS.assets/fig4.png Graphic file (type bmp)
 File: ../24ws_ANS.assets/fig5.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig5.png>
 )
-Overfull \vbox (9.6179pt too high) detected at line 95
+Overfull \vbox (9.6179pt too high) detected at line 98
  []
 
 [29
@@ -1264,7 +1264,7 @@ Overfull \vbox (9.6179pt too high) detected at line 95
 File: ../24ws_ANS.assets/fig6.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig6.png>
 )
-Overfull \vbox (9.6179pt too high) detected at line 102
+Overfull \vbox (9.6179pt too high) detected at line 105
  []
 
 [30
@@ -1301,7 +1301,7 @@ File: ../24ws_ANS.assets/fig7.png Graphic file (type bmp)
 
  (./main.vrb) [37
 
-]) (./slides/rANS.tex [38
+]) (./slides/4rANS.tex [38
 
 ]
 \openout4 = `main.vrb'.
@@ -1339,18 +1339,18 @@ Overfull \vbox (7.20464pt too high) detected at line 22
 
  (./main.vrb) [45
 
-]) (./slides/streamingrANS.tex [46
+]) (./slides/5streamingrANS.tex [46
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb) [47
 
-]) (./slides/Summary.tex [48
+]) (./slides/6Summary.tex [48
 
 ] [49
 
-]) (./slides/Reference.tex [50
+]) (./slides/7Reference.tex [50
 
 ] [51
 
@@ -1372,12 +1372,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36450 strings out of 476683
- 786071 string characters out of 5804048
+ 36460 strings out of 476683
+ 786444 string characters out of 5804048
  1854018 words of memory out of 5000000
- 55958 multiletter control sequences out of 15000+600000
+ 55968 multiletter control sequences out of 15000+600000
  517527 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,1227b,1102s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (51 pages, 353384 bytes).
+Output written on main.xdv (51 pages, 353040 bytes).
