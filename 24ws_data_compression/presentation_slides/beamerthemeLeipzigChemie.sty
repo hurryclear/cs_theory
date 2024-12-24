@@ -3,6 +3,7 @@
 \setsansfont{Arial}
 
 \usepackage{tikz}
+\usepackage{hyperref}
 
 \mode<presentation>
 
@@ -220,6 +221,9 @@
     \end{frame}
 }}
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Reference %%%%%%%%%%%%%%%%%%%%
+\newcommand{\refer}[1]{\textsuperscript{\hyperlink{ref#1}{[#1]}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Re-position Footnote %%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{footnote}{%

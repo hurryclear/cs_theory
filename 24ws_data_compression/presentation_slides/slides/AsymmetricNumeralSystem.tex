@@ -183,16 +183,25 @@
         \end{itemize}
     \end{frame}
 
+
     \subsubsection{Decoding Function}
     \begin{frame}
         \textbf{Decoding Function (binary):}
         \[
-        D(x) = (s, F_s \cdot (x >> n)+ (x \& mask) - c_s) ^{[1]}
+        D(x) = (s, F_s \cdot (x >> n)+ (x \& mask) - c_s) \refer{1}
         \]
         \begin{itemize}
             \item 
         \end{itemize}
     \end{frame}
+
+    \subsubsection{Implementation}
+    \begin{frame}[fragile]{Implementation}
+        \begin{itemize}
+            \item \textbf{Python Implementation:}
+        \end{itemize}
+    \end{frame}
+
     \subsubsection{Streaming-rANS}
     \begin{frame}[fragile]{Streaming-rANS}
         To avoid using large number arithmetic, in practice stream variants are used: which enforce by renormalization: sending the least significant bits of x to or from the bitstream (usually L and b are powers of 2).

@@ -14,8 +14,9 @@
 \beamer@subsubsectionintoc {3}{2}{2}{Exa. 3}{37}{0}{3}
 \beamer@subsubsectionintoc {3}{2}{3}{Encoding Function}{39}{0}{3}
 \beamer@subsubsectionintoc {3}{2}{4}{Decoding Function}{41}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{5}{Streaming-rANS}{42}{0}{3}
-\beamer@subsectionintoc {3}{3}{tANS}{43}{0}{3}
-\beamer@subsectionintoc {3}{4}{Performance}{44}{0}{3}
-\beamer@sectionintoc {4}{Summary}{45}{0}{4}
-\beamer@sectionintoc {5}{Reference}{47}{0}{5}
+\beamer@subsubsectionintoc {3}{2}{5}{Implementation}{42}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{6}{Streaming-rANS}{43}{0}{3}
+\beamer@subsectionintoc {3}{3}{tANS}{44}{0}{3}
+\beamer@subsectionintoc {3}{4}{Performance}{45}{0}{3}
+\beamer@sectionintoc {4}{Summary}{46}{0}{4}
+\beamer@sectionintoc {5}{Reference}{48}{0}{5}

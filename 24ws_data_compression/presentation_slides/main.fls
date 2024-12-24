@@ -1281,6 +1281,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplo
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/import/import.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/import/import.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/import/import.sty
@@ -1734,6 +1735,11 @@ INPUT main.vrb
 INPUT ../24ws_ANS.assets/fig8.png
 INPUT ../24ws_ANS.assets/fig8.png
 INPUT ../24ws_ANS.assets/fig8.png
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
 OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb

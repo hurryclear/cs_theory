@@ -1,20 +1,4 @@
-"""
-This file is part of a modified rANS (Range Asymmetric Numeral Systems) implementation.
-
-Original Work:
-- Repository: [https://github.com/kedartatwawadi/stanford_compression_library/blob/main/scl/compressors/rANS.py]
-- Author: [Kedar Tatwawadi]
-- Copyright (c) [2022]
-- Licensed under the MIT License.
-
-Modifications by: [Huo Jiang (hurryclear)]
-- Year: [2024]
-- Description of Changes:
-1. [Specify major change 1]
-2. [Specify major change 2]
-
-## Description of the Original Work:
-Streaming rANS (range Asymmetric Numeral Systems) implementation
+"""Streaming rANS (range Asymmetric Numeral Systems) implementation
 
 NOTE: Detailed algorithm description and discussion is on the wiki page:
 https://github.com/kedartatwawadi/stanford_compression_library/wiki/Asymmetric-Numeral-Systems
