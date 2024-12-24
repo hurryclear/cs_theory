@@ -1,27 +1,10 @@
 \section{Entropy Coding}
-\subsection{Huffman Coding}
-\begin{frame}[fragile]{1st frame}
+\begin{frame}[fragile]{Entropy Coding}
     \begin{itemize}
-        \item This is one of the section\footnote{This is a long footnote. Here I am. Who am I?}. 
-        \item Let's check for 2nd footnote \footnote{This is a 2nd long footnote. Here I am. Who am I?}.
-        \item The footnotes will be added from the bottom. If you want to pull the footnotes towards red-black margin line then use \verb|\addfootspace{}| at the end of the \verb|\frame{}|.
-        \item \verb|\addfootspace{}| actually adds an additional vacant footnote (without counting that vacant footnote).
-        \item To add more foot space add more \verb|\addfootspace{}|.
+        \item The theoretical limit of compression is given by Shannon entropy, which measures the minimum average number of bits needed to encode a symbol from a data source.
+        \item Lossless compression algorithms aim to approach this limit but cannot go below it.
+        \item The entropy depends on the probability distribution of the symbols, with more skewed distributions being more compressible.
+        \item Shannon Entropy \refer{1} $$H(X) = -\sum_{i=1}^{n} p(x_i) \log_2 p(x_i)$$ 
+        \item Shannon's Source Coding Theorem \refer{1} $$N \cdot H(X)$$
     \end{itemize}
-\addfootspace{} %\addfootspace{}
 \end{frame}
-\subsection{Arithmetic Coding}
-\begin{frame}[fragile]{2nd frame}
-    $\bullet$ Here is the next section\footnote{This is a 2nd long footnote. Here I am. Who am I?}\\
-    $\bullet$ Here I used two \verb|\addfootspace{}|. Don't do \verb|\addfootspace{\vspace{1cm}}|.
-    \addfootspace{}\addfootspace{}
-\end{frame}
-% \subsubsection{Subsubsection-1}
-% \begin{frame}{2nd frame: Subsubsection-1}
-% $\bullet$ This is a test for sub-sub-section.
-% \end{frame}
-% \subsubsection{Subsubsection-2}
-% \begin{frame}{2nd frame: Subsubsection-2}
-% $\bullet$ This is a test for sub-sub-section.
-% \end{frame}
-\subsection{Asymmetric Numeral System}

@@ -1,0 +1,79 @@
+
+\section{rANS}
+    \subsection{Key Concepts}
+    \begin{frame}[fragile]{rANS}
+        \begin{itemize}
+            \item "r" = "range": similar to range coding (RC)
+            \item symbol spread function
+            \item representation of information
+            \item asymmetric
+        \end{itemize}
+    \end{frame}
+
+    \subsection{Exa. 3}
+    \begin{frame}[fragile]{Exa.3}
+        How to encode 101110? What is the encoding function $C(s,x)$? \ $x' = C(s,x) \approx x/p_s$
+    \end{frame}
+    \begin{frame}[plain]
+        \begin{figure}
+            \centering
+            \includegraphics[width=1\textwidth,height=1.07\textheight,keepaspectratio]{../24ws_ANS.assets/fig8.png}
+        \end{figure}
+    \end{frame}
+
+    \subsection{Encoding Function}
+    \begin{frame}[fragile]{}
+        \textbf{Encoding Function (general):}
+        \[
+        x' = m \cdot \left\lfloor \frac{x}{F_s} \right\rfloor + \operatorname{mod}(x, F_s) + c_s \refer{5}
+        \]
+        \begin{itemize}
+            \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
+            \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
+            \item \textbf{Total frequency:} $m = \sum_{i=1}^{k} F_i$
+            \item \textbf{Probability of symbol \(s\):} $p_s = \frac{F_s}{m}$
+            \item \textbf{Cumulative frequency before \(s\):} $c_s := F_0 + F_1 + \dots + F_{s-1}$
+            % \item \textbf{Input sequence:} 
+            % \[
+            % S_{\text{in}} = (s_1, s_2, \dots, s_n)
+            % \]
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{}
+        \textbf{Encoding Function (binary):}
+        \[
+        x' = C(s,x) = \left\lfloor \frac{x}{F_s} \right\rfloor << n+ \operatorname{mod}(x, F_s) + c_s \, \refer{2}
+        \]
+        \begin{itemize}
+            \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
+            \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
+            \item \textbf{Total frequency:} $m = \sum_{i=1}^{k} F_i$
+            \item \textbf{Probability of symbol \(s\):} $p_s = \frac{F_s}{m}$
+            \item \textbf{Cumulative frequency before \(s\):} $c_s := F_0 + F_1 + \dots + F_{s-1}$
+            \item $<< n$ is a left shift by $n$ bits
+            % \item \textbf{Input sequence:} 
+            % \[
+            % S_{\text{in}} = (s_1, s_2, \dots, s_n)
+            % \]
+        \end{itemize}
+    \end{frame}
+
+
+    \subsection{Decoding Function}
+    \begin{frame}
+        \textbf{Decoding Function (binary):}
+        \[
+        D(x) = (s, F_s \cdot (x >> n)+ (x \& mask) - c_s) \refer{2}
+        \]
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{frame}
+
+    \subsection{Implementation}
+    \begin{frame}[fragile]{Implementation}
+        \begin{itemize}
+            \item \textbf{Python Implementation:}
+        \end{itemize}
+    \end{frame}
