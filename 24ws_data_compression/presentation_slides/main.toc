@@ -1,18 +1,18 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Entropy Coding}{5}{0}{2}
 \beamer@sectionintoc {3}{Asymmetric Numeral System}{7}{0}{3}
-\beamer@subsectionintoc {3}{1}{Motivation}{9}{0}{3}
-\beamer@subsectionintoc {3}{2}{Symbol spread function}{14}{0}{3}
-\beamer@subsectionintoc {3}{3}{Representation of information}{19}{0}{3}
-\beamer@subsectionintoc {3}{4}{Symmetric or Asymmetric}{30}{0}{3}
-\beamer@subsectionintoc {3}{5}{tANS}{36}{0}{3}
-\beamer@subsectionintoc {3}{6}{Performance}{37}{0}{3}
-\beamer@sectionintoc {4}{rANS}{38}{0}{4}
-\beamer@subsectionintoc {4}{1}{Key Concepts}{39}{0}{4}
-\beamer@subsectionintoc {4}{2}{Exa. 3}{40}{0}{4}
-\beamer@subsectionintoc {4}{3}{Encoding Function}{42}{0}{4}
-\beamer@subsectionintoc {4}{4}{Decoding Function}{44}{0}{4}
-\beamer@subsectionintoc {4}{5}{Implementation}{45}{0}{4}
-\beamer@sectionintoc {5}{Streaming-rANS}{46}{0}{5}
-\beamer@sectionintoc {6}{Summary}{48}{0}{6}
+\beamer@subsectionintoc {3}{1}{Motivation}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Symbol spread function}{13}{0}{3}
+\beamer@subsectionintoc {3}{3}{Representation of information}{18}{0}{3}
+\beamer@subsectionintoc {3}{4}{Symmetric or Asymmetric}{29}{0}{3}
+\beamer@subsectionintoc {3}{5}{tANS}{35}{0}{3}
+\beamer@subsectionintoc {3}{6}{Performance}{36}{0}{3}
+\beamer@sectionintoc {4}{rANS}{37}{0}{4}
+\beamer@subsectionintoc {4}{1}{Key Concepts}{38}{0}{4}
+\beamer@subsectionintoc {4}{2}{Exa. 3}{39}{0}{4}
+\beamer@subsectionintoc {4}{3}{Encoding Function}{41}{0}{4}
+\beamer@subsectionintoc {4}{4}{Decoding Function}{43}{0}{4}
+\beamer@subsectionintoc {4}{5}{Implementation}{44}{0}{4}
+\beamer@sectionintoc {5}{Streaming-rANS}{45}{0}{5}
+\beamer@sectionintoc {6}{Summary}{47}{0}{6}
 \beamer@sectionintoc {7}{Reference}{50}{0}{7}

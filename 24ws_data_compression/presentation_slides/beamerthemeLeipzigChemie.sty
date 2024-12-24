@@ -183,23 +183,23 @@
 %--------------------------------------------------------------------------
 \def\definepagelayoutwithAR{
 	\ifnum \BeamerAspectRatio=169
-    	\SpecialPageLayout
+        \SpecialPageLayout
     \else
-    	\specialpagelayout
+        \specialpagelayout
     \fi
 }
 %% This is to make table of contents/ overview slide after title page
-\newcommand{\maketableofcontents}{
-    {
-    \definepagelayoutwithAR
+\newcommand{\maketableofcontents}[1][]{
     \begin{frame}{Outline}
-        \tableofcontents
-        \vspace*{3em}
+        \ifx\relax#1\relax
+            \tableofcontents
+        \else
+            \tableofcontents[#1,subsectionstyle=show/show/hide]
+        \fi
     \end{frame}
-   } 
 }
 
-%% This will show table of content slides before move to each subsection
+%% This will show table of content slides before move to each subsection //TODO: Figure out how to make it work
 \newcommand{\makesubsectionpopup}{
 \AtBeginSubsection[]
 {{
