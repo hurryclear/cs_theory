@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  27 DEC 2024 11:54
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  27 DEC 2024 22:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1477,16 +1477,25 @@ Overfull \vbox (7.20464pt too high) detected at line 21
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [44
+ (./main.vrb
+\openout5 = `main.pyg'.
 
-]) (./slides/5streamingrANS.tex [45
+ (./_minted-main/autumn.pygstyle) (./_minted-main/CCE5BCCF8A6F4CD77EE0C170C5B27CF8541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [44
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [46
+ (./main.vrb
+\openout5 = `main.pyg'.
 
-] [47
+ (./_minted-main/181E6D663A5231C2774D298F306E9B4C541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [45
+
+]) (./slides/5streamingrANS.tex [46
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [47
 
 ] [48
 
@@ -1496,10 +1505,12 @@ Overfull \vbox (7.20464pt too high) detected at line 21
 
 ] [51
 
+] [52
+
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [52
+ (./main.vrb) [53
 
 ]
 \openout4 = `main.vrb'.
@@ -1507,18 +1518,15 @@ Overfull \vbox (7.20464pt too high) detected at line 21
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/trac.pygstyle) (./_minted-main/8464DEC90C65E3388B8E7D3BFDC6399A541C68F80C6A6F06151AFD63BAE50EBC.pygtex
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
-)) [53
+ (./_minted-main/8464DEC90C65E3388B8E7D3BFDC6399A541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [54
 
-]) (./slides/6Summary.tex [54
+]) (./slides/6Summary.tex [55
 
-] [55
+] [56
 
-]) (./slides/7Reference.tex [56
+]) (./slides/7Reference.tex [57
 
-] [57
+] [58
 
 ])
 \tf@nav=\write9
@@ -1540,12 +1548,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40717 strings out of 476683
- 872509 string characters out of 5804048
- 1854018 words of memory out of 5000000
- 60135 multiletter control sequences out of 15000+600000
- 517551 words of font info for 83 fonts, out of 8000000 for 9000
+ 40754 strings out of 476683
+ 873978 string characters out of 5804048
+ 1863018 words of memory out of 5000000
+ 60155 multiletter control sequences out of 15000+600000
+ 518236 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,1227b,1105s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (57 pages, 391912 bytes).
+Output written on main.xdv (58 pages, 413200 bytes).

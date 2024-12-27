@@ -13,10 +13,12 @@
 \beamer@subsectionintoc {4}{3}{Encoding Function}{41}{0}{4}
 \beamer@subsectionintoc {4}{4}{Decoding Function}{43}{0}{4}
 \beamer@subsectionintoc {4}{5}{Implementation}{44}{0}{4}
-\beamer@sectionintoc {5}{Streaming-rANS}{45}{0}{5}
-\beamer@subsectionintoc {5}{1}{Problem}{47}{0}{5}
-\beamer@subsectionintoc {5}{2}{Idea}{49}{0}{5}
-\beamer@subsectionintoc {5}{3}{Methods}{52}{0}{5}
-\beamer@subsectionintoc {5}{4}{Implementation of Streaming-rANS}{53}{0}{5}
-\beamer@sectionintoc {6}{Summary}{54}{0}{6}
-\beamer@sectionintoc {7}{Reference}{56}{0}{7}
+\beamer@subsubsectionintoc {4}{5}{1}{Encoding}{44}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{2}{Decoding}{45}{0}{4}
+\beamer@sectionintoc {5}{Streaming-rANS}{46}{0}{5}
+\beamer@subsectionintoc {5}{1}{Problem}{48}{0}{5}
+\beamer@subsectionintoc {5}{2}{Idea}{50}{0}{5}
+\beamer@subsectionintoc {5}{3}{Methods}{53}{0}{5}
+\beamer@subsectionintoc {5}{4}{Implementation of Streaming-rANS}{54}{0}{5}
+\beamer@sectionintoc {6}{Summary}{55}{0}{6}
+\beamer@sectionintoc {7}{Reference}{57}{0}{7}
