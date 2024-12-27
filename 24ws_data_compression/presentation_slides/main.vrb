@@ -1,2 +1,4 @@
-\frametitle{Streaming-rANS}
-To avoid using large number arithmetic, in practice stream variants are used: which enforce by renormalization: sending the least significant bits of x to or from the bitstream (usually L and b are powers of 2). \refer{4}
+\begin{minted}[linenos, breaklines]{python}
+    for i in range(10):
+        print("Hello, World!")
+    \end{minted}

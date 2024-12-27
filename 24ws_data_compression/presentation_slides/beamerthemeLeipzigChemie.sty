@@ -1,11 +1,22 @@
 \ProvidesPackage{beamerthemeLeipzigChemie}[07/09/2021]
 \usepackage{fontspec}
 \setsansfont{Arial}
-
+\usepackage{amsmath} % For math symbols
+\usepackage{array}   % For advanced table formatting
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage{minted}
+\usepackage{listings}
 
 \mode<presentation>
+
+% Set a global style for all minted code blocks
+\setminted{
+    style=trac, % Change "monokai" to your preferred theme
+    linenos,       % Line numbers
+    frame=lines,   % Frame around the code block
+    breaklines     % Automatic line breaking
+}
 
 %%%%%%% Define color %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{DarkOrange}{RGB}{255, 152, 0}
@@ -263,3 +274,16 @@
 %%%%%%%%%%%%%%%%%%%% Alert %%%%%%%%%%%%%%%%%%%
 \setbeamercolor{alerted text}{fg=karneol}
 \setbeamertemplate{blocks}[rounded][shadow=true]
+
+
+% Custom \pseudo command (defined in the preamble)
+\newcommand{\pseudo}[2]{%
+    \begin{table}[ht]
+        \renewcommand{\arraystretch}{1.2} % Adjust row spacing
+        \centering
+        \begin{tabular}{@{}l@{}}
+            \multicolumn{1}{l}{\textbf{#1}} \\ \hline
+            #2 \\ \hline
+        \end{tabular}
+    \end{table}
+}

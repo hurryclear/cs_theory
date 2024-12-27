@@ -14,5 +14,9 @@
 \beamer@subsectionintoc {4}{4}{Decoding Function}{43}{0}{4}
 \beamer@subsectionintoc {4}{5}{Implementation}{44}{0}{4}
 \beamer@sectionintoc {5}{Streaming-rANS}{45}{0}{5}
-\beamer@sectionintoc {6}{Summary}{47}{0}{6}
-\beamer@sectionintoc {7}{Reference}{50}{0}{7}
+\beamer@subsectionintoc {5}{1}{Problem}{47}{0}{5}
+\beamer@subsectionintoc {5}{2}{Idea}{49}{0}{5}
+\beamer@subsectionintoc {5}{3}{Methods}{52}{0}{5}
+\beamer@subsectionintoc {5}{4}{Implementation of Streaming-rANS}{53}{0}{5}
+\beamer@sectionintoc {6}{Summary}{54}{0}{6}
+\beamer@sectionintoc {7}{Reference}{56}{0}{7}

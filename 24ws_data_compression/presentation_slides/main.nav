@@ -103,22 +103,40 @@
 \headcommand {\beamer@framepages {45}{45}}
 \headcommand {\slideentry {5}{0}{2}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@sectionpages {45}{46}}
 \headcommand {\beamer@subsectionpages {45}{46}}
-\headcommand {\sectionentry {6}{Summary}{47}{Summary}{0}}
-\headcommand {\slideentry {6}{0}{1}{47/47}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{47}{Problem}}
+\headcommand {\slideentry {5}{1}{1}{47/47}{Problem}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {6}{0}{2}{49/49}{}{0}}
-\headcommand {\beamer@framepages {49}{49}}
-\headcommand {\beamer@sectionpages {47}{49}}
-\headcommand {\beamer@subsectionpages {47}{49}}
-\headcommand {\sectionentry {7}{Intro}{50}{Reference}{0}}
-\headcommand {\slideentry {7}{0}{1}{50/50}{}{0}}
-\headcommand {\beamer@framepages {50}{50}}
-\headcommand {\slideentry {7}{0}{2}{51/51}{}{0}}
-\headcommand {\beamer@framepages {51}{51}}
-\headcommand {\beamer@partpages {1}{51}}
-\headcommand {\beamer@subsectionpages {50}{51}}
-\headcommand {\beamer@sectionpages {50}{51}}
-\headcommand {\beamer@documentpages {51}}
-\headcommand {\gdef \inserttotalframenumber {38}}
+\headcommand {\slideentry {5}{1}{2}{48/48}{Problem}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\beamer@subsectionpages {47}{48}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{49}{Idea}}
+\headcommand {\slideentry {5}{2}{1}{49/51}{Idea}{0}}
+\headcommand {\beamer@framepages {49}{51}}
+\headcommand {\beamer@subsectionpages {49}{51}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{52}{Methods}}
+\headcommand {\slideentry {5}{3}{1}{52/52}{Methods}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\beamer@subsectionpages {52}{52}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{53}{Implementation of Streaming-rANS}}
+\headcommand {\slideentry {5}{4}{1}{53/53}{Implementation of Streaming-rANS}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\beamer@sectionpages {45}{53}}
+\headcommand {\beamer@subsectionpages {53}{53}}
+\headcommand {\sectionentry {6}{Summary}{54}{Summary}{0}}
+\headcommand {\slideentry {6}{0}{1}{54/54}{}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\slideentry {6}{0}{2}{55/55}{}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\beamer@sectionpages {54}{55}}
+\headcommand {\beamer@subsectionpages {54}{55}}
+\headcommand {\sectionentry {7}{Intro}{56}{Reference}{0}}
+\headcommand {\slideentry {7}{0}{1}{56/56}{}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {7}{0}{2}{57/57}{}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\beamer@partpages {1}{57}}
+\headcommand {\beamer@subsectionpages {56}{57}}
+\headcommand {\beamer@sectionpages {56}{57}}
+\headcommand {\beamer@documentpages {57}}
+\headcommand {\gdef \inserttotalframenumber {43}}

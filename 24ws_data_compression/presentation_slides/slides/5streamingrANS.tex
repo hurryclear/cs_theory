@@ -3,4 +3,57 @@
         To avoid using large number arithmetic, in practice stream variants are used: which enforce by renormalization: sending the least significant bits of x to or from the bitstream (usually L and b are powers of 2). \refer{4}
     \end{frame}
 
-// TODO: learn the streaming and finish this part before 25.12.24
+\subsection{Problem}
+    \begin{frame}
+        Example of the problem //TODO: add example
+    \end{frame}
+    \begin{frame}
+        \begin{itemize}
+            \item ANS (Asymmetric Numeral Systems) uses a single integer x, known as the “state,” to represent the encoded data.
+            \item Over time, as more symbols are encoded, the state x can grow arbitrarily large. This can lead to:
+            \begin{itemize}
+                \item Overflow: If the value exceeds the precision limits of your system (e.g., a 32-bit or 64-bit register).
+                \item Inefficient Encoding: A larger x means you need more memory or bits to represent it.
+            \end{itemize}
+            \item Using the Cfunction from the previous section to encode succeeding symbols, we can encode a sequence into a very large natural number $x$, which can be stored as a length $\lfloor lg(x) \rfloor+ 1$ bit sequence. \refer{2}
+        \end{itemize}
+    \end{frame}
+
+\subsection{Idea}
+    \begin{frame}
+    $[L, H]$
+    \begin{itemize}
+        \item <1-> How to determine L and H?
+        \item <2-> 
+        \item <3-> 
+    \end{itemize}
+    \end{frame}
+
+\subsection{Methods}
+\begin{frame}[fragile]
+    \pseudo{Method 1 \refer{2}: ANS encoding step of symbol sfrom state $x$ \refer{2}}{
+        \textbf{while} $x > maxX[s]$ \textbf{do} \hfill \{fff\} \\
+        \quad writeDigit(mod(x,b)); $x=\lfloor x/b \rfloor$ \hfill \{fff\}\\
+        \textbf{end while} \\
+        $x=C(s,x)$ \hfill \{fff\}
+    }
+    \vspace{1em}
+    \pseudo{Method 2: ANS decoding step from state $x$  \refer{2}}{
+        $(s, x) = D(x)$ \hfill \{fff\} \\
+        useSymbol($s$) \hfill \{fff\} \\
+        \textbf{while} $x < L$ \textbf{do} \hfill \{fff\}\\
+        \quad $x = b \cdot x + \text{readDigit}()$ \hfill \{fff\}\\
+        \textbf{end while}
+    }
+\end{frame}
+
+\subsection{Implementation of Streaming-rANS}
+
+\begin{frame}[fragile]
+    \begin{minted}[linenos, breaklines]{python}
+    for i in range(10):
+        print("Hello, World!")
+    \end{minted}
+\end{frame}
+
+% // TODO: learn the streaming and finish this part before 25.12.24
