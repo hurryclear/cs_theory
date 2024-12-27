@@ -42,7 +42,7 @@ app.layout = html.Div([
     # Decoder
     html.H1("rANS Decoder", style={'textAlign': 'center'}),
     html.Div([
-        html.Label("Symbol Counts (comma-separated):"),
+        html.Label("Symbol Counts:"),
         dcc.Input(
             id='decode-symbols',
             type='text',
@@ -68,7 +68,13 @@ app.layout = html.Div([
         ),
         html.Button('Decode', id='decode-button', n_clicks=0),
     ], style={'width': '50%', 'margin': 'auto'}),
-    html.Div(id='decoded-output', style={'marginTop': 20, 'textAlign': 'center'})
+    html.Div(id='decoded-output', style={'marginTop': 20, 'textAlign': 'center'}),
+
+    # Steaming Encoder
+    html.H1("rANS Streaming Encoder", style={'textAlign': 'center'}),
+
+    # Steaming Decoder
+    html.H1("rANS Streaming Decoder", style={'textAlign': 'center'}),
 ])
 
 @app.callback(

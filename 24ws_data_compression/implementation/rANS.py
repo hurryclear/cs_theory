@@ -1,3 +1,8 @@
+"""
+this module implements the rANS and tANS algorithms for entropy coding
+the original code is from Kedar Tatwawadi: https://github.com/kedartatwawadi/post--ANS/blob/master/public/rANS.js, base on the code in js file, I implement the rANS and tANS algorithms in Python
+"""
+
 import math
 from bisect import bisect_right
 
