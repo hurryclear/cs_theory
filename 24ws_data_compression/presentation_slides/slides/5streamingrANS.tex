@@ -31,7 +31,7 @@
 
 \subsection{Methods}
 \begin{frame}[fragile]
-    \pseudo{Method 1 \refer{2}: ANS encoding step of symbol sfrom state $x$ \refer{2}}{
+    \pseudo{Method 1: ANS encoding step of symbol sfrom state $x$ \refer{2}}{
         \textbf{while} $x > maxX[s]$ \textbf{do} \hfill \{fff\} \\
         \quad writeDigit(mod(x,b)); $x=\lfloor x/b \rfloor$ \hfill \{fff\}\\
         \textbf{end while} \\
@@ -45,6 +45,27 @@
         \quad $x = b \cdot x + \text{readDigit}()$ \hfill \{fff\}\\
         \textbf{end while}
     }
+\end{frame}
+
+\subsection{choose L and H}
+\subsubsection{Constraint 1: Decoding}
+    \begin{frame}
+        \begin{itemize}
+            \item Base decoding: 
+            \item $x_i = 2 * x_{i-1} + bit$
+            \item Either $x_i$ in $[L, H]$ or $x_{i-1}$ in $[L, H]$. Assume $x_{i-1}$ in $[L, H]$.
+                \begin{itemize}
+                    \item $x_{i-1} >= L$
+                    \item $x_i >= 2 * L + bit >= 2 * L$
+                    \item $x_i$ can't be in $[L, H]$
+                    \item derive: $H <= 2*L -1$
+                \end{itemize}
+            \item 
+        \end{itemize}
+    \end{frame}
+\subsubsection{Constraint 2: Encoding}
+\begin{frame}
+
 \end{frame}
 
 \subsection{Implementation of Streaming-rANS}

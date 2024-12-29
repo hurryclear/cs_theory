@@ -1,3 +1,4 @@
+
 \section{rANS}
     \subsection{Key Concepts}
     \begin{frame}[fragile]{rANS}
@@ -22,9 +23,9 @@
 
     \subsection{Encoding Function}
     \begin{frame}[fragile]{}
-        \textbf{Encoding Function (general):}
+        \textbf{Encoding Function \refer{2} \refer{5}:}
         \[
-        x' = m \cdot \left\lfloor \frac{x}{F_s} \right\rfloor + \operatorname{mod}(x, F_s) + c_s \refer{5}
+        x' = m \cdot \left\lfloor x/F_s \right\rfloor + \operatorname{mod}(x, F_s) + c_s 
         \]
         \begin{itemize}
             \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
@@ -40,9 +41,9 @@
     \end{frame}
 
     \begin{frame}[fragile]{}
-        \textbf{Encoding Function (binary):}
+        \textbf{Encoding Function (binary) \refer{2} : maybe no need to put this slide, let's see}
         \[
-        x' = C(s,x) = \left\lfloor \frac{x}{F_s} \right\rfloor << n+ \operatorname{mod}(x, F_s) + c_s \, \refer{2}
+        x' = C(s,x) = \left\lfloor x/F_s \right\rfloor << n+ \operatorname{mod}(x, F_s) + c_s \, 
         \]
         \begin{itemize}
             \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
@@ -60,6 +61,12 @@
 
 
     \subsection{Decoding Function}
+    \begin{frame}[plain]
+        \begin{figure}
+            \centering
+            \includegraphics[width=1\textwidth,height=1.07\textheight,keepaspectratio]{../24ws_ANS.assets/fig9.png}
+        \end{figure}
+    \end{frame}
     \begin{frame}
         \textbf{Decoding Function (binary):}
         \[

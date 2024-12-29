@@ -1,7 +1,7 @@
 \ProvidesPackage{beamerthemeLeipzigChemie}[07/09/2021]
 \usepackage{fontspec}
 \setsansfont{Arial}
-\usepackage{amsmath} % For math symbols
+% \usepackage{amsmath} % For math symbols
 \usepackage{array}   % For advanced table formatting
 \usepackage{tikz}
 \usepackage{hyperref}
@@ -287,3 +287,14 @@
         \end{tabular}
     \end{table}
 }
+
+% Ensure all math symbols are in italic
+\DeclareMathAlphabet{\mathnormal}{OML}{cmm}{m}{it}
+\DeclareMathAlphabet{\mathbf}{OML}{cmm}{b}{it}
+\DeclareMathAlphabet{\mathit}{OML}{cmm}{m}{it}
+\DeclareMathAlphabet{\mathsf}{OT1}{cmss}{m}{n}
+\DeclareMathAlphabet{\mathtt}{OT1}{cmtt}{m}{n}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\DeclareMathAlphabet{\mathbb}{U}{msb}{m}{n}
+\DeclareMathAlphabet{\mathfrak}{U}{euf}{m}{n}
+\DeclareMathAlphabet{\mathscr}{U}{rsfs}{m}{n}

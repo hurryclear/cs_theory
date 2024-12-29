@@ -1204,7 +1204,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
@@ -1952,6 +1951,9 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
+INPUT ../24ws_ANS.assets/fig9.png
+INPUT ../24ws_ANS.assets/fig9.png
+INPUT ../24ws_ANS.assets/fig9.png
 OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
@@ -2004,6 +2006,11 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
