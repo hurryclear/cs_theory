@@ -196,3 +196,4 @@ state = 52              # Final state after encoding
 decoded_symbols, final_state = rANS_decoder(symbol_counts, num_symbols, state)
 print("Decoded symbols:", decoded_symbols)
 print("Remaining state:", final_state)
+

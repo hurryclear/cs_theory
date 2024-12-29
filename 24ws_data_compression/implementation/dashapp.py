@@ -1,7 +1,7 @@
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output, State
-from rANS import rANS_encoder, rANS_decoder
+from rANSv1 import rANS_encoder, rANS_decoder
 
 app = dash.Dash(__name__)
 app.title = "rANS Encoder and Decoder"
