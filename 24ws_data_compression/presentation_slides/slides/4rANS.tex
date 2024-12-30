@@ -12,16 +12,29 @@
 
     \subsection{Exa. 3}
     \begin{frame}[fragile]{Exa.3}
-        How to encode 101110? What is the encoding function $C(s,x)$? \ $x' = C(s,x) \approx x/p_s$
+        How to encode 101110? What is the encoding function $\mathit{C(s,x)}$? \ $\mathit{x' = C(s,x) \approx x/p_s}$
     \end{frame}
+    
+    \subsection{Notations}
+    \begin{frame}[fragile]{Some notations}
+        \begin{itemize}
+            \item $\mathcal{A} = \{\mathit{s_1, s_2, \dots, s_k}\}$ is the alphabet set
+            \item $\mathit{s}$ is the symbol, if it is used in subscript: $\mathit{s}$ is the current symbol, $\mathit{s-1}$ is the previous symbol,  $\mathit{s+1}$ is the next symbol
+            \item $\mathit{F_s}$ is the absolute frequency of symbol $\mathit{s}$
+            \item $\mathit{m = \sum_{s \in \mathcal{A}} F_s}$ is the total frequency
+            \item $\mathit{c_s = \sum_{s \in \mathcal{A}} F_{s-1}}$ is the cumulative frequency ($\mathit{c_{s+1}}$ is the cumulative frequency of the next symbol)
+            \item $\mathit{p_s = F_s / m}$ is the probability of symbol $\mathit{s}$
+            \item $\mathit{x_i}$ is the current state (next state: $\mathit{x_{i+1}}$, previous state: $\mathit{x_{i-1}}$)
+        \end{itemize}
+    \end{frame}
+
+    \subsection{Encoding Function}
     \begin{frame}[plain]
         \begin{figure}
             \centering
             \includegraphics[width=1\textwidth,height=1.07\textheight,keepaspectratio]{../24ws_ANS.assets/fig8.png}
         \end{figure}
     \end{frame}
-
-    \subsection{Encoding Function}
     \begin{frame}[fragile]{}
         \textbf{Encoding Function \refer{2} \refer{5}:}
         \[
@@ -40,24 +53,24 @@
         \end{itemize}
     \end{frame}
 
-    \begin{frame}[fragile]{}
-        \textbf{Encoding Function (binary) \refer{2} : maybe no need to put this slide, let's see}
-        \[
-        x' = C(s,x) = \left\lfloor x/F_s \right\rfloor << n+ \operatorname{mod}(x, F_s) + c_s \, 
-        \]
-        \begin{itemize}
-            \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
-            \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
-            \item \textbf{Total frequency:} $m = \sum_{i=1}^{k} F_i$
-            \item \textbf{Probability of symbol \(s\):} $p_s = \frac{F_s}{m}$
-            \item \textbf{Cumulative frequency before \(s\):} $c_s := F_0 + F_1 + \dots + F_{s-1}$
-            \item $<< n$ is a left shift by $n$ bits
-            % \item \textbf{Input sequence:} 
-            % \[
-            % S_{\text{in}} = (s_1, s_2, \dots, s_n)
-            % \]
-        \end{itemize}
-    \end{frame}
+    % \begin{frame}[fragile]{}
+    %     \textbf{Encoding Function (binary) \refer{2} : maybe no need to put this slide, let's see}
+    %     \[
+    %     x' = C(s,x) = \left\lfloor x/F_s \right\rfloor << n+ \operatorname{mod}(x, F_s) + c_s \, 
+    %     \]
+    %     \begin{itemize}
+    %         \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
+    %         \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
+    %         \item \textbf{Total frequency:} $m = \sum_{i=1}^{k} F_i$
+    %         \item \textbf{Probability of symbol \(s\):} $p_s = \frac{F_s}{m}$
+    %         \item \textbf{Cumulative frequency before \(s\):} $c_s := F_0 + F_1 + \dots + F_{s-1}$
+    %         \item $<< n$ is a left shift by $n$ bits
+    %         % \item \textbf{Input sequence:} 
+    %         % \[
+    %         % S_{\text{in}} = (s_1, s_2, \dots, s_n)
+    %         % \]
+    %     \end{itemize}
+    % \end{frame}
 
 
     \subsection{Decoding Function}

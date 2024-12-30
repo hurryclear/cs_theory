@@ -80,27 +80,29 @@
 \headcommand {\beamer@subsectionentry {0}{4}{2}{39}{Exa. 3}}
 \headcommand {\slideentry {4}{2}{1}{39/39}{Exa. 3}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {4}{2}{2}{40/40}{Exa. 3}{0}}
+\headcommand {\beamer@subsectionpages {39}{39}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{40}{Notations}}
+\headcommand {\slideentry {4}{3}{1}{40/40}{Notations}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@subsectionpages {39}{40}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{41}{Encoding Function}}
-\headcommand {\slideentry {4}{3}{1}{41/41}{Encoding Function}{0}}
+\headcommand {\beamer@subsectionpages {40}{40}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{41}{Encoding Function}}
+\headcommand {\slideentry {4}{4}{1}{41/41}{Encoding Function}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {4}{3}{2}{42/42}{Encoding Function}{0}}
+\headcommand {\slideentry {4}{4}{2}{42/42}{Encoding Function}{0}}
 \headcommand {\beamer@framepages {42}{42}}
 \headcommand {\beamer@subsectionpages {41}{42}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{43}{Decoding Function}}
-\headcommand {\slideentry {4}{4}{1}{43/43}{Decoding Function}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{43}{Decoding Function}}
+\headcommand {\slideentry {4}{5}{1}{43/43}{Decoding Function}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {4}{4}{2}{44/44}{Decoding Function}{0}}
+\headcommand {\slideentry {4}{5}{2}{44/44}{Decoding Function}{0}}
 \headcommand {\beamer@framepages {44}{44}}
 \headcommand {\beamer@subsectionpages {43}{44}}
-\headcommand {\beamer@subsectionentry {0}{4}{5}{45}{Implementation}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{5}{1}{45}{Encoding}}
-\headcommand {\slideentry {4}{5}{1}{45/45}{Implementation}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{6}{45}{Implementation}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{1}{45}{Encoding}}
+\headcommand {\slideentry {4}{6}{1}{45/45}{Implementation}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{5}{2}{46}{Decoding}}
-\headcommand {\slideentry {4}{5}{2}{46/46}{Implementation}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{2}{46}{Decoding}}
+\headcommand {\slideentry {4}{6}{2}{46/46}{Implementation}{0}}
 \headcommand {\beamer@framepages {46}{46}}
 \headcommand {\beamer@sectionpages {37}{46}}
 \headcommand {\beamer@subsectionpages {45}{46}}
