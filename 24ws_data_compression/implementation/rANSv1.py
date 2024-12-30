@@ -17,23 +17,29 @@ def entropy(symbol_counts):
     return H
 
 def rANS_encoder(symbol_counts, s_input):
+    """
+    rANS Encoder: Encodes a sequence of symbols using rANS.
+    Input:  symbol_counts - A list of frequencies for each symbol.
+            s_input - A list of symbols to encode.
+    Output: output - A list of tuples containing the encoded symbol and the state.
+    """
     # compute cumulative frequencies
-    cumul_counts = []
-    sum_counts = 0
+    cumul_freq = [] # c_s
+    sum_freq = 0 # m
+    x = 0 # initial state
+    output = [] # list to store encoded (symbols, state)
+
     for count in symbol_counts:
-        cumul_counts.append(sum_counts)
-        sum_counts += count
-    
-    state = 0
-    output = []
+        cumul_freq.append(sum_freq)
+        sum_freq += count
     for s in s_input:
-        Fs = symbol_counts[s]
-        Cs = cumul_counts[s]
-        state = (state // Fs) * sum_counts + Cs + (state % Fs)
-        output.append((s, state))
+        F_s = symbol_counts[s]
+        c_s = cumul_freq[s]
+        x = sum_freq * (x // F_s) + (x % F_s) + c_s
+        output.append((s, x))
     
-    L_avg = math.ceil(math.log(state) / math.log(2.0)) / len(s_input)
-    return output, state, L_avg, entropy(symbol_counts)
+    L_avg = math.ceil(math.log(x) / math.log(2.0)) / len(s_input)
+    return output, x, L_avg, entropy(symbol_counts)
 
 def rANS_decoder(symbol_counts, num_symbols, state):
     """
