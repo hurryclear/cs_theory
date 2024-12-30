@@ -41,7 +41,7 @@ def rANS_encoder(symbol_counts, s_input):
     L_avg = math.ceil(math.log(x) / math.log(2.0)) / len(s_input)
     return output, x, L_avg, entropy(symbol_counts)
 
-def rANS_decoder(symbol_counts, num_symbols, state):
+def rANS_decoder(symbol_counts, x):
     """
     rANS Decoder: Decodes a sequence of symbols from an rANS-compressed state.
 
@@ -55,29 +55,30 @@ def rANS_decoder(symbol_counts, num_symbols, state):
         state (int): The remaining state after decoding all symbols.
     """
     # Compute cumulative frequencies
-    cumul_counts = [0]  # Start with 0 as the first cumulative frequency
-    total_frequency = sum(symbol_counts)
+    cumul_freq = []  # c_s
+    sum_freq = 0 # m
+    output = []  # List to store decoded symbols and states
+
+    # compute m and c_s
     for count in symbol_counts:
-        cumul_counts.append(cumul_counts[-1] + count)
-
-    def c_inv(y):
-        """
-        Binary search to find the symbol corresponding to the given slot.
-        y: Slot value (state % total_frequency).
-        Returns: Decoded symbol index.
-        """
-        return bisect_right(cumul_counts, y) - 1
-
+        cumul_freq.append(sum_freq)
+        sum_freq += count
+    # def c_inv(y):
+    #     """
+    #     Binary search to find the symbol corresponding to the given slot.
+    #     y: Slot value (state % total_frequency).
+    #     Returns: Decoded symbol index.
+    #     """
+    #     return bisect_right(cumul_freq, y) - 1
     # Decoding process
-    output = []  # List to store decoded symbols
-    for _ in range(num_symbols):
-        slot = state % total_frequency  # Find the slot in the cumulative frequency range
-        s = c_inv(slot)                 # Get the symbol corresponding to the slot
-        Fs = symbol_counts[s]           # Frequency of the symbol
-        Cs = cumul_counts[s]            # Cumulative count of the symbol
-        output.append((s,state))                # Append decoded symbol to the output
-        state = (state // total_frequency) * Fs + (slot - Cs)  # Update the state
-
+    # for _ in range(num_symbols):
+    while x > 0:
+        slot = x % sum_freq  # Find the slot in the cumulative frequency range
+        s = bisect_right(cumul_freq, slot) - 1 # Binary search to find the symbol corresponding to the given slot.
+        F_s = symbol_counts[s]         # Frequency of the symbol
+        c_s = cumul_freq[s]            # Cumulative count of the symbol
+        output.append((s,x))           # Append decoded symbol to the output
+        x = (x // sum_freq) * F_s + x % sum_freq - c_s  # Update the state
     return output, state
 
 def rANS_streaming_encoder(symbol_counts, s_input):
@@ -199,7 +200,7 @@ num_symbols = 6         # Number of symbols to decode
 state = 52              # Final state after encoding
 
 # Decode symbols
-decoded_symbols, final_state = rANS_decoder(symbol_counts, num_symbols, state)
+decoded_symbols, final_state = rANS_decoder(symbol_counts, state)
 print("Decoded symbols:", decoded_symbols)
 print("Remaining state:", final_state)
 

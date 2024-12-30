@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+            \PYG{k}{def} \PYG{n+nf}{rANS\PYGZus{}encoder}\PYG{p}{(}\PYG{n}{symbol\PYGZus{}counts}\PYG{p}{,} \PYG{n}{s\PYGZus{}input}\PYG{p}{):}
+                \PYG{c+c1}{\PYGZsh{} compute cumulative frequencies}
+                \PYG{n}{cumul\PYGZus{}freq} \PYG{o}{=} \PYG{p}{[]} \PYG{c+c1}{\PYGZsh{} c\PYGZus{}s}
+                \PYG{n}{sum\PYGZus{}freq} \PYG{o}{=} \PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} m}
+                \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} initial state}
+                \PYG{n}{output} \PYG{o}{=} \PYG{p}{[]} \PYG{c+c1}{\PYGZsh{} list to store encoded (symbols, state)}
+
+                \PYG{k}{for} \PYG{n}{count} \PYG{o+ow}{in} \PYG{n}{symbol\PYGZus{}counts}\PYG{p}{:}
+                    \PYG{n}{cumul\PYGZus{}freq}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{sum\PYGZus{}freq}\PYG{p}{)}
+                    \PYG{n}{sum\PYGZus{}freq} \PYG{o}{+=} \PYG{n}{count}
+                \PYG{k}{for} \PYG{n}{s} \PYG{o+ow}{in} \PYG{n}{s\PYGZus{}input}\PYG{p}{:}
+                    \PYG{n}{F\PYGZus{}s} \PYG{o}{=} \PYG{n}{symbol\PYGZus{}counts}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]}
+                    \PYG{n}{c\PYGZus{}s} \PYG{o}{=} \PYG{n}{cumul\PYGZus{}freq}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]}
+                    \PYG{n}{x} \PYG{o}{=} \PYG{n}{sum\PYGZus{}freq} \PYG{o}{*} \PYG{p}{(}\PYG{n}{x} \PYG{o}{//} \PYG{n}{F\PYGZus{}s}\PYG{p}{)} \PYG{o}{+} \PYG{p}{(}\PYG{n}{x} \PYG{o}{\PYGZpc{}} \PYG{n}{F\PYGZus{}s}\PYG{p}{)} \PYG{o}{+} \PYG{n}{c\PYGZus{}s}
+                    \PYG{n}{output}\PYG{o}{.}\PYG{n}{append}\PYG{p}{((}\PYG{n}{s}\PYG{p}{,} \PYG{n}{x}\PYG{p}{))}
+
+                \PYG{n}{L\PYGZus{}avg} \PYG{o}{=} \PYG{n}{math}\PYG{o}{.}\PYG{n}{ceil}\PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{log}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)} \PYG{o}{/} \PYG{n}{math}\PYG{o}{.}\PYG{n}{log}\PYG{p}{(}\PYG{l+m+mf}{2.0}\PYG{p}{))} \PYG{o}{/} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{s\PYGZus{}input}\PYG{p}{)}
+                \PYG{k}{return} \PYG{n}{output}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{L\PYGZus{}avg}\PYG{p}{,} \PYG{n}{entropy}\PYG{p}{(}\PYG{n}{symbol\PYGZus{}counts}\PYG{p}{)}
+\end{Verbatim}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  30 DEC 2024 11:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  30 DEC 2024 23:16
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -797,34 +797,6 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
-LaTeX Font Info:    Redeclaring math alphabet \mathnormal on input line 292.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 293.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OML/cmm/b/it on input line 293.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OML/cmm/b/it on input line 293.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 294.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OML/cmm/m/it on input line 294.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OML/cmm/m/it on input line 294.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 295.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 295.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 295.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 296.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 296.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 296.
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 297.
-LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 298.
-LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 299.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `normal'
-(Font)                  U/euf/m/n --> U/euf/m/n on input line 299.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/b/n --> U/euf/m/n on input line 299.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -1178,19 +1150,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 17.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OML/cmm/b/it --> TU/Arial(0)/b/n on input line 17.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OML/cmm/b/it --> TU/Arial(0)/b/n on input line 17.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 17.
 LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 17.
+(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/m/n on input line 17.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OML/cmm/m/it --> TU/Arial(0)/m/it on input line 17.
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OML/cmm/m/it --> TU/Arial(0)/m/it on input line 17.
+(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/m/it on input line 17.
 LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 17.
@@ -1506,13 +1478,25 @@ Overfull \vbox (7.21477pt too high) detected at line 37
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/autumn.pygstyle) (./_minted-main/CCE5BCCF8A6F4CD77EE0C170C5B27CF8541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [43
+ (./_minted-main/autumn.pygstyle) (./_minted-main/EA83EFF5CE9258CB470F93F1BE1D01F1541C68F80C6A6F06151AFD63BAE50EBC.pygtex
+LaTeX Font Info:    Trying to load font information for TU+rm on input line 1.
+LaTeX Font Info:    No file TUrm.fd. on input line 1.
+
+
+LaTeX Font Warning: Font shape `TU/rm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 1.
+
+
+LaTeX Font Warning: Font shape `TU/rm/m/it' undefined
+(Font)              using `TU/rm/m/n' instead on input line 3.
+
+)) [43
 
 ]
 File: ../24ws_ANS.assets/fig9.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig9.png>
 
-Overfull \vbox (7.21072pt too high) detected at line 90
+Overfull \vbox (7.21072pt too high) detected at line 99
  []
 
 [44
@@ -1528,7 +1512,7 @@ Overfull \vbox (7.21072pt too high) detected at line 90
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/181E6D663A5231C2774D298F306E9B4C541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [46
+ (./_minted-main/FBA5BE11E8CB38386C861B8E655B20E3541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [46
 
 ]) (./slides/5streamingrANS.tex [47
 
@@ -1541,20 +1525,53 @@ Overfull \vbox (7.21072pt too high) detected at line 90
 
 ] [50
 
-] [51
+]
+\openout4 = `main.vrb'.
 
-] [52
+ (./main.vrb) [51
 
-] [53
+] (./main.vrb) [52
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [54
+ (./main.vrb) [53
 
-] [55
+]
+\openout4 = `main.vrb'.
 
-] [56
+ (./main.vrb
+File: ../24ws_ANS.assets/fig11.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig11.png>
+) [54
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [55
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [56
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/fig10.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig10.png>
+) [57
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [58
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [59
 
 ]
 \openout4 = `main.vrb'.
@@ -1562,15 +1579,15 @@ Overfull \vbox (7.21072pt too high) detected at line 90
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/8464DEC90C65E3388B8E7D3BFDC6399A541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [57
+ (./_minted-main/8464DEC90C65E3388B8E7D3BFDC6399A541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [60
 
-]) (./slides/6Summary.tex [58
+]) (./slides/6Summary.tex [61
 
-] [59
+] [62
 
-]) (./slides/7Reference.tex [60
+]) (./slides/7Reference.tex [63
 
-] [61
+] [64
 
 ])
 \tf@nav=\write9
@@ -1583,6 +1600,9 @@ Overfull \vbox (7.21072pt too high) detected at line 90
 \openout11 = `main.snm'.
 
  (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 runsystem(rm main.pyg)...executed.
@@ -1592,12 +1612,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40816 strings out of 476683
- 875313 string characters out of 5804048
- 1863018 words of memory out of 5000000
- 60199 multiletter control sequences out of 15000+600000
- 519378 words of font info for 107 fonts, out of 8000000 for 9000
+ 40866 strings out of 476683
+ 876299 string characters out of 5804048
+ 1860018 words of memory out of 5000000
+ 60232 multiletter control sequences out of 15000+600000
+ 519370 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,1227b,1105s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (61 pages, 429060 bytes).
+Output written on main.xdv (64 pages, 458676 bytes).

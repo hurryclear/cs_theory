@@ -15,7 +15,9 @@
     style=autumn, % Change "monokai" to your preferred theme
     linenos,       % Line numbers
     frame=lines,   % Frame around the code block
-    breaklines     % Automatic line breaking
+    breaklines,    % Automatic line breaking
+    fontfamily=rm, % Set font family for comments
+    fontsize=\footnotesize % Set font size for comments
 }
 
 %%%%%%% Define color %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,7 +112,7 @@
 	
 }
 %%%%%%% Frame title %%%%%%%%%%%%%%%
-\setbeamertemplate{frametitle}{\vskip 10pt\color{black}\bfseries\normalsize \insertframetitle\par }
+\setbeamertemplate{frametitle}{\vskip 5pt\color{black}\bfseries\normalsize \insertframetitle\par }
 
 %%%%%%%%%%%%%%%%%%%% Section page layout for 4/3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\specialpagelayout}
@@ -282,19 +284,30 @@
         \renewcommand{\arraystretch}{1.2} % Adjust row spacing
         \centering
         \begin{tabular}{@{}l@{}}
+            % \fontsize{10}{12}\selectfont % Change font size here
             \multicolumn{1}{l}{\textbf{#1}} \\ \hline
             #2 \\ \hline
         \end{tabular}
     \end{table}
 }
 
-% Ensure all math symbols are in italic
-\DeclareMathAlphabet{\mathnormal}{OML}{cmm}{m}{it}
-\DeclareMathAlphabet{\mathbf}{OML}{cmm}{b}{it}
-\DeclareMathAlphabet{\mathit}{OML}{cmm}{m}{it}
-\DeclareMathAlphabet{\mathsf}{OT1}{cmss}{m}{n}
-\DeclareMathAlphabet{\mathtt}{OT1}{cmtt}{m}{n}
-\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
-\DeclareMathAlphabet{\mathbb}{U}{msb}{m}{n}
-\DeclareMathAlphabet{\mathfrak}{U}{euf}{m}{n}
-\DeclareMathAlphabet{\mathscr}{U}{rsfs}{m}{n}
+% Custom environment to split code blocks into two columns if they exceed 15 lines
+% Define splitcode environment
+% \newenvironment{splitcode}[1][15]
+% {
+%     \VerbatimEnvironment
+%     \begin{columns}
+%     \begin{column}{0.5\textwidth}
+%     \begin{minted}[linenos, breaklines, firstnumber=1, gobble=0]{python}
+% }
+% {
+%     \end{minted}
+%     \end{column}
+%     \begin{column}{0.5\textwidth}
+%     \begin{minted}[linenos, breaklines, firstnumber=#1, gobble=0]{python}
+% }
+% {
+%     \end{minted}
+%     \end{column}
+%     \end{columns}
+% }

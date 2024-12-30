@@ -50,14 +50,6 @@ app.layout = html.Div([
             value='1,3',
             style={'width': '100%', 'marginBottom': 20}
         ),
-        html.Label("Number of Symbols:"),
-        dcc.Input(
-            id='num-symbols',
-            type='number',
-            placeholder='Enter number of symbols, e.g., 4',
-            value=7,
-            style={'width': '100%', 'marginBottom': 20}
-        ),
         html.Label("Final State:"),
         dcc.Input(
             id='final-state',
@@ -107,15 +99,14 @@ def encode(n_clicks, symbols, sequence):
     Output('decoded-output', 'children'),
     Input('decode-button', 'n_clicks'),
     State('decode-symbols', 'value'),
-    State('num-symbols', 'value'),
     State('final-state', 'value')
 )
-def decode(n_clicks, symbols, num_symbols, final_state):
+def decode(n_clicks, symbols, final_state):
     if n_clicks > 0:
         symbol_counts = list(map(int, symbols.split(',')))
-        num_symbols = int(num_symbols)
+        # num_symbols = int(num_symbols)
         final_state = int(final_state)
-        decoded, _ = rANS_decoder(symbol_counts, num_symbols, final_state)
+        decoded, _ = rANS_decoder(symbol_counts, final_state)
         
         table_rows = [html.Tr([html.Th("State"), html.Th("Output Symbol")])]
         for symbol, state in decoded:

@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{k}{def} \PYG{n+nf}{rANS\PYGZus{}encoder}\PYG{p}{(}\PYG{n}{symbol\PYGZus{}counts}\PYG{p}{,} \PYG{n}{s\PYGZus{}input}\PYG{p}{):}
+            \PYG{n}{cumul\PYGZus{}freq} \PYG{o}{=} \PYG{p}{[]} \PYG{c+c1}{\PYGZsh{} c\PYGZus{}s}
+            \PYG{n}{sum\PYGZus{}freq} \PYG{o}{=} \PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} m}
+            \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} initial state}
+            \PYG{n}{output} \PYG{o}{=} \PYG{p}{[]} \PYG{c+c1}{\PYGZsh{} list to store encoded (symbols, state)}
+
+            \PYG{k}{for} \PYG{n}{count} \PYG{o+ow}{in} \PYG{n}{symbol\PYGZus{}counts}\PYG{p}{:}
+                \PYG{n}{cumul\PYGZus{}freq}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{sum\PYGZus{}freq}\PYG{p}{)}
+                \PYG{n}{sum\PYGZus{}freq} \PYG{o}{+=} \PYG{n}{count}
+            \PYG{k}{for} \PYG{n}{s} \PYG{o+ow}{in} \PYG{n}{s\PYGZus{}input}\PYG{p}{:}
+                \PYG{n}{F\PYGZus{}s} \PYG{o}{=} \PYG{n}{symbol\PYGZus{}counts}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]}
+                \PYG{n}{c\PYGZus{}s} \PYG{o}{=} \PYG{n}{cumul\PYGZus{}freq}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]}
+                \PYG{n}{x} \PYG{o}{=} \PYG{n}{sum\PYGZus{}freq} \PYG{o}{*} \PYG{p}{(}\PYG{n}{x} \PYG{o}{//} \PYG{n}{F\PYGZus{}s}\PYG{p}{)} \PYG{o}{+} \PYG{p}{(}\PYG{n}{x} \PYG{o}{\PYGZpc{}} \PYG{n}{F\PYGZus{}s}\PYG{p}{)} \PYG{o}{+} \PYG{n}{c\PYGZus{}s}
+                \PYG{n}{output}\PYG{o}{.}\PYG{n}{append}\PYG{p}{((}\PYG{n}{s}\PYG{p}{,} \PYG{n}{x}\PYG{p}{))}
+
+            \PYG{n}{L\PYGZus{}avg} \PYG{o}{=} \PYG{n}{math}\PYG{o}{.}\PYG{n}{ceil}\PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{log}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)} \PYG{o}{/} \PYG{n}{math}\PYG{o}{.}\PYG{n}{log}\PYG{p}{(}\PYG{l+m+mf}{2.0}\PYG{p}{))} \PYG{o}{/} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{s\PYGZus{}input}\PYG{p}{)}
+
+    \PYGZbs{}\PYG{n}{pseudo}\PYG{p}{\PYGZob{}}\PYG{n}{Method} \PYG{l+m+mi}{1}\PYG{p}{:} \PYG{n}{ANS} \PYG{n}{encoding} \PYG{n}{step} \PYG{n}{of} \PYG{n}{symbol} \PYG{n}{sfrom} \PYG{n}{state} \PYG{err}{\PYGZdl{}}\PYGZbs{}\PYG{n}{mathit}\PYG{p}{\PYGZob{}}\PYG{n}{x}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZdl{}} \PYGZbs{}\PYG{n}{refer}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{2}\PYG{p}{\PYGZcb{}\PYGZcb{}\PYGZob{}}
+        \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{k}{while}\PYG{p}{\PYGZcb{}} \PYG{err}{\PYGZdl{}}\PYGZbs{}\PYG{n}{mathit}\PYG{p}{\PYGZob{}}\PYG{n}{x} \PYG{o}{\PYGZgt{}} \PYG{n}{maxX}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]\PYGZcb{}}\PYG{err}{\PYGZdl{}} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{do}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{hfill} \PYGZbs{}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYGZbs{}
+        \PYGZbs{}\PYG{n}{quad} \PYG{n}{writeDigit}\PYG{p}{(}\PYG{n}{mod}\PYG{p}{(}\PYG{err}{\PYGZdl{}}\PYGZbs{}\PYG{n}{mathit}\PYG{p}{\PYGZob{}}\PYG{n}{x}\PYG{p}{,}\PYG{n}{b}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZdl{}}\PYG{p}{));} \PYG{err}{\PYGZdl{}}\PYGZbs{}\PYG{n}{mathit}\PYG{p}{\PYGZob{}}\PYG{n}{x}\PYG{o}{=}\PYGZbs{}\PYG{n}{lfloor} \PYG{n}{x}\PYG{o}{/}\PYG{n}{b} \PYGZbs{}\PYG{n}{rfloor}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZdl{}} \PYGZbs{}\PYG{n}{hfill} \PYGZbs{}\PYG{p}{\PYGZob{}}\PYG{n}{fff}\PYGZbs{}\PYG{p}{\PYGZcb{}}\PYGZbs{}\PYGZbs{}
+        \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{end} \PYG{k}{while}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYGZbs{}
+        \PYG{err}{\PYGZdl{}}\PYGZbs{}\PYG{n}{mathit}\PYG{p}{\PYGZob{}}\PYG{n}{x}\PYG{o}{=}\PYG{n}{C}\PYG{p}{(}\PYG{n}{s}\PYG{p}{,}\PYG{n}{x}\PYG{p}{)\PYGZcb{}}\PYG{err}{\PYGZdl{}} \PYGZbs{}\PYG{n}{hfill} \PYGZbs{}\PYG{p}{\PYGZob{}}\PYG{n}{fff}\PYGZbs{}\PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -41,27 +41,36 @@
     \end{frame}
     \subsection{Implementation of Encoder}
     \begin{frame}[fragile]{}
+        \href{http://localhost:8050}{implementation with python (dash app)}
         \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}
             def rANS_encoder(symbol_counts, s_input):
-                # compute cumulative frequencies
-                cumul_counts = []
-                sum_counts = 0
+                cumul_freq = [] # c_s
+                sum_freq = 0 # m
+                x = 0 # initial state
+                output = [] # list to store encoded (symbols, state)
+
                 for count in symbol_counts:
-                    cumul_counts.append(sum_counts)
-                    sum_counts += count
-                state = 0
-                output = []
+                    cumul_freq.append(sum_freq)
+                    sum_freq += count
                 for s in s_input:
-                    Fs = symbol_counts[s]
-                    Cs = cumul_counts[s]
-                    state = (state // Fs) * sum_counts + Cs + (state % Fs)
-                    output.append((s, state))
+                    F_s = symbol_counts[s]
+                    c_s = cumul_freq[s]
+                    x = sum_freq * (x // F_s) + (x % F_s) + c_s
+                    output.append((s, x))
                 
-                L_avg = math.ceil(math.log(state) / math.log(2.0)) / len(s_input)
-                return output, state, L_avg, entropy(symbol_counts)
+                L_avg = math.ceil(math.log(x) / math.log(2.0)) / len(s_input)
+                return output, x, L_avg, entropy(symbol_counts)
         \end{minted}
-        \href{http://localhost:8050}{Implemenation in Dash app with interactive visualization}
     \end{frame}
+    % \begin{frame}[fragile]
+    %     \begin{splitcode}[10]{python}
+    %     def rANS_encoder(symbol_counts, s_input):
+    %         cumul_freq = [] # c_s
+    %             sum_freq = 0 # m
+    %             x = 0 # initial state
+    %             output = [] # list to store encoded (symbols, state)
+    %     \end{splitcode}
+    % \end{frame}
     % \begin{frame}[fragile]{}
     %     \textbf{Encoding Function (binary) \refer{2} : maybe no need to put this slide, let's see}
     %     \[
@@ -99,23 +108,23 @@
     
     \subsection{Implemenation of Decoder}
     \begin{frame}[fragile]{}
+        \href{http://localhost:8050}{implementation with python (dash app)}
         \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}
-            def rANS_decoder(symbol_counts, num_symbols, state):
-                cumul_counts = [0]  # Start with 0 as the first cumulative frequency
-                total_frequency = sum(symbol_counts)
+            def rANS_decoder(symbol_counts, x):
+                cumul_freq = []  # c_s
+                sum_freq = 0 # m
+                output = []  # List to store decoded symbols and states
+                # compute m and c_s
                 for count in symbol_counts:
-                    cumul_counts.append(cumul_counts[-1] + count)
-                def c_inv(y):
-                    return bisect_right(cumul_counts, y) - 1
-                output = []  # List to store decoded symbols
-                for _ in range(num_symbols):
-                    slot = state % total_frequency  # Find the slot in the cumulative frequency range
-                    s = c_inv(slot)                 # Get the symbol corresponding to the slot
-                    Fs = symbol_counts[s]           # Frequency of the symbol
-                    Cs = cumul_counts[s]            # Cumulative count of the symbol
-                    output.append((s,state))                # Append decoded symbol to the output
-                    state = (state // total_frequency) * Fs + (slot - Cs)  # Update the state
+                    cumul_freq.append(sum_freq)
+                    sum_freq += count
+                while x > 0:
+                    slot = x % sum_freq  # Find the slot in the cumulative frequency range
+                    s = bisect_right(cumul_freq, slot) - 1 # Binary search to find the symbol s (slot).
+                    F_s = symbol_counts[s]         # Frequency of the symbol
+                    c_s = cumul_freq[s]            # Cumulative count of the symbol
+                    output.append((s,x))           # Append decoded symbol to the output
+                    x = (x // sum_freq) * F_s + x % sum_freq - c_s  # Update the state
                 return output, state
         \end{minted}
-        \href{http://localhost:8050}{Implemenation in Dash app with interactive visualization}
     \end{frame}

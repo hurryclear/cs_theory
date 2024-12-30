@@ -119,40 +119,45 @@
 \headcommand {\beamer@framepages {50}{50}}
 \headcommand {\beamer@subsectionpages {49}{50}}
 \headcommand {\beamer@subsectionentry {0}{5}{2}{51}{Idea}}
-\headcommand {\slideentry {5}{2}{1}{51/53}{Idea}{0}}
-\headcommand {\beamer@framepages {51}{53}}
-\headcommand {\beamer@subsectionpages {51}{53}}
-\headcommand {\beamer@subsectionentry {0}{5}{3}{54}{Methods}}
-\headcommand {\slideentry {5}{3}{1}{54/54}{Methods}{0}}
+\headcommand {\slideentry {5}{2}{1}{51/52}{Idea}{0}}
+\headcommand {\beamer@framepages {51}{52}}
+\headcommand {\beamer@subsectionpages {51}{52}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{53}{Solution}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{1}{53}{Renormalization}}
+\headcommand {\slideentry {5}{3}{1}{53/53}{Solution}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {5}{3}{2}{54/54}{Solution}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\beamer@subsectionpages {54}{54}}
-\headcommand {\beamer@subsectionentry {0}{5}{4}{55}{choose L and H}}
-\headcommand {\beamer@subsubsectionentry {0}{5}{4}{1}{55}{Constraint 1: Decoding}}
-\headcommand {\slideentry {5}{4}{1}{55/55}{choose L and H}{0}}
+\headcommand {\slideentry {5}{3}{3}{55/55}{Solution}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\beamer@subsubsectionentry {0}{5}{4}{2}{56}{Constraint 2: Encoding}}
-\headcommand {\slideentry {5}{4}{2}{56/56}{choose L and H}{0}}
+\headcommand {\slideentry {5}{3}{4}{56/56}{Solution}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\beamer@subsectionpages {55}{56}}
-\headcommand {\beamer@subsectionentry {0}{5}{5}{57}{Implementation of Streaming-rANS}}
-\headcommand {\slideentry {5}{5}{1}{57/57}{Implementation of Streaming-rANS}{0}}
+\headcommand {\slideentry {5}{3}{5}{57/57}{Solution}{0}}
 \headcommand {\beamer@framepages {57}{57}}
-\headcommand {\beamer@sectionpages {47}{57}}
-\headcommand {\beamer@subsectionpages {57}{57}}
-\headcommand {\sectionentry {6}{Summary}{58}{Summary}{0}}
-\headcommand {\slideentry {6}{0}{1}{58/58}{}{0}}
+\headcommand {\slideentry {5}{3}{6}{58/58}{Solution}{0}}
 \headcommand {\beamer@framepages {58}{58}}
-\headcommand {\slideentry {6}{0}{2}{59/59}{}{0}}
+\headcommand {\slideentry {5}{3}{7}{59/59}{Solution}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\beamer@sectionpages {58}{59}}
-\headcommand {\beamer@subsectionpages {58}{59}}
-\headcommand {\sectionentry {7}{Intro}{60}{Reference}{0}}
-\headcommand {\slideentry {7}{0}{1}{60/60}{}{0}}
+\headcommand {\beamer@subsectionpages {53}{59}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{60}{Implementation of Streaming-rANS}}
+\headcommand {\slideentry {5}{4}{1}{60/60}{Implementation of Streaming-rANS}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {7}{0}{2}{61/61}{}{0}}
+\headcommand {\beamer@sectionpages {47}{60}}
+\headcommand {\beamer@subsectionpages {60}{60}}
+\headcommand {\sectionentry {6}{Summary}{61}{Summary}{0}}
+\headcommand {\slideentry {6}{0}{1}{61/61}{}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\beamer@partpages {1}{61}}
-\headcommand {\beamer@subsectionpages {60}{61}}
-\headcommand {\beamer@sectionpages {60}{61}}
-\headcommand {\beamer@documentpages {61}}
-\headcommand {\gdef \inserttotalframenumber {47}}
+\headcommand {\slideentry {6}{0}{2}{62/62}{}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\beamer@sectionpages {61}{62}}
+\headcommand {\beamer@subsectionpages {61}{62}}
+\headcommand {\sectionentry {7}{Intro}{63}{Reference}{0}}
+\headcommand {\slideentry {7}{0}{1}{63/63}{}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {7}{0}{2}{64/64}{}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\beamer@partpages {1}{64}}
+\headcommand {\beamer@subsectionpages {63}{64}}
+\headcommand {\beamer@sectionpages {63}{64}}
+\headcommand {\beamer@documentpages {64}}
+\headcommand {\gdef \inserttotalframenumber {51}}

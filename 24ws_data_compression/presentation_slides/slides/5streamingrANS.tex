@@ -15,61 +15,94 @@
                 \item Overflow: If the value exceeds the precision limits of your system (e.g., a 32-bit or 64-bit register).
                 \item Inefficient Encoding: A larger x means you need more memory or bits to represent it.
             \end{itemize}
-            \item Using the Cfunction from the previous section to encode succeeding symbols, we can encode a sequence into a very large natural number $x$, which can be stored as a length $\lfloor lg(x) \rfloor+ 1$ bit sequence. \refer{2}
+            \item Using the C function from the previous section to encode succeeding symbols, we can encode a sequence into a very large natural number $\mathit{x}$, which can be stored as a length $\mathit{\lfloor lg(x) \rfloor+ 1}$ bit sequence. \refer{2}
         \end{itemize}
     \end{frame}
 
 \subsection{Idea}
-    \begin{frame}
-    $[L, H]$
+\begin{frame}[fragile]{Renormalization in Range Coding}
     \begin{itemize}
-        \item <1-> How to determine L and H?
-        \item <2-> 
-        \item <3-> 
+        \item <1-> Range Coding
+        \begin{itemize}
+            \item 1
+            \item 2
+        \end{itemize}
+        \item <2-> we use the similar idea for rANS
+        \begin{itemize}
+            \item range $\mathit{[L, H]}$
+            \item Encoding: shrink the current state $\mathit{x}$ until it is in the range $\mathit{[L, H]}$ 
+            \item Decoding: expand the current state $\mathit{x}$ until it is in the range $\mathit{[L, H]}$
+        \end{itemize}
     \end{itemize}
-    \end{frame}
-
-\subsection{Methods}
-\begin{frame}[fragile]
-    \pseudo{Method 1: ANS encoding step of symbol sfrom state $x$ \refer{2}}{
-        \textbf{while} $x > maxX[s]$ \textbf{do} \hfill \{fff\} \\
-        \quad writeDigit(mod(x,b)); $x=\lfloor x/b \rfloor$ \hfill \{fff\}\\
-        \textbf{end while} \\
-        $x=C(s,x)$ \hfill \{fff\}
-    }
-    \vspace{1em}
-    \pseudo{Method 2: ANS decoding step from state $x$  \refer{2}}{
-        $(s, x) = D(x)$ \hfill \{fff\} \\
-        useSymbol($s$) \hfill \{fff\} \\
-        \textbf{while} $x < L$ \textbf{do} \hfill \{fff\}\\
-        \quad $x = b \cdot x + \text{readDigit}()$ \hfill \{fff\}\\
-        \textbf{end while}
-    }
 \end{frame}
 
-\subsection{choose L and H}
-\subsubsection{Constraint 1: Decoding}
-    \begin{frame}
-        \begin{itemize}
-            \item Base decoding: 
-            \item $x_i = 2 * x_{i-1} + bit$
-            \item Either $x_i$ in $[L, H]$ or $x_{i-1}$ in $[L, H]$. Assume $x_{i-1}$ in $[L, H]$.
-                \begin{itemize}
-                    \item $x_{i-1} >= L$
-                    \item $x_i >= 2 * L + bit >= 2 * L$
-                    \item $x_i$ can't be in $[L, H]$
-                    \item derive: $H <= 2*L -1$
-                \end{itemize}
-            \item 
-        \end{itemize}
-    \end{frame}
-\subsubsection{Constraint 2: Encoding}
-\begin{frame}
-
+\subsection{Solution}
+\subsubsection{Renormalization}
+\begin{frame}[fragile]{Methods from Jarek Duda: Method 1 - Decoding \refer{2}}
+    \pseudo{ANS decoding step from state $x$}{
+        $\mathit{(s, x) = D(x)}$ \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# decode the current state x}} \\
+        useSymbol($\mathit{s}$) \\
+        \textbf{while} $\mathit{x < \textcolor{red}{L}}$ \textbf{do} \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# if x is too small that not in the range [L,H]}}\\
+        \quad \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# expand the x by reading the outstreamed digits back from the stream (an array)}}\\
+        \quad $\mathit{\text{expand}(x,m) = m \cdot x + \text{readDigit}()} \rightarrow \mathit{x}$\\
+        \textbf{end while} \\
+        \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# return the new state}}
+    }
+\end{frame}
+\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{L,H}$ ?}}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth,keepaspectratio]{../24ws_ANS.assets/fig11.png}
+    \end{center}
+\end{frame}
+\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{L,H}$ ?}}
+    \begin{itemize}
+        \item $\mathit{x_i = m \cdot x_{i-1} + \text{bit}}$
+        \item Either $\mathit{x_i}$ in $\mathit{[L, H]}$ or $\mathit{x_{i-1}}$ in $\mathit{[L, H]}$. Assume $\mathit{x_{i-1}}$ in $\mathit{[L, H]}$.
+            \begin{itemize}
+                \item $\mathit{x_{i-1} >= L}$
+                \item $\mathit{x_i >= m \cdot L + bit >= m \cdot L}$
+                \item $\mathit{x_i}$ can't be in $\mathit{[L, H]}$
+                \item derive: $\mathit{H <= m\cdot L -1}$
+            \end{itemize}
+        \item $\mathit{[L,H]}$, where $\mathit{H <= m\cdot L -1}$ \textcolor{blue}{(Constraint 1)}
+        \item $\mathit{I=\{L, ..., b\cdot L -1\}}$, which is defined by Jarek Duda $\mathit{b}$-unique interval and $\mathit{L \in \mathbb{N}}$
+        \item This will ensure that the loop in Method 1 will always return to the original value
+    \end{itemize}
+\end{frame}
+\begin{frame}[fragile]{Methods from Jarek Duda: Method 2 - Encoding \refer{2}}
+    shrink the current state $\mathit{x}$ by stream out the least significant bit ($\mathit{x}$ will be stored in binary and we take out the bit from right side)
+    \pseudo{ANS encoding step of symbol sfrom state $\mathit{x}$}{
+        \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# once the current state x is greater than max value that we define later}} \\
+        \textbf{while} $\mathit{x > \textcolor{red}{maxX[s]}}$ \textbf{do}\\
+        \quad \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# write the least significant digit to the stream (stream could be an array in implementaion )}} \\
+        \quad writeDigit(mod($\mathit{x,m}$)) \\
+        \quad $\mathit{\text{shrink}(x,m)=\lfloor x/m \rfloor \rightarrow x}$ \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# shrink the x}}\\
+        \textbf{end while} \\
+        $\mathit{x=C(s,x)}$ \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# encode with the shrunk x}}
+    }
+\end{frame}
+\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{maxX[s]}$?}}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth,keepaspectratio]{../24ws_ANS.assets/fig10.png}
+    \end{center}
+\end{frame}
+\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{maxX[s]}$?}}
+    \begin{itemize}
+        \item to make sure not to jump over the range
+        \item Assume that $\mathit{x_i = H_s + 1}$ and it will be shrinked to $\mathit{x_i'=\lfloor x_i/m \rfloor}$
+        \item $\mathit{x_i' = \lfloor x_i/m \rfloor = \lfloor (H_s + 1)/m \rfloor >= L_s}$
+        \item $\mathit{ L_s <= (H_s + 1) / m <= \lfloor (H_s + 1)/m \rfloor < (H_s + 1)/b + 1}$
+        \item $\mathit{H_s >= m \cdot L_s - 1}$, $\forall \mathit{s} \in \mathcal{A}$ \textcolor{blue}{(Constraint 2)}
+    \end{itemize}
+\end{frame}
+\begin{frame}[fragile]{Final Form of $[L,H]$ in practice}
+    \begin{itemize}
+        \item Contraints $$\begin{gathered}\mathit{[L,H]}, \text{ where } \mathit{H <= m\cdot L -1} \\ \mathit{H_s >= m \cdot L_s - 1}, \forall \mathit{s} \in \mathcal{A}\end{gathered}$$
+        \item In practice $$\begin{gathered}\mathcal{I}=\mathit{[l\cdot m, 2l\cdot m-1]} \\ \mathcal{I}_{\mathit{s}} \mathit{=[l\cdot \mathit{F_s}, 2l \cdot F_s -1] \text{   for   } \forall \mathit{s} \in \mathcal{A}}\end{gathered}$$
+    \end{itemize}
 \end{frame}
 
 \subsection{Implementation of Streaming-rANS}
-
 \begin{frame}[fragile]
     \begin{minted}[linenos, breaklines]{python}
     for i in range(10):
