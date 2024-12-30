@@ -1254,4 +1254,347 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 17.
 LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 17.
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 17.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the 
+(Font)              `operators' in the math version `normal' on input line 17.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 17.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 17.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmss/b/n --> TU/lmr/m/n on input line 17.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  TU/Arial(0)/m/it --> TU/lmr/m/it on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  TU/Arial(0)/b/n --> TU/lmr/b/n on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 17.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  TU/Arial(0)/b/it --> TU/lmr/b/it on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  TU/Arial(0)/b/n --> TU/Arial(0)/b/n on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  TU/lmtt/b/n --> TU/lmtt/b/n on input line 17.
+\c@lstlisting=\count533
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout7 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 17.
+Package biblatex Info: Reference segment=0 on input line 17.
+ (./main.nav)
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+File: imglib/logo_leipzig.eps Graphic file (type eps)
+<imglib/logo_leipzig.eps>
+ [1
+
+] (./main.toc) [2
+
+] (./slides/1Introduction.tex [3
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [4
+
+]) (./slides/2EntropyCoding.tex [5
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [6
+
+]) (./slides/3AsymmetricNumeralSystem.tex [7
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [8
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [9
+
+] (./main.vrb) [10
+
+] (./main.vrb) [11
+
+] (./main.vrb) [12
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [13
+
+] (./main.vrb) [14
+
+] (./main.vrb) [15
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/exa1_1.png Graphic file (type bmp)
+<../24ws_ANS.assets/exa1_1.png>
+) [16
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/fig2.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig2.png>
+) [17
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [18
+
+] (./main.vrb) [19
+
+] (./main.vrb) [20
+
+] (./main.vrb) [21
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [22
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [23
+
+] (./main.vrb) [24
+
+] (./main.vrb) [25
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/fig3.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig3.png>
+) [26
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/fig4.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig4.png>
+) [27
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/fig5.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig5.png>
+)
+Overfull \vbox (9.6179pt too high) detected at line 95
+ []
+
+[28
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/fig6.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig6.png>
+)
+Overfull \vbox (9.6179pt too high) detected at line 102
+ []
+
+[29
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [30
+
+] (./main.vrb) [31
+
+] (./main.vrb) [32
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: ../24ws_ANS.assets/fig7.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig7.png>
+) [33
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [34
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [35
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [36
+
+]) (./slides/4rANS.tex [37
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [38
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [39
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [40
+
+]
+File: ../24ws_ANS.assets/fig8.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig8.png>
+
+Overfull \vbox (7.21477pt too high) detected at line 37
+ []
+
+[41
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [42
+
+]
+File: ../24ws_ANS.assets/fig9.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig9.png>
+
+Overfull \vbox (7.21072pt too high) detected at line 82
+ []
+
+[43
+
+] [44
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+\openout5 = `main.pyg'.
+
+ (./_minted-main/autumn.pygstyle) (./_minted-main/CCE5BCCF8A6F4CD77EE0C170C5B27CF8541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [45
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+\openout5 = `main.pyg'.
+
+ (./_minted-main/181E6D663A5231C2774D298F306E9B4C541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [46
+
+]) (./slides/5streamingrANS.tex [47
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [54
+
+] [55
+
+] [56
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+\openout5 = `main.pyg'.
+
+ (./_minted-main/8464DEC90C65E3388B8E7D3BFDC6399A541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [57
+
+]) (./slides/6Summary.tex [58
+
+] [59
+
+]) (./slides/7Reference.tex [60
+
+] [61
+
+])
+\tf@nav=\write9
+\openout9 = `main.nav'.
+
+\tf@toc=\write10
+\openout10 = `main.toc'.
+
+\tf@snm=\write11
+\openout11 = `main.snm'.
+
+ (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+runsystem(rm main.pyg)...executed.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 40814 strings out of 476683
+ 875295 string characters out of 5804048
+ 1863018 words of memory out of 5000000
+ 60199 multiletter control sequences out of 15000+600000
+ 519378 words of font info for 107 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 128i,15n,122p,1227b,1105s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.xdv (61 pages, 431140 bytes).

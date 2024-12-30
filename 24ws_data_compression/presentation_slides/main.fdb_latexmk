@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1735547837 "main.bcf" "main.bbl" "main" 1735551693 0
+["biber main"] 1735547837 "main.bcf" "main.bbl" "main" 1735551929 0
   "./references.bib" 1733152088 7068 6687f488d3d32a90eda7968a6a8d1616 ""
-  "main.bcf" 1735551691 107610 d063964bad4b0d0de2437b963be06df9 "xelatex"
+  "main.bcf" 1735551927 107610 d063964bad4b0d0de2437b963be06df9 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1735551692 "main.xdv" "main.pdf" "main" 1735551693 0
-  "main.xdv" 1735551691 439792 f53b2b647c17bcd2859e39a189e067ca "xelatex"
+["xdvipdfmx"] 1735551927 "main.xdv" "main.pdf" "main" 1735551929 0
+  "main.xdv" 1735551927 431140 85d05db46eaecfd3e31f877d6870794c "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1735551689 "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" "main.xdv" "main" 1735551693 0
+["xelatex"] 1735551925 "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" "main.xdv" "main" 1735551929 0
   "../24ws_ANS.assets/exa1_1.png" 1734433274 23627 e07113cccd32af165ebd65a54c4677ad ""
   "../24ws_ANS.assets/fig2.png" 1734622317 1045536 f2f8732d3a212e80693fe2a45ba522f8 ""
   "../24ws_ANS.assets/fig3.png" 1734622908 1041032 16f31b935e11585a89475da72e1a77ba ""
@@ -23,7 +23,7 @@
   "../24ws_ANS.assets/fig9.png" 1735551684 1400021 ce9556f309c3058a362c91f2fdefb4e0 ""
   "./TitlePageInfo.tex" 1733248039 294 98c8a8cd26f61945e058ffdbed0ade3f ""
   "/Users/hurjiang/Documents/101_cs_hc/101_cs_ul/cs_theory/24ws_data_compression/presentation_slides/main.tex" 1735208383 1326 c0aa2d8b5f0040c48b781972a9f883d6 ""
-  "/dev/null" 1735551691 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/dev/null" 1735551929 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -274,18 +274,18 @@
   "_minted-main/autumn.pygstyle" 1735385194 6027 0b21a2ad064dfeb8a8d93db61fe24661 ""
   "beamerthemeLeipzigChemie.sty" 1735386501 11431 91aedb18c8d24a3941e64d7ef91b1b02 ""
   "imglib/logo_leipzig.eps" 1733152090 514490 5b5a02d4cd19da1e514a1aa8f00321e0 ""
-  "main.aux" 1735551691 19013 abb614cd2c45ff2885131a50dde49cf4 "xelatex"
+  "main.aux" 1735551927 18782 af55baf56eefecade711ee3dbbcb2242 "xelatex"
   "main.bbl" 1735547839 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.nav" 1735551691 8591 9177d88f7d677c6b3a1ec9f6d4147853 "xelatex"
-  "main.out" 1735551690 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "main.run.xml" 1735551691 2412 2baf21f7cfc8d2b24a37b4288cd43ff7 "xelatex"
+  "main.nav" 1735551927 8482 15f29c59cd929fbf039d93f74f79fee0 "xelatex"
+  "main.out" 1735551926 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "main.run.xml" 1735551927 2412 2baf21f7cfc8d2b24a37b4288cd43ff7 "xelatex"
   "main.tex" 1735208383 1326 c0aa2d8b5f0040c48b781972a9f883d6 ""
-  "main.toc" 1735551691 1565 18810349287604b9381b1836d698f6d0 "xelatex"
-  "main.vrb" 1735551691 116 0e37ebb4b6520561e1c2a410f0745bea "xelatex"
+  "main.toc" 1735551927 1565 5ae2d3d625fda83632468ab14c86f408 "xelatex"
+  "main.vrb" 1735551927 116 0e37ebb4b6520561e1c2a410f0745bea "xelatex"
   "slides/1Introduction.tex" 1733152088 160 dd83a977d3f049b6deb9133052b245c5 ""
   "slides/2EntropyCoding.tex" 1735050947 686 ba5e5e18a3534c5ac5d0ebf87222c23c ""
   "slides/3AsymmetricNumeralSystem.tex" 1735053517 5428 b5d70348fb7b11f5fca1f2f083d86657 ""
-  "slides/4rANS.tex" 1735551688 6331 97512b8a26e6691691b53d64435bbe3b ""
+  "slides/4rANS.tex" 1735551922 6367 fe6d1cfe21a7edffa9c15b7a45667c12 ""
   "slides/5streamingrANS.tex" 1735387764 3085 2e8d675f99109df4a049b590eb6045e4 ""
   "slides/6Summary.tex" 1733152088 148 a3bd58d4a634880c5e6d005908407994 ""
   "slides/7Reference.tex" 1735052989 1047 196761fa4e9b4704ad5e3eeb145042d9 ""
