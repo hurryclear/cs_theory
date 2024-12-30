@@ -12,10 +12,9 @@
 \beamer@subsectionintoc {4}{2}{Exa. 3}{39}{0}{4}
 \beamer@subsectionintoc {4}{3}{Notations}{40}{0}{4}
 \beamer@subsectionintoc {4}{4}{Encoding Function}{41}{0}{4}
-\beamer@subsectionintoc {4}{5}{Decoding Function}{43}{0}{4}
-\beamer@subsectionintoc {4}{6}{Implementation}{45}{0}{4}
-\beamer@subsubsectionintoc {4}{6}{1}{Encoding}{45}{0}{4}
-\beamer@subsubsectionintoc {4}{6}{2}{Decoding}{46}{0}{4}
+\beamer@subsectionintoc {4}{5}{Implementation of Encoder}{43}{0}{4}
+\beamer@subsectionintoc {4}{6}{Decoding Function}{44}{0}{4}
+\beamer@subsectionintoc {4}{7}{Implemenation of Decoder}{46}{0}{4}
 \beamer@sectionintoc {5}{Streaming-rANS}{47}{0}{5}
 \beamer@subsectionintoc {5}{1}{Problem}{49}{0}{5}
 \beamer@subsectionintoc {5}{2}{Idea}{51}{0}{5}

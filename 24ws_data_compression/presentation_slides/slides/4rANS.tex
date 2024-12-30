@@ -37,61 +37,9 @@
     \end{frame}
     \begin{frame}[fragile]{}
         \textbf{Encoding Function \refer{2} \refer{5}:}
-        \[
-        x' = m \cdot \left\lfloor x/F_s \right\rfloor + \operatorname{mod}(x, F_s) + c_s 
-        \]
-        \begin{itemize}
-            \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
-            \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
-            \item \textbf{Total frequency:} $m = \sum_{i=1}^{k} F_i$
-            \item \textbf{Probability of symbol \(s\):} $p_s = \frac{F_s}{m}$
-            \item \textbf{Cumulative frequency before \(s\):} $c_s := F_0 + F_1 + \dots + F_{s-1}$
-            % \item \textbf{Input sequence:} 
-            % \[
-            % S_{\text{in}} = (s_1, s_2, \dots, s_n)
-            % \]
-        \end{itemize}
+        $$ \mathit{x_{i+1} = m \cdot \lfloor x_i/F_s \rfloor + \operatorname{mod}(x_i, F_s) + c_s} $$
     \end{frame}
-
-    % \begin{frame}[fragile]{}
-    %     \textbf{Encoding Function (binary) \refer{2} : maybe no need to put this slide, let's see}
-    %     \[
-    %     x' = C(s,x) = \left\lfloor x/F_s \right\rfloor << n+ \operatorname{mod}(x, F_s) + c_s \, 
-    %     \]
-    %     \begin{itemize}
-    %         \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
-    %         \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
-    %         \item \textbf{Total frequency:} $m = \sum_{i=1}^{k} F_i$
-    %         \item \textbf{Probability of symbol \(s\):} $p_s = \frac{F_s}{m}$
-    %         \item \textbf{Cumulative frequency before \(s\):} $c_s := F_0 + F_1 + \dots + F_{s-1}$
-    %         \item $<< n$ is a left shift by $n$ bits
-    %         % \item \textbf{Input sequence:} 
-    %         % \[
-    %         % S_{\text{in}} = (s_1, s_2, \dots, s_n)
-    %         % \]
-    %     \end{itemize}
-    % \end{frame}
-
-
-    \subsection{Decoding Function}
-    \begin{frame}[plain]
-        \begin{figure}
-            \centering
-            \includegraphics[width=1\textwidth,height=1.07\textheight,keepaspectratio]{../24ws_ANS.assets/fig9.png}
-        \end{figure}
-    \end{frame}
-    \begin{frame}
-        \textbf{Decoding Function (binary):}
-        \[
-        D(x) = (s, F_s \cdot (x >> n)+ (x \& mask) - c_s) \refer{2}
-        \]
-        \begin{itemize}
-            \item 
-        \end{itemize}
-    \end{frame}
-
-    \subsection{Implementation}
-    \subsubsection{Encoding}
+    \subsection{Implementation of Encoder}
     \begin{frame}[fragile]{}
         \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}
             def rANS_encoder(symbol_counts, s_input):
@@ -114,7 +62,42 @@
         \end{minted}
         \href{http://localhost:8050}{Implemenation in Dash app with interactive visualization}
     \end{frame}
-    \subsubsection{Decoding}
+    % \begin{frame}[fragile]{}
+    %     \textbf{Encoding Function (binary) \refer{2} : maybe no need to put this slide, let's see}
+    %     \[
+    %     x' = C(s,x) = \left\lfloor x/F_s \right\rfloor << n+ \operatorname{mod}(x, F_s) + c_s \, 
+    %     \]
+    %     \begin{itemize}
+    %         \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
+    %         \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
+    %         \item \textbf{Total frequency:} $m = \sum_{i=1}^{k} F_i$
+    %         \item \textbf{Probability of symbol \(s\):} $p_s = \frac{F_s}{m}$
+    %         \item \textbf{Cumulative frequency before \(s\):} $c_s := F_0 + F_1 + \dots + F_{s-1}$
+    %         \item $<< n$ is a left shift by $n$ bits
+    %         % \item \textbf{Input sequence:} 
+    %         % \[
+    %         % S_{\text{in}} = (s_1, s_2, \dots, s_n)
+    %         % \]
+    %     \end{itemize}
+    % \end{frame}
+
+    \subsection{Decoding Function}
+    \begin{frame}[plain]
+        \begin{figure}
+            \centering
+            \includegraphics[width=1\textwidth,height=1.07\textheight,keepaspectratio]{../24ws_ANS.assets/fig9.png}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}[fragile]{}
+        \textbf{Decoding Function \refer{2} \refer{5}:}
+        \begin{itemize}
+            \item $\mathit{s}$ $$ \mathit{s \text{ such that} c_s \leq \text{ mod} (x_i, m) < c_{s+1}} $$
+            \item $\mathit{x_{i-1}}$ $$ \mathit{ x_{i-1} = D(x_i)= \lfloor x_i/m \rfloor \cdot F_s + \text{mod}(x_i, F_s) - c_s} $$
+        \end{itemize}
+    \end{frame}
+    
+    \subsection{Implemenation of Decoder}
     \begin{frame}[fragile]{}
         \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}
             def rANS_decoder(symbol_counts, num_symbols, state):

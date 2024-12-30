@@ -91,21 +91,21 @@
 \headcommand {\slideentry {4}{4}{2}{42/42}{Encoding Function}{0}}
 \headcommand {\beamer@framepages {42}{42}}
 \headcommand {\beamer@subsectionpages {41}{42}}
-\headcommand {\beamer@subsectionentry {0}{4}{5}{43}{Decoding Function}}
-\headcommand {\slideentry {4}{5}{1}{43/43}{Decoding Function}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{43}{Implementation of Encoder}}
+\headcommand {\slideentry {4}{5}{1}{43/43}{Implementation of Encoder}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {4}{5}{2}{44/44}{Decoding Function}{0}}
+\headcommand {\beamer@subsectionpages {43}{43}}
+\headcommand {\beamer@subsectionentry {0}{4}{6}{44}{Decoding Function}}
+\headcommand {\slideentry {4}{6}{1}{44/44}{Decoding Function}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@subsectionpages {43}{44}}
-\headcommand {\beamer@subsectionentry {0}{4}{6}{45}{Implementation}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{1}{45}{Encoding}}
-\headcommand {\slideentry {4}{6}{1}{45/45}{Implementation}{0}}
+\headcommand {\slideentry {4}{6}{2}{45/45}{Decoding Function}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{2}{46}{Decoding}}
-\headcommand {\slideentry {4}{6}{2}{46/46}{Implementation}{0}}
+\headcommand {\beamer@subsectionpages {44}{45}}
+\headcommand {\beamer@subsectionentry {0}{4}{7}{46}{Implemenation of Decoder}}
+\headcommand {\slideentry {4}{7}{1}{46/46}{Implemenation of Decoder}{0}}
 \headcommand {\beamer@framepages {46}{46}}
 \headcommand {\beamer@sectionpages {37}{46}}
-\headcommand {\beamer@subsectionpages {45}{46}}
+\headcommand {\beamer@subsectionpages {46}{46}}
 \headcommand {\sectionentry {5}{Streaming-rANS}{47}{Streaming-rANS}{0}}
 \headcommand {\slideentry {5}{0}{1}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}

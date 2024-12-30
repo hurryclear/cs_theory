@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  30 DEC 2024 10:45
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  30 DEC 2024 11:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1501,23 +1501,26 @@ Overfull \vbox (7.21477pt too high) detected at line 37
  (./main.vrb) [42
 
 ]
-File: ../24ws_ANS.assets/fig9.png Graphic file (type bmp)
-<../24ws_ANS.assets/fig9.png>
-
-Overfull \vbox (7.21072pt too high) detected at line 82
- []
-
-[43
-
-] [44
-
-]
 \openout4 = `main.vrb'.
 
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/autumn.pygstyle) (./_minted-main/CCE5BCCF8A6F4CD77EE0C170C5B27CF8541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [45
+ (./_minted-main/autumn.pygstyle) (./_minted-main/CCE5BCCF8A6F4CD77EE0C170C5B27CF8541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [43
+
+]
+File: ../24ws_ANS.assets/fig9.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig9.png>
+
+Overfull \vbox (7.21072pt too high) detected at line 90
+ []
+
+[44
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [45
 
 ]
 \openout4 = `main.vrb'.
@@ -1589,12 +1592,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40814 strings out of 476683
- 875295 string characters out of 5804048
+ 40816 strings out of 476683
+ 875313 string characters out of 5804048
  1863018 words of memory out of 5000000
  60199 multiletter control sequences out of 15000+600000
  519378 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,1227b,1105s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (61 pages, 431140 bytes).
+Output written on main.xdv (61 pages, 429060 bytes).
