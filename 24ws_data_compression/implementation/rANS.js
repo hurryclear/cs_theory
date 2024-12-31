@@ -145,8 +145,9 @@ function rANS_streaming_decoder(){
     var countsVal = document.getElementById("symbol_counts_streaming_decoder").value;
     var num_symbols = Number(document.getElementById("num_streaming_decoder").value);
     var state = Number(document.getElementById("state_streaming_decoder").value);
+    var symbol_counts = countsVal.split(',').map(function (countsVal) { return Number(countsVal); });
+    
     var streamVal = document.getElementById("rANS_stream_decoder").value;
-    var symbol_counts = countsVal.split(',').map(function(countsVal){return Number(countsVal);});
     var rANS_stream = streamVal.split('').map(function(arr){return Number(arr);});
     
     // compute cumulative frequencies

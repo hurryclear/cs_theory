@@ -79,62 +79,62 @@ def rANS_decoder(symbol_counts, x):
         c_s = cumul_freq[s]            # Cumulative count of the symbol
         output.append((s,x))           # Append decoded symbol to the output
         x = (x // sum_freq) * F_s + x % sum_freq - c_s  # Update the state
-    return output, state
+    return output, x
 
-def rANS_streaming_encoder(symbol_counts, s_input):
-    # compute cumulative frequencies
-    cumul_counts = []
-    sum_counts = 0
+
+def rANS_stream_encoder(symbol_counts, s_input):
+    # compute cumulative frequencies c_s and total frequency m
+    cumul_freq = []
+    sum_freq = 0
     for count in symbol_counts:
-        cumul_counts.append(sum_counts)
-        sum_counts += count
+        cumul_freq.append(sum_freq)
+        sum_freq += count
     
-    state = sum_counts
-    rANS_stream = ""
+    x = sum_freq  # why x = sum_freq not 0?
+    bit_stream = ""
     output = []
+    maxX_s = [] # how to compute maxX_s
+    L_s = 0
+
     for s in s_input:
-        Fs = symbol_counts[s]
-        Cs = cumul_counts[s]
-
+        F_s = symbol_counts[s]
+        c_s = cumul_freq[s]
+        L_s = F_s # k = 1
+        maxX_s = 2 * L_s - 1
         out_bits = ""
-        while state >= 2 * Fs:
-            out_bits += str(state % 2)
-            state //= 2
-        state = (state // Fs) * sum_counts + Cs + (state % Fs)
-        rANS_stream += out_bits
-        output.append((s, state, out_bits))
-    
-    L_avg = (math.ceil(math.log(state) / math.log(2.0)) + len(rANS_stream)) / len(s_input)
-    return output, state, rANS_stream, L_avg, entropy(symbol_counts)
 
-def rANS_streaming_decoder(symbol_counts, num_symbols, state, rANS_stream):
-    # compute cumulative frequencies
-    cumul_counts = []
-    sum_counts = 0
-    for count in symbol_counts:
-        cumul_counts.append(sum_counts)
-        sum_counts += count
+        while x > maxX_s:
+            out_bits += str(x % 2)
+            x = x // 2
+        x = (x // F_s) * sum_freq + (x % F_s) + c_s
+        bit_stream += out_bits
+        output.append((s, x, out_bits, bit_stream))
     
-    def c_inv(y):
-        for i in range(len(cumul_counts) - 1, -1, -1):
-            if y >= cumul_counts[i]:
-                return i
-        return 0
+    L_avg = (math.ceil(math.log(x) / math.log(2.0)) + len(bit_stream)) / len(s_input)
+    return output, x, bit_stream, L_avg, entropy(symbol_counts)
+
+def rANS_stream_decoder(symbol_counts, x, bit_stream, num_symbols):
+    # compute cumulative frequencies
+    cumul_freq = [] # c_s
+    sum_freq = 0 # m
+    for count in symbol_counts:
+        cumul_freq.append(sum_freq)
+        sum_freq += count
 
     output = []
-    rANS_stream = list(map(int, rANS_stream))
+    bit_stream = list(map(int, bit_stream.split(',')))  # Convert bit_stream to a list of integers
     for _ in range(num_symbols):
-        slot = state % sum_counts
-        s = c_inv(slot)
-        Fs = symbol_counts[s]
-        Cs = cumul_counts[s]
-        output.append((s, state))
-        state = (state // sum_counts) * Fs + slot - Cs
+        slot = x % sum_freq
+        s = bisect_right(cumul_freq, slot) - 1
+        F_s = symbol_counts[s]
+        c_s = cumul_freq[s]
+        output.append((s, x))
+        x = (x // sum_freq) * F_s + slot - c_s
 
-        while state < sum_counts:
-            state = state * 2 + rANS_stream.pop()
+        while x < sum_freq and len(bit_stream) > 0: 
+            x = x * 2 + bit_stream.pop()
     
-    return output, state
+    return output, x
 
 def tANS_encoder(symbol_counts):
     # compute cumulative frequencies
@@ -196,11 +196,12 @@ def tANS_decoder(symbol_counts):
 
 # Example symbol frequencies
 symbol_counts = [1, 3]  # P(0) = 1/4, P(1) = 3/4
-num_symbols = 6         # Number of symbols to decode
-state = 52              # Final state after encoding
+x = 4              # Final state after encoding
+bit_stream = "0,1,0,1,1"   # Bit stream
+num_symbols = 6
 
 # Decode symbols
-decoded_symbols, final_state = rANS_decoder(symbol_counts, state)
-print("Decoded symbols:", decoded_symbols)
-print("Remaining state:", final_state)
+output, x_i = rANS_stream_decoder(symbol_counts, x, bit_stream, num_symbols)
+print("Decoded symbols:", output)
+print("Remaining state:", x_i)
 
