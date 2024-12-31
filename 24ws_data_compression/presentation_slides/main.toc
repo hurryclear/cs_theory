@@ -18,8 +18,8 @@
 \beamer@sectionintoc {5}{Streaming-rANS}{47}{0}{5}
 \beamer@subsectionintoc {5}{1}{Problem}{49}{0}{5}
 \beamer@subsectionintoc {5}{2}{Idea}{51}{0}{5}
-\beamer@subsectionintoc {5}{3}{Solution}{53}{0}{5}
-\beamer@subsubsectionintoc {5}{3}{1}{Renormalization}{53}{0}{5}
-\beamer@subsectionintoc {5}{4}{Implementation of Streaming-rANS}{60}{0}{5}
-\beamer@sectionintoc {6}{Summary}{61}{0}{6}
-\beamer@sectionintoc {7}{Reference}{63}{0}{7}
+\beamer@subsectionintoc {5}{3}{Solution}{52}{0}{5}
+\beamer@subsubsectionintoc {5}{3}{1}{Renormalization}{52}{0}{5}
+\beamer@subsectionintoc {5}{4}{Implementation of Streaming-rANS}{59}{0}{5}
+\beamer@sectionintoc {6}{Summary}{60}{0}{6}
+\beamer@sectionintoc {7}{Reference}{62}{0}{7}

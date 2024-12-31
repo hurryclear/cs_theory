@@ -22,17 +22,18 @@
 \subsection{Idea}
 \begin{frame}[fragile]{Renormalization in Range Coding}
     \begin{itemize}
-        \item <1-> Range Coding
+        \item Range Coding
         \begin{itemize}
             \item 1
             \item 2
         \end{itemize}
-        \item <2-> we use the similar idea for rANS
+        \item we use the similar idea for rANS
         \begin{itemize}
             \item range $\mathit{[L, H]}$
             \item Encoding: shrink the current state $\mathit{x}$ until it is in the range $\mathit{[L, H]}$ 
             \item Decoding: expand the current state $\mathit{x}$ until it is in the range $\mathit{[L, H]}$
         \end{itemize}
+        \item In AC, renormalization is used to allow finite precision, an analogous approach should be used for ANS. Specifically, we will enforce xto remain in some fixed range I by transferring the least significant bits to the stream. For generality, let us transfer a base $\mathit{b}$ digit, for example $\mathit{b}= 2$ means transferring single bits, while $\mathit{b} = 2^8$ means transferring complete bytes.
     \end{itemize}
 \end{frame}
 
@@ -44,7 +45,7 @@
         useSymbol($\mathit{s}$) \\
         \textbf{while} $\mathit{x < \textcolor{red}{L}}$ \textbf{do} \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# if x is too small that not in the range [L,H]}}\\
         \quad \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# expand the x by reading the outstreamed digits back from the stream (an array)}}\\
-        \quad $\mathit{\text{expand}(x,m) = m \cdot x + \text{readDigit}()} \rightarrow \mathit{x}$\\
+        \quad $\mathit{\text{expand}(x,b) = b \cdot x + \text{readDigit}()} \rightarrow \mathit{x}$\\
         \textbf{end while} \\
         \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# return the new state}}
     }
@@ -56,16 +57,16 @@
 \end{frame}
 \begin{frame}[fragile]{\textcolor{red}{What is $\mathit{L,H}$ ?}}
     \begin{itemize}
-        \item $\mathit{x_i = m \cdot x_{i-1} + \text{bit}}$
+        \item $\mathit{x_i = b \cdot x_{i-1} + \text{bit}}$
         \item Either $\mathit{x_i}$ in $\mathit{[L, H]}$ or $\mathit{x_{i-1}}$ in $\mathit{[L, H]}$. Assume $\mathit{x_{i-1}}$ in $\mathit{[L, H]}$.
             \begin{itemize}
                 \item $\mathit{x_{i-1} >= L}$
-                \item $\mathit{x_i >= m \cdot L + bit >= m \cdot L}$
+                \item $\mathit{x_i >= b \cdot L + bit >= b \cdot L}$
                 \item $\mathit{x_i}$ can't be in $\mathit{[L, H]}$
-                \item derive: $\mathit{H <= m\cdot L -1}$
+                \item derive: $\mathit{H <= b\cdot L -1}$
             \end{itemize}
-        \item $\mathit{[L,H]}$, where $\mathit{H <= m\cdot L -1}$ \textcolor{blue}{(Constraint 1)}
-        \item $\mathit{I=\{L, ..., b\cdot L -1\}}$, which is defined by Jarek Duda $\mathit{b}$-unique interval and $\mathit{L \in \mathbb{N}}$
+        \item $\mathit{[L,H]}$, where $\mathit{H <= b\cdot L -1}$ \textcolor{blue}{(Constraint 1)}
+        \item $\mathit{I=\{L, ..., b\cdot L -1\}}$, which is defined by Jarek Duda \textbf{$\mathit{b}$-unique interval} and $\mathit{L \in \mathbb{N}}$
         \item This will ensure that the loop in Method 1 will always return to the original value
     \end{itemize}
 \end{frame}
@@ -75,8 +76,8 @@
         \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# once the current state x is greater than max value that we define later}} \\
         \textbf{while} $\mathit{x > \textcolor{red}{maxX[s]}}$ \textbf{do}\\
         \quad \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# write the least significant digit to the stream (stream could be an array in implementaion )}} \\
-        \quad writeDigit(mod($\mathit{x,m}$)) \\
-        \quad $\mathit{\text{shrink}(x,m)=\lfloor x/m \rfloor \rightarrow x}$ \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# shrink the x}}\\
+        \quad writeDigit(mod($\mathit{x,b}$)) \\
+        \quad $\mathit{\text{shrink}(x,b)=\lfloor x/b \rfloor \rightarrow x}$ \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# shrink the x}}\\
         \textbf{end while} \\
         $\mathit{x=C(s,x)}$ \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# encode with the shrunk x}}
     }
@@ -89,16 +90,16 @@
 \begin{frame}[fragile]{\textcolor{red}{What is $\mathit{maxX[s]}$?}}
     \begin{itemize}
         \item to make sure not to jump over the range
-        \item Assume that $\mathit{x_i = H_s + 1}$ and it will be shrinked to $\mathit{x_i'=\lfloor x_i/m \rfloor}$
-        \item $\mathit{x_i' = \lfloor x_i/m \rfloor = \lfloor (H_s + 1)/m \rfloor >= L_s}$
-        \item $\mathit{ L_s <= (H_s + 1) / m <= \lfloor (H_s + 1)/m \rfloor < (H_s + 1)/b + 1}$
-        \item $\mathit{H_s >= m \cdot L_s - 1}$, $\forall \mathit{s} \in \mathcal{A}$ \textcolor{blue}{(Constraint 2)}
+        \item Assume that $\mathit{x_i = H_s + 1}$ and it will be shrinked to $\mathit{x_i'=\lfloor x_i/b \rfloor}$
+        \item $\mathit{x_i' = \lfloor x_i/b \rfloor = \lfloor (H_s + 1)/b \rfloor >= L_s}$
+        \item $\mathit{ L_s <= (H_s + 1) / b <= \lfloor (H_s + 1)/b \rfloor < (H_s + 1)/b + 1}$
+        \item $\mathit{H_s >= b \cdot L_s - 1}$, $\forall \mathit{s} \in \mathcal{A}$ \textcolor{blue}{(Constraint 2)}
     \end{itemize}
 \end{frame}
 \begin{frame}[fragile]{Final Form of $[L,H]$ in practice}
     \begin{itemize}
-        \item Contraints $$\begin{gathered}\mathit{[L,H]}, \text{ where } \mathit{H <= m\cdot L -1} \\ \mathit{H_s >= m \cdot L_s - 1}, \forall \mathit{s} \in \mathcal{A}\end{gathered}$$
-        \item In practice $$\begin{gathered}\mathcal{I}=\mathit{[l\cdot m, 2l\cdot m-1]} \\ \mathcal{I}_{\mathit{s}} \mathit{=[l\cdot \mathit{F_s}, 2l \cdot F_s -1] \text{   for   } \forall \mathit{s} \in \mathcal{A}}\end{gathered}$$
+        \item Contraints $$\begin{gathered}\mathit{[L,H]}: \text{ where } \mathit{H <= b\cdot L -1} \\ \mathit{[L_s, H_s]: H_s >= b \cdot L_s - 1}, \forall \mathit{s} \in \mathcal{A}\end{gathered}$$
+        \item In practice ($\mathit{b}=2^1$): we choose $\mathit{L=k\cdot m}$, $\mathit{L_s=k\cdot F_s}$ ($\mathit{k} \in \mathbb{N}$) $$\begin{gathered}\mathcal{I}=\mathit{[km}, 2\cdot \mathit{km}-1] \\ \mathcal{I}_{\mathit{s}} =[\mathit{kF_s}, \,2\cdot \mathit{kF_s} -1] \text{   for   } \forall \mathit{s} \in \mathcal{A} \end{gathered}$$
     \end{itemize}
 \end{frame}
 
