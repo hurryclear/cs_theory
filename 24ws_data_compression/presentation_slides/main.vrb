@@ -1,4 +1,18 @@
-\begin{minted}[linenos, breaklines]{python}
-    for i in range(10):
-        print("Hello, World!")
+\href{http://localhost:8050}{implementation with python} (\href{https://github.com/hurryclear/cs_theory/tree/data_compression/24ws_data_compression/implementation}{dash app})
+    \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}
+    def rANS_stream_decoder(symbol_counts, x, bit_stream, num_symbols):
+        # Init: c_s, m, x, output, bit_stream (omit the code here)
+        bit_stream = list(map(int, bit_stream.split(',')))  # Convert bit_stream to a list of integers
+        for _ in range(num_symbols):
+            slot = x % sum_freq
+            s = bisect_right(cumul_freq, slot) - 1
+            F_s = symbol_counts[s]
+            c_s = cumul_freq[s]
+            output.append((s, x))
+            x = (x // sum_freq) * F_s + slot - c_s
+
+            while x < sum_freq and len(bit_stream) > 0:
+                x = x * 2 + bit_stream.pop()
+
+        return output, x
     \end{minted}

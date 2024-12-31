@@ -140,24 +140,28 @@
 \headcommand {\beamer@framepages {58}{58}}
 \headcommand {\beamer@subsectionpages {52}{58}}
 \headcommand {\beamer@subsectionentry {0}{5}{4}{59}{Implementation of Streaming-rANS}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{4}{1}{59}{Encoding}}
 \headcommand {\slideentry {5}{4}{1}{59/59}{Implementation of Streaming-rANS}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\beamer@sectionpages {47}{59}}
-\headcommand {\beamer@subsectionpages {59}{59}}
-\headcommand {\sectionentry {6}{Summary}{60}{Summary}{0}}
-\headcommand {\slideentry {6}{0}{1}{60/60}{}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{4}{2}{60}{Dncoding}}
+\headcommand {\slideentry {5}{4}{2}{60/60}{Implementation of Streaming-rANS}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {6}{0}{2}{61/61}{}{0}}
+\headcommand {\beamer@sectionpages {47}{60}}
+\headcommand {\beamer@subsectionpages {59}{60}}
+\headcommand {\sectionentry {6}{Summary}{61}{Summary}{0}}
+\headcommand {\slideentry {6}{0}{1}{61/61}{}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\beamer@sectionpages {60}{61}}
-\headcommand {\beamer@subsectionpages {60}{61}}
-\headcommand {\sectionentry {7}{Intro}{62}{Reference}{0}}
-\headcommand {\slideentry {7}{0}{1}{62/62}{}{0}}
+\headcommand {\slideentry {6}{0}{2}{62/62}{}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {7}{0}{2}{63/63}{}{0}}
+\headcommand {\beamer@sectionpages {61}{62}}
+\headcommand {\beamer@subsectionpages {61}{62}}
+\headcommand {\sectionentry {7}{Intro}{63}{Reference}{0}}
+\headcommand {\slideentry {7}{0}{1}{63/63}{}{0}}
 \headcommand {\beamer@framepages {63}{63}}
-\headcommand {\beamer@partpages {1}{63}}
-\headcommand {\beamer@subsectionpages {62}{63}}
-\headcommand {\beamer@sectionpages {62}{63}}
-\headcommand {\beamer@documentpages {63}}
-\headcommand {\gdef \inserttotalframenumber {51}}
+\headcommand {\slideentry {7}{0}{2}{64/64}{}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\beamer@partpages {1}{64}}
+\headcommand {\beamer@subsectionpages {63}{64}}
+\headcommand {\beamer@sectionpages {63}{64}}
+\headcommand {\beamer@documentpages {64}}
+\headcommand {\gdef \inserttotalframenumber {52}}

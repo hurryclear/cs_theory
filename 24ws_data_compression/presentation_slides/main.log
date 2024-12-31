@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  31 DEC 2024 11:46
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  31 DEC 2024 17:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1496,7 +1496,7 @@ LaTeX Font Warning: Font shape `TU/rm/m/it' undefined
 File: ../24ws_ANS.assets/fig9.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig9.png>
 
-Overfull \vbox (7.21072pt too high) detected at line 99
+Overfull \vbox (7.21072pt too high) detected at line 72
  []
 
 [44
@@ -1577,15 +1577,23 @@ File: ../24ws_ANS.assets/fig10.png Graphic file (type bmp)
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/8464DEC90C65E3388B8E7D3BFDC6399A541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [59
+ (./_minted-main/5B89C42D6FDD8330C20EF98A24D4667F541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [59
 
-]) (./slides/6Summary.tex [60
+]
+\openout4 = `main.vrb'.
 
-] [61
+ (./main.vrb
+\openout5 = `main.pyg'.
 
-]) (./slides/7Reference.tex [62
+ (./_minted-main/6CCEAC4C9103EBB77DCD070AA8FA7B7B541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [60
 
-] [63
+]) (./slides/6Summary.tex [61
+
+] [62
+
+]) (./slides/7Reference.tex [63
+
+] [64
 
 ])
 \tf@nav=\write9
@@ -1610,12 +1618,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40862 strings out of 476683
- 876236 string characters out of 5804048
+ 40872 strings out of 476683
+ 876739 string characters out of 5804048
  1860018 words of memory out of 5000000
- 60230 multiletter control sequences out of 15000+600000
- 519370 words of font info for 106 fonts, out of 8000000 for 9000
+ 60237 multiletter control sequences out of 15000+600000
+ 519362 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,1227b,1105s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (63 pages, 453936 bytes).
+Output written on main.xdv (64 pages, 471996 bytes).

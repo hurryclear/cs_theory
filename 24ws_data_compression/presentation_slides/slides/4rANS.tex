@@ -41,7 +41,7 @@
     \end{frame}
     \subsection{Implementation of Encoder}
     \begin{frame}[fragile]{}
-        \href{http://localhost:8050}{implementation with python (dash app)}
+        \href{http://localhost:8050}{implementation with python} (\href{https://github.com/hurryclear/cs_theory/tree/data_compression/24ws_data_compression/implementation}{dash app})
         \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}
             def rANS_encoder(symbol_counts, s_input):
                 cumul_freq = [] # c_s
@@ -62,33 +62,6 @@
                 return output, x, L_avg, entropy(symbol_counts)
         \end{minted}
     \end{frame}
-    % \begin{frame}[fragile]
-    %     \begin{splitcode}[10]{python}
-    %     def rANS_encoder(symbol_counts, s_input):
-    %         cumul_freq = [] # c_s
-    %             sum_freq = 0 # m
-    %             x = 0 # initial state
-    %             output = [] # list to store encoded (symbols, state)
-    %     \end{splitcode}
-    % \end{frame}
-    % \begin{frame}[fragile]{}
-    %     \textbf{Encoding Function (binary) \refer{2} : maybe no need to put this slide, let's see}
-    %     \[
-    %     x' = C(s,x) = \left\lfloor x/F_s \right\rfloor << n+ \operatorname{mod}(x, F_s) + c_s \, 
-    %     \]
-    %     \begin{itemize}
-    %         \item \textbf{Alphabet set:} \(\mathcal{A} = \{a_1, a_2, \dots, a_k\}\)
-    %         \item \textbf{Absolute frequency of symbol \(s\):} \(F_s\)
-    %         \item \textbf{Total frequency:} $m = \sum_{i=1}^{k} F_i$
-    %         \item \textbf{Probability of symbol \(s\):} $p_s = \frac{F_s}{m}$
-    %         \item \textbf{Cumulative frequency before \(s\):} $c_s := F_0 + F_1 + \dots + F_{s-1}$
-    %         \item $<< n$ is a left shift by $n$ bits
-    %         % \item \textbf{Input sequence:} 
-    %         % \[
-    %         % S_{\text{in}} = (s_1, s_2, \dots, s_n)
-    %         % \]
-    %     \end{itemize}
-    % \end{frame}
 
     \subsection{Decoding Function}
     \begin{frame}[plain]
@@ -108,7 +81,7 @@
     
     \subsection{Implemenation of Decoder}
     \begin{frame}[fragile]{}
-        \href{http://localhost:8050}{implementation with python (dash app)}
+        \href{http://localhost:8050}{implementation with python} (\href{https://github.com/hurryclear/cs_theory/tree/data_compression/24ws_data_compression/implementation}{dash app})
         \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}
             def rANS_decoder(symbol_counts, x):
                 cumul_freq = []  # c_s

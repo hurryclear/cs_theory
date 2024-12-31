@@ -21,5 +21,7 @@
 \beamer@subsectionintoc {5}{3}{Solution}{52}{0}{5}
 \beamer@subsubsectionintoc {5}{3}{1}{Renormalization}{52}{0}{5}
 \beamer@subsectionintoc {5}{4}{Implementation of Streaming-rANS}{59}{0}{5}
-\beamer@sectionintoc {6}{Summary}{60}{0}{6}
-\beamer@sectionintoc {7}{Reference}{62}{0}{7}
+\beamer@subsubsectionintoc {5}{4}{1}{Encoding}{59}{0}{5}
+\beamer@subsubsectionintoc {5}{4}{2}{Dncoding}{60}{0}{5}
+\beamer@sectionintoc {6}{Summary}{61}{0}{6}
+\beamer@sectionintoc {7}{Reference}{63}{0}{7}

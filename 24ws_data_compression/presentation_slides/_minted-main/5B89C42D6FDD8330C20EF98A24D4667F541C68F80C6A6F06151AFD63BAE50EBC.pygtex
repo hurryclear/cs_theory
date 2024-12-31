@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{def} \PYG{n+nf}{rANS\PYGZus{}stream\PYGZus{}encoder}\PYG{p}{(}\PYG{n}{symbol\PYGZus{}counts}\PYG{p}{,} \PYG{n}{s\PYGZus{}input}\PYG{p}{):}
+        \PYG{c+c1}{\PYGZsh{} Init: c\PYGZus{}s, m, x, output, bit\PYGZus{}stream (omit the code here)}
+        \PYG{k}{for} \PYG{n}{s} \PYG{o+ow}{in} \PYG{n}{s\PYGZus{}input}\PYG{p}{:}
+            \PYG{n}{F\PYGZus{}s} \PYG{o}{=} \PYG{n}{symbol\PYGZus{}counts}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]}
+            \PYG{n}{c\PYGZus{}s} \PYG{o}{=} \PYG{n}{cumul\PYGZus{}freq}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]}
+            \PYG{n}{L\PYGZus{}s} \PYG{o}{=} \PYG{n}{F\PYGZus{}s} \PYG{c+c1}{\PYGZsh{} k = 1}
+            \PYG{n}{maxX\PYGZus{}s} \PYG{o}{=} \PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{L\PYGZus{}s} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}
+            \PYG{n}{out\PYGZus{}bits} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}
+
+            \PYG{k}{while} \PYG{n}{x} \PYG{o}{\PYGZgt{}} \PYG{n}{maxX\PYGZus{}s}\PYG{p}{:}
+                \PYG{n}{out\PYGZus{}bits} \PYG{o}{+=} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{x} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{2}\PYG{p}{)}
+                \PYG{n}{x} \PYG{o}{=} \PYG{n}{x} \PYG{o}{//} \PYG{l+m+mi}{2}
+            \PYG{n}{x} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x} \PYG{o}{//} \PYG{n}{F\PYGZus{}s}\PYG{p}{)} \PYG{o}{*} \PYG{n}{sum\PYGZus{}freq} \PYG{o}{+} \PYG{p}{(}\PYG{n}{x} \PYG{o}{\PYGZpc{}} \PYG{n}{F\PYGZus{}s}\PYG{p}{)} \PYG{o}{+} \PYG{n}{c\PYGZus{}s}
+            \PYG{n}{bit\PYGZus{}stream} \PYG{o}{+=} \PYG{n}{out\PYGZus{}bits}
+            \PYG{n}{output}\PYG{o}{.}\PYG{n}{append}\PYG{p}{((}\PYG{n}{s}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{out\PYGZus{}bits}\PYG{p}{,} \PYG{n}{bit\PYGZus{}stream}\PYG{p}{))}
+
+        \PYG{k}{return} \PYG{n}{output}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{bit\PYGZus{}stream}\PYG{p}{,} \PYG{n}{L\PYGZus{}avg}\PYG{p}{,} \PYG{n}{entropy}\PYG{p}{(}\PYG{n}{symbol\PYGZus{}counts}\PYG{p}{)}
+\end{Verbatim}

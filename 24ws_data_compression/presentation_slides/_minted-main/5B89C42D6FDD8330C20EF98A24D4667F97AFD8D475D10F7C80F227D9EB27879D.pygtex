@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{    def rANS\PYGZus{}stream\PYGZus{}encoder(symbol\PYGZus{}counts, s\PYGZus{}input):}
+\PYG{x}{        \PYGZsh{} Init: c\PYGZus{}s, m, x, output, bit\PYGZus{}stream (omit the code here)}
+\PYG{x}{        for s in s\PYGZus{}input:}
+\PYG{x}{            F\PYGZus{}s = symbol\PYGZus{}counts[s]}
+\PYG{x}{            c\PYGZus{}s = cumul\PYGZus{}freq[s]}
+\PYG{x}{            L\PYGZus{}s = F\PYGZus{}s \PYGZsh{} k = 1}
+\PYG{x}{            maxX\PYGZus{}s = 2 * L\PYGZus{}s \PYGZhy{} 1}
+\PYG{x}{            out\PYGZus{}bits = \PYGZdq{}\PYGZdq{}}
+
+\PYG{x}{            while x \PYGZgt{} maxX\PYGZus{}s:}
+\PYG{x}{                out\PYGZus{}bits += str(x \PYGZpc{} 2)}
+\PYG{x}{                x = x // 2}
+\PYG{x}{            x = (x // F\PYGZus{}s) * sum\PYGZus{}freq + (x \PYGZpc{} F\PYGZus{}s) + c\PYGZus{}s}
+\PYG{x}{            bit\PYGZus{}stream += out\PYGZus{}bits}
+\PYG{x}{            output.append((s, x, out\PYGZus{}bits, bit\PYGZus{}stream))}
+
+\PYG{x}{        return output, x, bit\PYGZus{}stream, L\PYGZus{}avg, entropy(symbol\PYGZus{}counts)}
+\end{Verbatim}
