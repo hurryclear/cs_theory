@@ -44,12 +44,10 @@ def rANS_encoder(symbol_counts, s_input):
 def rANS_decoder(symbol_counts, x):
     """
     rANS Decoder: Decodes a sequence of symbols from an rANS-compressed state.
-
     Args:
         symbol_counts (list): A list of frequencies for each symbol.
         num_symbols (int): The number of symbols to decode.
         state (int): The final state from which to decode.
-
     Returns:
         output (list): A list of decoded symbols.
         state (int): The remaining state after decoding all symbols.
@@ -150,15 +148,15 @@ def tANS_encoder(symbol_counts):
         state_row = [state]
         bits_row = [state]
         for s in range(len(symbol_counts)):
-            Fs = symbol_counts[s]
-            Cs = cumul_counts[s]
+            F_s = symbol_counts[s]
+            c_s = cumul_counts[s]
 
             out_bits = ""
             out_state = state
-            while out_state >= 2 * Fs:
+            while out_state >= 2 * F_s:
                 out_bits += str(out_state % 2)
                 out_state //= 2
-            out_state = (out_state // Fs) * sum_counts + Cs + (out_state % Fs)
+            out_state = (out_state // F_s) * sum_counts + c_s + (out_state % F_s)
             
             state_row.append(out_state)
             bits_row.append(out_bits)
