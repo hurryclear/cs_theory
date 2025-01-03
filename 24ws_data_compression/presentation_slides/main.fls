@@ -1816,10 +1816,6 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
-INPUT ./main.vrb
-INPUT main.vrb
-INPUT ./main.vrb
-INPUT main.vrb
 OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
@@ -1850,10 +1846,6 @@ INPUT ../24ws_ANS.assets/fig2.png
 INPUT ../24ws_ANS.assets/fig2.png
 INPUT ../24ws_ANS.assets/fig2.png
 OUTPUT main.vrb
-INPUT ./main.vrb
-INPUT main.vrb
-INPUT ./main.vrb
-INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb

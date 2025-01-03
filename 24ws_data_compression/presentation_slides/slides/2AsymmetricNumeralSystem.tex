@@ -2,7 +2,11 @@
 
 % Add outline page for Introduction section
 \begin{frame}{Outline}
-    \tableofcontents[currentsection, sectionstyle=show/hide, subsectionstyle=show/show/hide, subsubsectionstyle=show/show/hide]
+    \tableofcontents[
+        currentsection, 
+        sectionstyle=show/hide, 
+        subsectionstyle=show/show/hide, 
+        subsubsectionstyle=show/show/hide]
 \end{frame}
 
 \subsection{Motivation}
@@ -10,46 +14,46 @@
         ANS combines the compression ratio of \href{https://en.wikipedia.org/wiki/Arithmetic_coding}{arithmetic coding} (which uses a nearly accurate \href{https://en.wikipedia.org/wiki/Probability_distribution}{probability distribution}), with a processing cost similar to that of \href{https://en.wikipedia.org/wiki/Huffman_coding}{Huffman coding} \refer{4}.
     \end{frame}
 
-    \begin{frame}[fragile]{Basic Idea}
+\subsection{Key Concepts}
+    \begin{frame}[fragile]{Key Concepts}
         \begin{itemize}
-            \item<1-> Symbol spread function
-            \item<2-> Representation of information \\
-            (represents an entire message as a single number, similar to Arithmetic Coding) --> example: representation of \{2,0,2,5,1,8\}
-            \item<3-> Symmetric or Asymmetric
-            \item<4-> rANS and tANS
+            \item<1-> \textbf{Symbol spread function} $\rightarrow$ \textcolor{blue}{"Numeral System"}, e.g. standard binary system 
+            \item<2-> \textbf{Representation of information}, e.g. standard decimal system \\
+            represents an entire message as a single number
+            \item<3-> \textbf{Symmetric or \textcolor{blue}{"Asymmetric"}}
         \end{itemize}
     \end{frame}
 
-\subsection{Symbol spread function}
+\subsubsection{Symbol spread function}
     \begin{frame}[fragile]{Symbol spread function}
         \begin{itemize}
-            \item<1-> the function that determines the split of the $\mathbb{N}$ subsets corresponding to different symbols [1]
-            \item<2-> $\bar{s}: \mathbb{N} \rightarrow \mathcal{A}, \bar{s}(x) = \text{mod}(x,b) = s$
-            \item<3-> In the standard binary system example: $\bar{s}(x) = \text{mod}(x,2)$ \\ e.g. splits natural numbers into subsets of even/odd numbers \refer{2}
+            \item<1-> the function that determines the split of the $\mathbb{N}$ subsets corresponding to different symbols \refer{3}
+            \item<2-> $\bar{\mathit{s}}: \mathbb{N} \rightarrow \mathcal{A}, \bar{\mathit{s}}(\mathit{x}) = \text{mod}\mathit{(x,b) = s}$
+            \item<3-> In the standard binary system example: $\bar{\mathit{s}}(x) = \text{mod}(\mathit{x},2)$ \\ i.e. splits natural numbers into subsets of even/odd numbers \refer{3}
         \end{itemize}
     \end{frame}
 
     \begin{frame}[fragile]{Symbol spread function (Exa. 1)}
-        $S=\{0,1\}$
+        $\mathit{S}=\{0,1\}$
         \begin{center}
-            \includegraphics[width=0.9\textwidth]{../24ws_ANS.assets/fig1.png}
+            \includegraphics[width=1\textwidth]{../24ws_ANS.assets/fig1.png}
         \end{center}
     \end{frame}
 
     \begin{frame}[fragile]{Symbol spread function (Exa. 2)}
-        $S=\{0,1,2,3,4,5,6,7,8,9\}$
+        $\mathit{S}=\{0,1,2,3,4,5,6,7,8,9\}$
         \begin{center}
-            \includegraphics[width=0.85\textwidth]{../24ws_ANS.assets/fig2.png}
+            \includegraphics[width=1\textwidth]{../24ws_ANS.assets/fig2.png}
         \end{center}
     \end{frame}
 
-\subsection{Representation of information}    
+\subsubsection{Representation of information}    
     \begin{frame}[fragile]{Representation of information (Exa. 2)}
         \begin{itemize}
             \item<1-> a finite sequence of symbols/digits: $$\mathcal{A}=\{0,1,2,3,4,5,6,7,8,9\}$$
-            \item<2-> the sequence of symbols/digits to be encoded: $$S_{in}=(2,0,2,5)$$
-            \item<3-> \textcolor{red}{How can we represent this sequence as a single number?} 
-            \item<4-> The easiest way is to concatenate the symbols/digits: $$x_{out} = 2025$$
+            \item<2-> the sequence of symbols/digits to be encoded: $$\mathit{S}_{in}=(2,0,2,5)$$
+            \item<3-> \textcolor{red}{How can we represent this sequence as a single number?} \\
+            The easiest way is to concatenate the symbols/digits: $$\mathit{x}_{out} = 2025$$
         \end{itemize}
     \end{frame}
 
@@ -58,11 +62,11 @@
             \item<1-> encoding the sequence of digits (2,0,2,5,1,8)
             \[
             \begin{aligned}
-                x_{\text{init}} &= 0 \\
-                x_1 &= x_{\text{init}} \times 10 + 2 = 2 \\
-                x_2 &= x_1 \times 10 + 0 = 20 \\
-                x_3 &= x_2 \times 10 + 2 = 202 \\
-                x_{\text{out}} &= x_3 \times 10 + 5 = 2025
+                \mathit{x}_{\text{init}} &= 0 \\
+                \mathit{x}_1 &= \mathit{x}_{\text{init}} \times 10 + 2 = 2 \\
+                \mathit{x}_2 &= \mathit{x}_1 \times 10 + 0 = 20 \\
+                \mathit{x}_3 &= \mathit{x}_2 \times 10 + 2 = 202 \\
+                \mathit{x}_{\text{out}} &= \mathit{x}_3 \times 10 + 5 = 2025
             \end{aligned}
             \]
         \end{itemize}
@@ -72,9 +76,9 @@
         \begin{itemize}
             \item<1-> \textcolor{red}{What is the encoding function?}
             \item<2-> Encoding function
-            $$\mathit{x_{i+1} = x_i \times 10 + s_i}$$
-            \item<3-> $\mathit{x'}$ is the $\mathit{x}$-th appearance of symbol $\mathit{s}$
-            $$\mathit{x'} = \textcolor{orange}{\mathit{C(s, x)= x \cdot 10 + s}} $$
+            $$\mathit{x_{i+1} = x_i} \times 10 + \mathit{s_i}$$
+            \item<3-> $\mathit{x'}$ is the $\mathit{x}$ -th appearance of symbol $\mathit{s}$
+            $$\mathit{x'} = \textcolor{orange}{\mathit{C(s, x)= x} \cdot 10 + \mathit{s}} $$
         \end{itemize}
     \end{frame}
 
@@ -96,7 +100,7 @@
         \end{center}
     \end{frame}
 
-\subsection{Symmetric or Asymmetric}
+\subsubsection{Symmetric or Asymmetric}
     \begin{frame}[fragile]{}
         \begin{center}
             \includegraphics[width=0.7\textwidth]{../24ws_ANS.assets/fig6.png}  

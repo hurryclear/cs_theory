@@ -5,25 +5,26 @@
 \beamer@subsectionintoc {1}{4}{Entropy Coding}{8}{0}{1}
 \beamer@sectionintoc {2}{Asymmetric Numeral System}{11}{0}{2}
 \beamer@subsectionintoc {2}{1}{Motivation}{13}{0}{2}
-\beamer@subsectionintoc {2}{2}{Symbol spread function}{18}{0}{2}
-\beamer@subsectionintoc {2}{3}{Representation of information}{23}{0}{2}
-\beamer@subsectionintoc {2}{4}{Symmetric or Asymmetric}{34}{0}{2}
-\beamer@subsectionintoc {2}{5}{Performance}{40}{0}{2}
-\beamer@sectionintoc {3}{rANS}{41}{0}{3}
-\beamer@subsectionintoc {3}{1}{Key Concepts}{43}{0}{3}
-\beamer@subsectionintoc {3}{2}{Exa. 3}{44}{0}{3}
-\beamer@subsectionintoc {3}{3}{Notations}{45}{0}{3}
-\beamer@subsectionintoc {3}{4}{Encoding Function}{46}{0}{3}
-\beamer@subsectionintoc {3}{5}{Implementation of Encoder}{48}{0}{3}
-\beamer@subsectionintoc {3}{6}{Decoding Function}{49}{0}{3}
-\beamer@subsectionintoc {3}{7}{Implemenation of Decoder}{51}{0}{3}
-\beamer@sectionintoc {4}{Streaming-rANS}{52}{0}{4}
-\beamer@subsectionintoc {4}{1}{Problem}{55}{0}{4}
-\beamer@subsectionintoc {4}{2}{Idea}{57}{0}{4}
-\beamer@subsectionintoc {4}{3}{Solution}{58}{0}{4}
-\beamer@subsubsectionintoc {4}{3}{1}{Renormalization}{58}{0}{4}
-\beamer@subsectionintoc {4}{4}{Implementation of Streaming-rANS}{65}{0}{4}
-\beamer@subsubsectionintoc {4}{4}{1}{Encoding}{65}{0}{4}
-\beamer@subsubsectionintoc {4}{4}{2}{Dncoding}{66}{0}{4}
-\beamer@sectionintoc {5}{Summary}{67}{0}{5}
-\beamer@sectionintoc {6}{Reference}{69}{0}{6}
+\beamer@subsectionintoc {2}{2}{Key Concepts}{14}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Symbol spread function}{17}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Representation of information}{22}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{3}{Symmetric or Asymmetric}{32}{0}{2}
+\beamer@subsectionintoc {2}{3}{Performance}{38}{0}{2}
+\beamer@sectionintoc {3}{rANS}{39}{0}{3}
+\beamer@subsectionintoc {3}{1}{Key Concepts}{41}{0}{3}
+\beamer@subsectionintoc {3}{2}{Exa. 3}{42}{0}{3}
+\beamer@subsectionintoc {3}{3}{Notations}{43}{0}{3}
+\beamer@subsectionintoc {3}{4}{Encoding Function}{44}{0}{3}
+\beamer@subsectionintoc {3}{5}{Implementation of Encoder}{46}{0}{3}
+\beamer@subsectionintoc {3}{6}{Decoding Function}{47}{0}{3}
+\beamer@subsectionintoc {3}{7}{Implemenation of Decoder}{49}{0}{3}
+\beamer@sectionintoc {4}{Streaming-rANS}{50}{0}{4}
+\beamer@subsectionintoc {4}{1}{Problem}{53}{0}{4}
+\beamer@subsectionintoc {4}{2}{Idea}{55}{0}{4}
+\beamer@subsectionintoc {4}{3}{Solution}{56}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{1}{Renormalization}{56}{0}{4}
+\beamer@subsectionintoc {4}{4}{Implementation of Streaming-rANS}{63}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{1}{Encoding}{63}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{2}{Dncoding}{64}{0}{4}
+\beamer@sectionintoc {5}{Summary}{65}{0}{5}
+\beamer@sectionintoc {6}{Reference}{67}{0}{6}
