@@ -201,15 +201,20 @@
         \specialpagelayout
     \fi
 }
-%% This is to make table of contents/ overview slide after title page
+% Define table of contents command with spacing adjustments
 \newcommand{\maketableofcontents}[1][]{
     \begin{frame}{Outline}
+    \label{outline}
         \ifx\relax#1\relax
             \tableofcontents
         \else
             \tableofcontents[#1,subsectionstyle=show/show/hide]
         \fi
     \end{frame}
+    % Adjust spacing for TOC
+    \setbeamerfont{section in toc}{size=\large}  % Section font size
+    \setbeamerfont{subsection in toc}{size=\normalsize} % Subsection font size
+    \setlength{\itemsep}{1em} % Spacing between lines
 }
 
 %% This will show table of content slides before move to each subsection //TODO: Figure out how to make it work
@@ -219,21 +224,20 @@
     \definepagelayoutwithAR
     \begin{frame}{Outline}
         \tableofcontents[currentsection,currentsubsection]
-        \vspace*{3em}
+        \vspace*{2em}
     \end{frame}
 }}
 }
 
-%% This will show section name slide before move to each section
 \newcommand{\makesectionpopup}{
-\AtBeginSection[]
-{{
+\AtBeginSection[]{{
     \definepagelayoutwithAR
     \begin{frame}
-        \textbf{\LARGE {\insertsection}}
+        \hyperlink{outline}{\textbf{\LARGE {\insertsection}}}
     \end{frame}
 }}
 }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Reference %%%%%%%%%%%%%%%%%%%%
 \newcommand{\refer}[1]{\textsuperscript{\hyperlink{ref#1}{[#1]}}}
@@ -297,17 +301,4 @@
 % {
 %     \VerbatimEnvironment
 %     \begin{columns}
-%     \begin{column}{0.5\textwidth}
-%     \begin{minted}[linenos, breaklines, firstnumber=1, gobble=0]{python}
-% }
-% {
-%     \end{minted}
-%     \end{column}
-%     \begin{column}{0.5\textwidth}
-%     \begin{minted}[linenos, breaklines, firstnumber=#1, gobble=0]{python}
-% }
-% {
-%     \end{minted}
-%     \end{column}
-%     \end{columns}
-% }
+%     \begin{column}{0.5\textwidth

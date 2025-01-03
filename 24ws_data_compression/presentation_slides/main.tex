@@ -18,22 +18,16 @@
 \maketitlepage %% This is to create title page. The data are taken from TitlePageInfo.tex
 
 %% This is to make table of contents/ overview slide after title page (only with section and subsection)
-\setcounter{tocdepth}{1}
-\maketableofcontents
+\maketableofcontents[hideallsubsections] %% This is to create table of contents slide
 
-\AtBeginSection[]{
-    \frametitle{Table of Contents}
-    \tableofcontents[currentsection]
-}
 
-%\makesubsectionpopup %% This will show table of content slides before move to each subsection
-\makesectionpopup %% This will show section name slide before move to each section
+\makesectionpopup
+
 
 \import{slides/}{1Introduction.tex}
-% \import{slides/}{2EntropyCoding.tex}
-\import{slides/}{3AsymmetricNumeralSystem.tex}
-\import{slides/}{4rANS.tex}
-\import{slides/}{5streamingrANS.tex}
-\import{slides/}{6Summary.tex}
-\import{slides/}{7Reference.tex}
+\import{slides/}{2AsymmetricNumeralSystem.tex}
+\import{slides/}{3rANS.tex}
+\import{slides/}{4streamingrANS.tex}
+\import{slides/}{5Summary.tex}
+\import{slides/}{6Reference.tex}
 \end{document}
