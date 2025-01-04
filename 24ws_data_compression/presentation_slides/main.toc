@@ -9,22 +9,22 @@
 \beamer@subsubsectionintoc {2}{2}{1}{Symbol spread function}{17}{0}{2}
 \beamer@subsubsectionintoc {2}{2}{2}{Representation of information}{22}{0}{2}
 \beamer@subsubsectionintoc {2}{2}{3}{Symmetric or Asymmetric}{32}{0}{2}
-\beamer@subsectionintoc {2}{3}{Performance}{38}{0}{2}
-\beamer@sectionintoc {3}{rANS}{39}{0}{3}
-\beamer@subsectionintoc {3}{1}{Key Concepts}{41}{0}{3}
-\beamer@subsectionintoc {3}{2}{Exa. 3}{42}{0}{3}
-\beamer@subsectionintoc {3}{3}{Notations}{43}{0}{3}
-\beamer@subsectionintoc {3}{4}{Encoding Function}{44}{0}{3}
-\beamer@subsectionintoc {3}{5}{Implementation of Encoder}{46}{0}{3}
-\beamer@subsectionintoc {3}{6}{Decoding Function}{47}{0}{3}
-\beamer@subsectionintoc {3}{7}{Implemenation of Decoder}{49}{0}{3}
-\beamer@sectionintoc {4}{Streaming-rANS}{50}{0}{4}
-\beamer@subsectionintoc {4}{1}{Problem}{53}{0}{4}
-\beamer@subsectionintoc {4}{2}{Idea}{55}{0}{4}
-\beamer@subsectionintoc {4}{3}{Solution}{56}{0}{4}
-\beamer@subsubsectionintoc {4}{3}{1}{Renormalization}{56}{0}{4}
-\beamer@subsectionintoc {4}{4}{Implementation of Streaming-rANS}{63}{0}{4}
-\beamer@subsubsectionintoc {4}{4}{1}{Encoding}{63}{0}{4}
-\beamer@subsubsectionintoc {4}{4}{2}{Dncoding}{64}{0}{4}
-\beamer@sectionintoc {5}{Summary}{65}{0}{5}
-\beamer@sectionintoc {6}{Reference}{67}{0}{6}
+\beamer@subsectionintoc {2}{3}{Performance}{47}{0}{2}
+\beamer@sectionintoc {3}{rANS}{48}{0}{3}
+\beamer@subsectionintoc {3}{1}{Key Concepts}{50}{0}{3}
+\beamer@subsectionintoc {3}{2}{Exa. 3}{51}{0}{3}
+\beamer@subsectionintoc {3}{3}{Notations}{52}{0}{3}
+\beamer@subsectionintoc {3}{4}{Encoding Function}{53}{0}{3}
+\beamer@subsectionintoc {3}{5}{Implementation of Encoder}{55}{0}{3}
+\beamer@subsectionintoc {3}{6}{Decoding Function}{56}{0}{3}
+\beamer@subsectionintoc {3}{7}{Implemenation of Decoder}{58}{0}{3}
+\beamer@sectionintoc {4}{Streaming-rANS}{59}{0}{4}
+\beamer@subsectionintoc {4}{1}{Problem}{62}{0}{4}
+\beamer@subsectionintoc {4}{2}{Idea}{64}{0}{4}
+\beamer@subsectionintoc {4}{3}{Solution}{65}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{1}{Renormalization}{65}{0}{4}
+\beamer@subsectionintoc {4}{4}{Implementation of Streaming-rANS}{72}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{1}{Encoding}{72}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{2}{Dncoding}{73}{0}{4}
+\beamer@sectionintoc {5}{Summary}{74}{0}{5}
+\beamer@sectionintoc {6}{Reference}{76}{0}{6}
