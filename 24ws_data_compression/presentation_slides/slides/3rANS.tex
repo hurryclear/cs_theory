@@ -15,16 +15,28 @@
         \end{itemize}
     \end{frame}
 
-    \subsection{Exa. 3}
-    \begin{frame}[fragile]{Exa.3}
-        How to encode 101110? What is the encoding function $\mathit{C(s,x)}$? \ $\mathit{x' = C(s,x) \approx x/p_s}$
+    \subsection{101110}
+    \begin{frame}[fragile]{Exa.1: Standard Binary System}
+        \begin{itemize}
+            \item How to encode 101110? What is the encoding function $\mathit{C(s,x_i)}$?
+        \end{itemize}
+        \begin{center}
+            \includegraphics[width=0.89\textwidth]{../24ws_ANS.assets/fig4_0.png}
+        \end{center}
+    \end{frame}
+    \begin{frame}[fragile]{Exa.3: $Pr(0)=1/4, Pr(1)=3/4$}
+        \begin{itemize}
+            \item How to encode 101110? What is the encoding function $\mathit{C(s,x_i)}$?
+            \item How can we find the $\mathit{x}$ -th appearance of symbol $\mathit{s}$?
+            \item $\mathit{x_{i+1} = C(s,x_i) \textcolor{red}{\approx} x_i/p_s}$
+        \end{itemize}
     \end{frame}
     
     \subsection{Notations}
-    \begin{frame}[fragile]{Some notations}
+    \begin{frame}[fragile]{Some Notations}
         \begin{itemize}
             \item $\mathcal{A} = \{\mathit{s_1, s_2, \dots, s_k}\}$ is the alphabet set
-            \item $\mathit{s}$ is the symbol, if it is used in subscript: $\mathit{s}$ is the current symbol, $\mathit{s-1}$ is the previous symbol,  $\mathit{s+1}$ is the next symbol
+            \item $\mathit{s}$ is the symbol, if it is used in subscript: $\mathit{s}$ is the current symbol, $\mathit{s}-1$ is the previous symbol,  $\mathit{s}+1$ is the next symbol
             \item $\mathit{F_s}$ is the absolute frequency of symbol $\mathit{s}$
             \item $\mathit{m = \sum_{s \in \mathcal{A}} F_s}$ is the total frequency
             \item $\mathit{c_s = \sum_{s \in \mathcal{A}} F_{s-1}}$ is the cumulative frequency ($\mathit{c_{s+1}}$ is the cumulative frequency of the next symbol)
