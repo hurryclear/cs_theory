@@ -12,7 +12,7 @@
 \beamer@subsectionintoc {2}{3}{Performance}{47}{0}{2}
 \beamer@sectionintoc {3}{rANS}{48}{0}{3}
 \beamer@subsectionintoc {3}{1}{Key Concepts}{50}{0}{3}
-\beamer@subsectionintoc {3}{2}{101110}{51}{0}{3}
+\beamer@subsectionintoc {3}{2}{Example: 101110}{51}{0}{3}
 \beamer@subsectionintoc {3}{3}{Notations}{53}{0}{3}
 \beamer@subsectionintoc {3}{4}{Encoding Function}{54}{0}{3}
 \beamer@subsectionintoc {3}{5}{Implementation of Encoder}{56}{0}{3}
@@ -23,8 +23,9 @@
 \beamer@subsectionintoc {4}{2}{Idea}{65}{0}{4}
 \beamer@subsectionintoc {4}{3}{Solution}{66}{0}{4}
 \beamer@subsubsectionintoc {4}{3}{1}{Renormalization}{66}{0}{4}
-\beamer@subsectionintoc {4}{4}{Implementation of Streaming-rANS}{73}{0}{4}
+\beamer@subsectionintoc {4}{4}{Implementation}{73}{0}{4}
 \beamer@subsubsectionintoc {4}{4}{1}{Encoding}{73}{0}{4}
 \beamer@subsubsectionintoc {4}{4}{2}{Dncoding}{74}{0}{4}
 \beamer@sectionintoc {5}{Summary}{75}{0}{5}
-\beamer@sectionintoc {6}{Reference}{77}{0}{6}
+\beamer@sectionintoc {6}{Further Study}{77}{0}{6}
+\beamer@sectionintoc {7}{Reference}{79}{0}{7}

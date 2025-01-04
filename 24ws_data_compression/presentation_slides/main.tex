@@ -9,6 +9,8 @@
 \documentclass[aspectratio=\BeamerAspectRatio]{beamer}
 
 \usepackage{ProjectSpecificAdditionalPackages}
+% \usepackage{tocloft}
+
 
 \import{./}{TitlePageInfo.tex}
 \addbibresource{references.bib}
@@ -18,8 +20,13 @@
 \maketitlepage %% This is to create title page. The data are taken from TitlePageInfo.tex
 
 %% This is to make table of contents/ overview slide after title page (only with section and subsection)
-\maketableofcontents[hideallsubsections] %% This is to create table of contents slide
+% \setbeamerfont{section in toc}{size=\normalsize} % Set section font size
+% \setbeamertemplate{section in toc}{%
+%     \leavevmode\leftskip=1em\vskip-6em% Reduce spacing
+%     \hbox to 2em{\inserttocsectionnumber.\hfil\inserttocsection}% Align number and text
+% }
 
+\maketableofcontents %% This is to create table of contents slide
 
 \makesectionpopup
 
@@ -29,5 +36,7 @@
 \import{slides/}{3rANS.tex}
 \import{slides/}{4streamingrANS.tex}
 \import{slides/}{5Summary.tex}
-\import{slides/}{6Reference.tex}
+\import{slides/}{6Further.tex}
+\import{slides/}{7Reference.tex}
+\import{slides/}{8Thanks.tex}
 \end{document}

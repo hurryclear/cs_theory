@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{minted}
 \usepackage{listings}
+\usepackage{minipage-marginpar}
 
 \mode<presentation>
 
@@ -15,9 +16,7 @@
     style=autumn, % Change "monokai" to your preferred theme
     linenos,       % Line numbers
     frame=lines,   % Frame around the code block
-    breaklines,    % Automatic line breaking
-    fontfamily=rm, % Set font family for comments
-    fontsize=\footnotesize % Set font size for comments
+    breaklines     % Automatic line breaking
 }
 
 %%%%%%% Define color %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -204,43 +203,54 @@
         \specialpagelayout
     \fi
 }
-% Define table of contents command with spacing adjustments
-\newcommand{\maketableofcontents}[1][]{
+%% This is to make table of contents/ overview slide after title page
+% \newcommand{\maketableofcontents}[1][]{
+%     \begin{frame}{Outline}
+%         \label{outline}
+%         \resizebox{0.89\textwidth}{!}{
+%             \begin{minipage}[t][1\textheight]{\textwidth} % Restrict height to 80% of the slide
+%                 \ifx\relax#1\relax
+%                     \tableofcontents[hideallsubsections]
+%                 \else
+%                     \tableofcontents[#1,subsectionstyle=show/show/hide]
+%                 \fi
+%             \end{minipage}
+%         }
+%     \end{frame}
+% }
+
+\newcommand{\maketableofcontents}{
+    {
+    \definepagelayoutwithAR
     \begin{frame}{Outline}
-    \label{outline}
-        \ifx\relax#1\relax
-            \tableofcontents
-        \else
-            \tableofcontents[#1,subsectionstyle=show/show/hide]
-        \fi
+        \tableofcontents[hideallsubsections]
+        \vspace*{3em}
     \end{frame}
-    % Adjust spacing for TOC
-    \setbeamerfont{section in toc}{size=\large}  % Section font size
-    \setbeamerfont{subsection in toc}{size=\normalsize} % Subsection font size
-    \setlength{\itemsep}{1em} % Spacing between lines
+   } 
 }
 
-%% This will show table of content slides before move to each subsection //TODO: Figure out how to make it work
+%% This will show table of content slides before move to each subsection 
 \newcommand{\makesubsectionpopup}{
 \AtBeginSubsection[]
 {{
     \definepagelayoutwithAR
     \begin{frame}{Outline}
         \tableofcontents[currentsection,currentsubsection]
-        \vspace*{2em}
+        \vspace*{3em}
     \end{frame}
 }}
 }
 
+%% This will show section name slide before move to each section
 \newcommand{\makesectionpopup}{
-\AtBeginSection[]{{
+\AtBeginSection[]
+{{
     \definepagelayoutwithAR
     \begin{frame}
         \hyperlink{outline}{\textbf{\LARGE {\insertsection}}}
     \end{frame}
 }}
 }
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Reference %%%%%%%%%%%%%%%%%%%%
 \newcommand{\refer}[1]{\textsuperscript{\hyperlink{ref#1}{[#1]}}}
@@ -291,17 +301,8 @@
         \renewcommand{\arraystretch}{1.2} % Adjust row spacing
         \centering
         \begin{tabular}{@{}l@{}}
-            % \fontsize{10}{12}\selectfont % Change font size here
             \multicolumn{1}{l}{\textbf{#1}} \\ \hline
             #2 \\ \hline
         \end{tabular}
     \end{table}
 }
-
-% Custom environment to split code blocks into two columns if they exceed 15 lines
-% Define splitcode environment
-% \newenvironment{splitcode}[1][15]
-% {
-%     \VerbatimEnvironment
-%     \begin{columns}
-%     \begin{column}{0.5\textwidth

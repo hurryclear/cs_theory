@@ -2,7 +2,7 @@
 
 % Add outline page for Introduction section
 \begin{frame}{Outline}
-    \tableofcontents[currentsection, sectionstyle=show/hide, subsectionstyle=show/show/hide, subsubsectionstyle=show/show/hide]
+    \tableofcontents[currentsection, sectionstyle=show/hide, subsectionstyle=show/show/hide, subsubsectionstyle=show/hide/show]
 \end{frame}
 
     \subsection{Key Concepts}
@@ -15,7 +15,7 @@
         \end{itemize}
     \end{frame}
 
-    \subsection{101110}
+    \subsection{Example: 101110}
     \begin{frame}[fragile]{Exa.1: Standard Binary System}
         \begin{itemize}
             \item How to encode 101110? What is the encoding function $\mathit{C(s,x_i)}$?
@@ -53,7 +53,7 @@
         \end{figure}
     \end{frame}
     \begin{frame}[fragile]{}
-        \textbf{Encoding Function \refer{2} \refer{5}:}
+        \textbf{Encoding Function \refer{3} \refer{5}:}
         $$ \mathit{x_{i+1} = m \cdot \lfloor x_i/F_s \rfloor + \operatorname{mod}(x_i, F_s) + c_s} $$
     \end{frame}
     \subsection{Implementation of Encoder}
@@ -89,7 +89,7 @@
     \end{frame}
     
     \begin{frame}[fragile]{}
-        \textbf{Decoding Function \refer{2} \refer{5}:}
+        \textbf{Decoding Function \refer{3} \refer{5}:}
         \begin{itemize}
             \item $\mathit{s}$ $$ \mathit{s \text{ such that} c_s \leq \text{ mod} (x_i, m) < c_{s+1}} $$
             \item $\mathit{x_{i-1}}$ $$ \mathit{ x_{i-1} = D(x_i)= \lfloor x_i/m \rfloor \cdot F_s + \text{mod}(x_i, F_s) - c_s} $$
