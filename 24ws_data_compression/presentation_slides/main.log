@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  4 JAN 2025 20:08
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  4 JAN 2025 23:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1357,20 +1357,28 @@ File: ../24ws_ANS.assets/fig21.png Graphic file (type bmp)
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [14
-
-] (./main.vrb) [15
-
-] (./main.vrb) [16
+ (./main.vrb
+File: ../24ws_ANS.assets/table1.png Graphic file (type bmp)
+<../24ws_ANS.assets/table1.png>
+) [14
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [17
+ (./main.vrb) [15
 
-] (./main.vrb) [18
+] (./main.vrb) [16
+
+] (./main.vrb) [17
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [18
 
 ] (./main.vrb) [19
+
+] (./main.vrb) [20
 
 ]
 \openout4 = `main.vrb'.
@@ -1378,7 +1386,7 @@ File: ../24ws_ANS.assets/fig21.png Graphic file (type bmp)
  (./main.vrb
 File: ../24ws_ANS.assets/fig1.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig1.png>
-) [20
+) [21
 
 ]
 \openout4 = `main.vrb'.
@@ -1387,33 +1395,33 @@ File: ../24ws_ANS.assets/fig1.png Graphic file (type bmp)
 File: ../24ws_ANS.assets/fig2.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig2.png>
 )
-Overfull \vbox (9.3607pt too high) detected at line 67
+Overfull \vbox (9.3607pt too high) detected at line 56
  []
 
-[21
+[22
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [22
-
-] (./main.vrb) [23
+ (./main.vrb) [23
 
 ] (./main.vrb) [24
 
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [25
+] (./main.vrb) [25
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb) [26
 
-] (./main.vrb) [27
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [27
 
 ] (./main.vrb) [28
+
+] (./main.vrb) [29
 
 ]
 \openout4 = `main.vrb'.
@@ -1421,7 +1429,7 @@ Overfull \vbox (9.3607pt too high) detected at line 67
  (./main.vrb
 File: ../24ws_ANS.assets/fig3.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig3.png>
-) [29
+) [30
 
 ]
 \openout4 = `main.vrb'.
@@ -1429,7 +1437,7 @@ File: ../24ws_ANS.assets/fig3.png Graphic file (type bmp)
  (./main.vrb
 File: ../24ws_ANS.assets/fig4.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig4.png>
-) [30
+) [31
 
 ]
 \openout4 = `main.vrb'.
@@ -1438,15 +1446,15 @@ File: ../24ws_ANS.assets/fig4.png Graphic file (type bmp)
 File: ../24ws_ANS.assets/fig5.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig5.png>
 )
-Overfull \vbox (10.89955pt too high) detected at line 120
+Overfull \vbox (10.89955pt too high) detected at line 109
  []
 
-[31
+[32
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [32
+ (./main.vrb) [33
 
 ]
 \openout4 = `main.vrb'.
@@ -1455,19 +1463,19 @@ Overfull \vbox (10.89955pt too high) detected at line 120
 File: ../24ws_ANS.assets/fig6.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig6.png>
 )
-Overfull \vbox (5.16327pt too high) detected at line 132
+Overfull \vbox (5.16327pt too high) detected at line 121
  []
 
-[33
+[34
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [34
-
-] (./main.vrb) [35
+ (./main.vrb) [35
 
 ] (./main.vrb) [36
+
+] (./main.vrb) [37
 
 ]
 \openout4 = `main.vrb'.
@@ -1475,7 +1483,7 @@ Overfull \vbox (5.16327pt too high) detected at line 132
  (./main.vrb
 File: ../24ws_ANS.assets/fig7_0.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig7_0.png>
-) [37
+) [38
 
 ]
 \openout4 = `main.vrb'.
@@ -1483,7 +1491,7 @@ File: ../24ws_ANS.assets/fig7_0.png Graphic file (type bmp)
  (./main.vrb
 File: ../24ws_ANS.assets/fig7_1.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig7_1.png>
-) [38
+) [39
 
 ]
 \openout4 = `main.vrb'.
@@ -1491,7 +1499,7 @@ File: ../24ws_ANS.assets/fig7_1.png Graphic file (type bmp)
  (./main.vrb
 File: ../24ws_ANS.assets/fig7_2.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig7_2.png>
-) [39
+) [40
 
 ]
 \openout4 = `main.vrb'.
@@ -1499,21 +1507,19 @@ File: ../24ws_ANS.assets/fig7_2.png Graphic file (type bmp)
  (./main.vrb
 File: ../24ws_ANS.assets/fig7.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig7.png>
-) [40
+) [41
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [41
+ (./main.vrb) [42
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 9.
-) [42
-
-] (./main.vrb) [43
+) [43
 
 ] (./main.vrb) [44
 
@@ -1521,19 +1527,21 @@ LaTeX Font Info:    Calculating math sizes for size <14> on input line 9.
 
 ] (./main.vrb) [46
 
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [47
-
-]) (./slides/3rANS.tex [48
-
-] (./main.toc) [49
+] (./main.vrb) [47
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [50
+ (./main.vrb) [48
+
+]) (./slides/3rANS.tex [49
+
+] (./main.toc) [50
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [51
 
 ]
 \openout4 = `main.vrb'.
@@ -1545,17 +1553,17 @@ File: ../24ws_ANS.assets/fig4_0.png Graphic file (type bmp)
 Overfull \vbox (13.59618pt too high) detected at line 26
  []
 
-[51
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [52
+[52
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb) [53
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [54
 
 ]
 File: ../24ws_ANS.assets/fig8.png Graphic file (type bmp)
@@ -1564,12 +1572,12 @@ File: ../24ws_ANS.assets/fig8.png Graphic file (type bmp)
 Overfull \vbox (7.21477pt too high) detected at line 54
  []
 
-[54
+[55
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [55
+ (./main.vrb) [56
 
 ]
 \openout4 = `main.vrb'.
@@ -1577,7 +1585,7 @@ Overfull \vbox (7.21477pt too high) detected at line 54
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/autumn.pygstyle) (./_minted-main/EA83EFF5CE9258CB470F93F1BE1D01F1541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [56
+ (./_minted-main/autumn.pygstyle) (./_minted-main/EA83EFF5CE9258CB470F93F1BE1D01F1541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [57
 
 ]
 File: ../24ws_ANS.assets/fig9.png Graphic file (type bmp)
@@ -1586,12 +1594,12 @@ File: ../24ws_ANS.assets/fig9.png Graphic file (type bmp)
 Overfull \vbox (7.21072pt too high) detected at line 89
  []
 
-[57
+[58
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [58
+ (./main.vrb) [59
 
 ]
 \openout4 = `main.vrb'.
@@ -1599,25 +1607,20 @@ Overfull \vbox (7.21072pt too high) detected at line 89
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/FBA5BE11E8CB38386C861B8E655B20E3541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [59
+ (./_minted-main/FBA5BE11E8CB38386C861B8E655B20E3541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [60
 
-]) (./slides/4streamingrANS.tex [60
+]) (./slides/4streamingrANS.tex [61
 
-] (./main.toc) [61
+] (./main.toc) [62
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [62
-
-] [63
+ (./main.vrb) [63
 
 ] [64
 
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [65
+] [65
 
 ]
 \openout4 = `main.vrb'.
@@ -1627,15 +1630,15 @@ Overfull \vbox (7.21072pt too high) detected at line 89
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb
-File: ../24ws_ANS.assets/fig11.png Graphic file (type bmp)
-<../24ws_ANS.assets/fig11.png>
-) [67
+ (./main.vrb) [67
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [68
+ (./main.vrb
+File: ../24ws_ANS.assets/fig11.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig11.png>
+) [68
 
 ]
 \openout4 = `main.vrb'.
@@ -1645,15 +1648,15 @@ File: ../24ws_ANS.assets/fig11.png Graphic file (type bmp)
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb
-File: ../24ws_ANS.assets/fig10.png Graphic file (type bmp)
-<../24ws_ANS.assets/fig10.png>
-) [70
+ (./main.vrb) [70
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [71
+ (./main.vrb
+File: ../24ws_ANS.assets/fig10.png Graphic file (type bmp)
+<../24ws_ANS.assets/fig10.png>
+) [71
 
 ]
 \openout4 = `main.vrb'.
@@ -1663,10 +1666,7 @@ File: ../24ws_ANS.assets/fig10.png Graphic file (type bmp)
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb
-\openout5 = `main.pyg'.
-
- (./_minted-main/5B89C42D6FDD8330C20EF98A24D4667F541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [73
+ (./main.vrb) [73
 
 ]
 \openout4 = `main.vrb'.
@@ -1674,21 +1674,29 @@ File: ../24ws_ANS.assets/fig10.png Graphic file (type bmp)
  (./main.vrb
 \openout5 = `main.pyg'.
 
- (./_minted-main/6CCEAC4C9103EBB77DCD070AA8FA7B7B541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [74
+ (./_minted-main/5B89C42D6FDD8330C20EF98A24D4667F541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [74
 
-]) (./slides/5Summary.tex [75
+]
+\openout4 = `main.vrb'.
 
-] [76
+ (./main.vrb
+\openout5 = `main.pyg'.
 
-]) (./slides/6Further.tex [77
+ (./_minted-main/6CCEAC4C9103EBB77DCD070AA8FA7B7B541C68F80C6A6F06151AFD63BAE50EBC.pygtex)) [75
 
-] [78
+]) (./slides/5Summary.tex [76
 
-]) (./slides/7Reference.tex [79
+] [77
 
-] [80
+]) (./slides/6Further.tex [78
 
-]) (./slides/8Thanks.tex [81
+] [79
+
+]) (./slides/7Reference.tex [80
+
+] [81
+
+]) (./slides/8Thanks.tex [82
 
 ])
 \tf@nav=\write9
@@ -1702,7 +1710,7 @@ File: ../24ws_ANS.assets/fig10.png Graphic file (type bmp)
 
  (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D946EF4D934B3B9CF023741E07466FC0;3065.
+(rerunfilecheck)             Checksum: C6A2D9D35EC77C3F247AAF2BDF2847ED;3065.
 runsystem(rm main.pyg)...executed.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1710,12 +1718,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41114 strings out of 476683
- 882399 string characters out of 5804048
+ 41128 strings out of 476683
+ 882728 string characters out of 5804048
  1861018 words of memory out of 5000000
- 60419 multiletter control sequences out of 15000+600000
+ 60430 multiletter control sequences out of 15000+600000
  521643 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,1227b,1104s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (81 pages, 633148 bytes).
+Output written on main.xdv (82 pages, 638544 bytes).

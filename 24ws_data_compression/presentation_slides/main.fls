@@ -1819,6 +1819,14 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
+INPUT ../24ws_ANS.assets/table1.png
+INPUT ../24ws_ANS.assets/table1.png
+INPUT ../24ws_ANS.assets/table1.png
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
