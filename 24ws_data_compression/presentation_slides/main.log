@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  4 JAN 2025 23:37
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.7)  5 JAN 2025 20:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1289,7 +1289,7 @@ File: imglib/logo_leipzig.eps Graphic file (type eps)
  [1
 
 ] (./main.toc)
-Overfull \vbox (20.56018pt too high) detected at line 29
+Overfull \vbox (7.93788pt too high) detected at line 30
  []
 
 [2
@@ -1550,7 +1550,7 @@ LaTeX Font Info:    Calculating math sizes for size <14> on input line 9.
 File: ../24ws_ANS.assets/fig4_0.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig4_0.png>
 )
-Overfull \vbox (13.59618pt too high) detected at line 26
+Overfull \vbox (13.59618pt too high) detected at line 31
  []
 
 [52
@@ -1569,7 +1569,7 @@ Overfull \vbox (13.59618pt too high) detected at line 26
 File: ../24ws_ANS.assets/fig8.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig8.png>
 
-Overfull \vbox (7.21477pt too high) detected at line 54
+Overfull \vbox (7.21477pt too high) detected at line 59
  []
 
 [55
@@ -1591,7 +1591,7 @@ Overfull \vbox (7.21477pt too high) detected at line 54
 File: ../24ws_ANS.assets/fig9.png Graphic file (type bmp)
 <../24ws_ANS.assets/fig9.png>
 
-Overfull \vbox (7.21072pt too high) detected at line 89
+Overfull \vbox (7.21072pt too high) detected at line 94
  []
 
 [58
@@ -1718,12 +1718,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41128 strings out of 476683
- 882728 string characters out of 5804048
+ 41130 strings out of 476683
+ 882757 string characters out of 5804048
  1861018 words of memory out of 5000000
- 60430 multiletter control sequences out of 15000+600000
+ 60432 multiletter control sequences out of 15000+600000
  521643 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,15n,122p,1227b,1104s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,122p,1227b,1105s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (82 pages, 638276 bytes).
+Output written on main.xdv (82 pages, 637368 bytes).

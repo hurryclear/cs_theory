@@ -2,10 +2,15 @@
 
 % Add outline page for Introduction section
 \begin{frame}{Outline}
-    \tableofcontents[currentsection, sectionstyle=show/hide, subsectionstyle=show/show/hide, subsubsectionstyle=show/hide/show]
+    \tableofcontents[
+        currentsection, 
+        sectionstyle=show/hide, 
+        subsectionstyle=show/show/hide, 
+        subsubsectionstyle=show/hide/show
+    ]
 \end{frame}
 
-    \subsection{Key Concepts}
+\subsection{Key Concepts}
     \begin{frame}[fragile]{rANS}
         \begin{itemize}
             \item "r" = "range": similar to range coding (RC)
@@ -15,7 +20,7 @@
         \end{itemize}
     \end{frame}
 
-    \subsection{Example: 101110}
+\subsection{Example: 101110}
     \begin{frame}[fragile]{Exa.1: Standard Binary System}
         \begin{itemize}
             \item How to encode 101110? What is the encoding function $\mathit{C(s,x_i)}$?
@@ -32,7 +37,7 @@
         \end{itemize}
     \end{frame}
     
-    \subsection{Notations}
+\subsection{Notations}
     \begin{frame}[fragile]{Some Notations}
         \begin{itemize}
             \item $\mathcal{A} = \{\mathit{s_1, s_2, \dots, s_k}\}$ is the alphabet set
@@ -45,7 +50,7 @@
         \end{itemize}
     \end{frame}
 
-    \subsection{Encoding Function}
+\subsection{Encoding Function}
     \begin{frame}[plain]
         \begin{figure}
             \centering
@@ -56,7 +61,7 @@
         \textbf{Encoding Function \refer{3} \refer{5}:}
         $$ \mathit{x_{i+1} = m \cdot \lfloor x_i/F_s \rfloor + \operatorname{mod}(x_i, F_s) + c_s} $$
     \end{frame}
-    \subsection{Implementation of Encoder}
+\subsection{Implementation of Encoder}
     \begin{frame}[fragile]{}
         \href{http://localhost:8050}{implementation with python} (\href{https://github.com/hurryclear/cs_theory/tree/data_compression/24ws_data_compression/implementation}{dash app})
         \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}
@@ -80,7 +85,7 @@
         \end{minted}
     \end{frame}
 
-    \subsection{Decoding Function}
+\subsection{Decoding Function}
     \begin{frame}[plain]
         \begin{figure}
             \centering
@@ -96,7 +101,7 @@
         \end{itemize}
     \end{frame}
     
-    \subsection{Implemenation of Decoder}
+\subsection{Implemenation of Decoder}
     \begin{frame}[fragile]{}
         \href{http://localhost:8050}{implementation with python} (\href{https://github.com/hurryclear/cs_theory/tree/data_compression/24ws_data_compression/implementation}{dash app})
         \begin{minted}[fontsize=\scriptsize, linenos, breaklines]{python}

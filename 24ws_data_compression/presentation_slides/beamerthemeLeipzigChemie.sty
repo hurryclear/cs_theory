@@ -178,6 +178,7 @@
 
 \defbeamertemplate{section in toc}{mysections numbered}
 {\leavevmode
+    \vskip-4em
 	\parbox[t]{2em}{\inserttocsectionnumber.}
 	\parbox[t]{.4\textwidth}{\inserttocsection}\par}
 \setbeamertemplate{section in toc}[mysections numbered]
@@ -191,7 +192,7 @@
 
 \defbeamertemplate{subsubsection in toc}{mysubsubsections numbered}
 {\leavevmode
-	\hspace{4em}
+	\hspace{5.4em}
 	\parbox[t]{3em}{\inserttocsectionnumber.\inserttocsubsectionnumber.\inserttocsubsubsectionnumber}
 	\parbox[t]{.4\textwidth}{\inserttocsubsubsection}\par}
 \setbeamertemplate{subsubsection in toc}[mysubsubsections numbered]
@@ -203,31 +204,31 @@
         \specialpagelayout
     \fi
 }
-%% This is to make table of contents/ overview slide after title page
-% \newcommand{\maketableofcontents}[1][]{
-%     \begin{frame}{Outline}
-%         \label{outline}
-%         \resizebox{0.89\textwidth}{!}{
-%             \begin{minipage}[t][1\textheight]{\textwidth} % Restrict height to 80% of the slide
-%                 \ifx\relax#1\relax
-%                     \tableofcontents[hideallsubsections]
-%                 \else
-%                     \tableofcontents[#1,subsectionstyle=show/show/hide]
-%                 \fi
-%             \end{minipage}
-%         }
-%     \end{frame}
-% }
-
-\newcommand{\maketableofcontents}{
-    {
-    \definepagelayoutwithAR
+% This is to make table of contents/ overview slide after title page
+\newcommand{\maketableofcontents}[1][]{
     \begin{frame}{Outline}
-        \tableofcontents[hideallsubsections]
-        \vspace*{3em}
+        \label{outline}
+        \resizebox{0.9\textwidth}{!}{
+            \begin{minipage}[t][1\textheight]{\textwidth} % Restrict height to 80% of the slide
+                \ifx\relax#1\relax
+                    \tableofcontents[hideallsubsections]
+                \else
+                    \tableofcontents[#1,subsectionstyle=show/show/hide]
+                \fi
+            \end{minipage}
+        }
     \end{frame}
-   } 
 }
+
+% \newcommand{\maketableofcontents}{
+%     {
+%     \definepagelayoutwithAR
+%     \begin{frame}{Outline}
+%         \tableofcontents[hideallsubsections]
+%         \vspace*{0em}
+%     \end{frame}
+%    } 
+% }
 
 %% This will show table of content slides before move to each subsection 
 \newcommand{\makesubsectionpopup}{
