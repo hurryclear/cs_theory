@@ -42,16 +42,16 @@
     \end{frame}
 
     \begin{frame}[fragile]{Symbol spread function (Exa. 1)}
-        $\mathit{S}=\{0,1\}$
+        $\mathcal{A}=\{0,1\}$, $\bar{\mathit{s}}(x) = \text{mod}(\mathit{x},2)$
         \begin{center}
             \includegraphics[width=1\textwidth]{../24ws_ANS.assets/fig1.png}
         \end{center}
     \end{frame}
 
     \begin{frame}[fragile]{Symbol spread function (Exa. 2)}
-        $\mathit{S}=\{0,1,2,3,4,5,6,7,8,9\}$
+        $\mathcal{A}=\{0,1,2,3,4,5,6,7,8,9\}$
         \begin{center}
-            \includegraphics[width=1\textwidth]{../24ws_ANS.assets/fig2.png}
+            \includegraphics[width=0.9\textwidth]{../24ws_ANS.assets/fig2.png}
         \end{center}
     \end{frame}
 
@@ -61,13 +61,13 @@
             \item<1-> a finite sequence of symbols/digits: $$\mathcal{A}=\{0,1,2,3,4,5,6,7,8,9\}$$
             \item<2-> the sequence of symbols/digits to be encoded: $$\mathit{S}_{in}=(2,0,2,5)$$
             \item<3-> \textcolor{red}{How can we represent this sequence as a single number?} \\
-            The easiest way is to concatenate the symbols/digits: $$\mathit{x}_{out} = 2025$$
+            \item<4-> The easiest way is to concatenate the symbols/digits: $$\mathit{x}_{out} = 2025$$
         \end{itemize}
     \end{frame}
 
     \begin{frame}[fragile]{Representation of Information (Exa. 2)}
         \begin{itemize}
-            \item<1-> encoding the sequence of digits (2,0,2,5,1,8)
+            \item<1-> encoding the sequence of digits $\mathit{S}_{in}=(2,0,2,5)$
             \[
             \begin{aligned}
                 \mathit{x}_{\text{init}} &= 0 \\
@@ -167,9 +167,3 @@
         \end{itemize}
     \end{frame}
 
-\subsection{Performance}
-\begin{frame}[fragile]{Performance}
-    \begin{itemize}
-        \item f
-    \end{itemize}
-\end{frame}

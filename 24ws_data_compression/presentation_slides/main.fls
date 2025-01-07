@@ -1745,6 +1745,11 @@ INPUT slides/1Introduction.tex
 INPUT ./main.toc
 INPUT main.toc
 INPUT main.toc
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -1771,11 +1776,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-OUTPUT main.vrb
-INPUT ./main.vrb
-INPUT main.vrb
-INPUT ./main.vrb
-INPUT main.vrb
 OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
@@ -1865,6 +1865,10 @@ INPUT ../24ws_ANS.assets/fig2.png
 INPUT ../24ws_ANS.assets/fig2.png
 INPUT ../24ws_ANS.assets/fig2.png
 OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
@@ -2011,11 +2015,6 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
-INPUT ./main.vrb
-INPUT main.vrb
-INPUT ./main.vrb
-INPUT main.vrb
-OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb

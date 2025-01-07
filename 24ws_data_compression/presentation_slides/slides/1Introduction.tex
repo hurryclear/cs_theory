@@ -5,23 +5,11 @@
     \tableofcontents[currentsection, sectionstyle=show/hide, subsectionstyle=show/show/hide, subsubsectionstyle=hide/hide/hide]
 \end{frame}
 
-\subsection{Background}
-\begin{frame}{}
-    \begin{itemize}
-        \item 1948: Claude Shannon introduced the concept of information theory in his paper "A Mathematical Theory of Communication" \refer{1}.
-        \item 1950: David Huffman introduced Huffman coding \refer{3}.
-        \item 1977: Arithmetic coding was introduced by Robert M. Fano \refer{4}.
-        \item 2014: Asymmetric Numeral System (ANS) was introduced by Jarosław Duda \refer{2}.
-        \item 2016: Zstandard (Zstd) was introduced by Yann Collet \refer{5}.
-        \item 2018: AV1 Image File Format (AVIF) was introduced by Alliance for Open Media \refer{6}.
-        \item 2020: JPEG XL was introduced by JPEG Committee \refer{7}.
-    \end{itemize}
-\end{frame}
 
 \subsection{Information Theory}
 \begin{frame}[fragile]{Information Theory\refer{1}}
     \begin{itemize}
-        \item Claude Shannon: "A Mathematical Theory of Communication" 
+        \item 1948 Claude Shannon: "A Mathematical Theory of Communication" 
         \item Self-information \\ a symbol of probability $\mathit{p}$ contains $\mathit{log}_2{1\over \mathit{p}}$ bits of information.
         \item Shannon Entropy \\Let $\mathit{X}$ be a random variable, which takes values in the set $\mathcal{X}$ and is distributed according to $\mathit{p}$ \\ $$\mathit{H(X) = \sum_{x \in \mathcal{X}} p(x)} \mathit{log}_2 {1\over{\mathit{p(x)}}}$$ 
     \end{itemize}
@@ -32,7 +20,7 @@
     \begin{itemize}
         \item prerequisite: lossless data compression
         \item $\mathit{H(X)}$ is compression limit, i.e. lower bound $\mathit{L_{\text{avg}} \geq H(X)}$ \\ 
-        which measures the minimum average number of bits needed to encode a symbol from a data source
+        which measures \textbf{the minimum average number of bits} needed to encode \textbf{a symbol} from a data source
         \item $\mathit{H(X)}$ is achievable, $\mathit{L_{\text{avg}} \rightarrow H(X)}$ \\
         for a sufficiently long sequence of symbols it is possible to achieve an average code length close to $\mathit{H(X)}$
         \item Shannon's Source Coding Theorem \refer{1} $$\mathit{N \cdot H(X)}$$
@@ -46,9 +34,12 @@
         \item High-probability symbols get shorter codes
         \item Low-probability symbols get longer codes.
         \item A method that attempts to approach the lower bound $\mathit{H(X)}$
-        \item Huffman Coding: ZIP, PNG
-        \item Arithmetic Coding: JPEG, H.264, HEVC.
-        \item Asymmetric Numeral System (ANS): Zstandard, AVIF, JPEG XL
+        \item Entropy Coding Family
+        \begin{itemize}
+            \item Huffman Coding: ZIP, JPEG, PNG
+            \item Arithmetic Coding/Range Coding: JPEG, H.264, HEVC.
+            \item Asymmetric Numeral System (ANS): Zstandard, JPEG XL, AVIF
+        \end{itemize}
     \end{itemize}
 \end{frame}
 \begin{frame}[fragile]{Huffman Coding}
@@ -57,7 +48,7 @@
         source: http://www.math.tau.ac.il/~dcor/Graphics/adv-slides/entropy.pdf
     \end{center}
 \end{frame}
-\begin{frame}[fragile]{Arithmetic Coding}
+\begin{frame}[fragile]{Arithmetic Coding / Range Coding}
     \begin{center}
         \includegraphics[width=0.6\textwidth]{../24ws_ANS.assets/fig21.png} \\
         source: http://www.math.tau.ac.il/~dcor/Graphics/adv-slides/entropy.pdf

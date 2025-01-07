@@ -10,52 +10,48 @@
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Background}}
-\headcommand {\slideentry {1}{1}{1}{5/5}{Background}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Information Theory}}
+\headcommand {\slideentry {1}{1}{1}{5/5}{Information Theory}{0}}
 \headcommand {\beamer@framepages {5}{5}}
 \headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Information Theory}}
-\headcommand {\slideentry {1}{2}{1}{6/6}{Information Theory}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Source Coding Theorem}}
+\headcommand {\slideentry {1}{2}{1}{6/6}{Source Coding Theorem}{0}}
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{7}{Source Coding Theorem}}
-\headcommand {\slideentry {1}{3}{1}{7/7}{Source Coding Theorem}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{7}{Entropy Coding}}
+\headcommand {\slideentry {1}{3}{1}{7/7}{Entropy Coding}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{1}{4}{8}{Entropy Coding}}
-\headcommand {\slideentry {1}{4}{1}{8/8}{Entropy Coding}{0}}
+\headcommand {\slideentry {1}{3}{2}{8/8}{Entropy Coding}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {1}{4}{2}{9/9}{Entropy Coding}{0}}
+\headcommand {\slideentry {1}{3}{3}{9/9}{Entropy Coding}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {1}{4}{3}{10/10}{Entropy Coding}{0}}
+\headcommand {\beamer@sectionpages {3}{9}}
+\headcommand {\beamer@subsectionpages {7}{9}}
+\headcommand {\sectionentry {2}{Asymmetric Numeral System}{10}{Asymmetric Numeral System}{0}}
+\headcommand {\slideentry {2}{0}{1}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@sectionpages {3}{10}}
-\headcommand {\beamer@subsectionpages {8}{10}}
-\headcommand {\sectionentry {2}{Asymmetric Numeral System}{11}{Asymmetric Numeral System}{0}}
-\headcommand {\slideentry {2}{0}{1}{11/11}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{0}{2}{12/12}{}{0}}
+\headcommand {\beamer@subsectionpages {10}{11}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{12}{Motivation}}
+\headcommand {\slideentry {2}{1}{1}{12/12}{Motivation}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionpages {11}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{Motivation}}
-\headcommand {\slideentry {2}{1}{1}{13/13}{Motivation}{0}}
+\headcommand {\slideentry {2}{1}{2}{13/13}{Motivation}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{1}{2}{14/14}{Motivation}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {13}{14}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{15}{Key Concepts}}
-\headcommand {\slideentry {2}{2}{1}{15/17}{Key Concepts}{0}}
-\headcommand {\beamer@framepages {15}{17}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{2}{1}{18}{Symbol spread function}}
-\headcommand {\slideentry {2}{2}{2}{18/20}{Key Concepts}{0}}
-\headcommand {\beamer@framepages {18}{20}}
-\headcommand {\slideentry {2}{2}{3}{21/21}{Key Concepts}{0}}
+\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{14}{Key Concepts}}
+\headcommand {\slideentry {2}{2}{1}{14/16}{Key Concepts}{0}}
+\headcommand {\beamer@framepages {14}{16}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{2}{1}{17}{Symbol spread function}}
+\headcommand {\slideentry {2}{2}{2}{17/19}{Key Concepts}{0}}
+\headcommand {\beamer@framepages {17}{19}}
+\headcommand {\slideentry {2}{2}{3}{20/20}{Key Concepts}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {2}{2}{4}{21/21}{Key Concepts}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {2}{2}{4}{22/22}{Key Concepts}{0}}
-\headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{2}{2}{23}{Representation of information}}
-\headcommand {\slideentry {2}{2}{5}{23/25}{Key Concepts}{0}}
-\headcommand {\beamer@framepages {23}{25}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{2}{2}{22}{Representation of information}}
+\headcommand {\slideentry {2}{2}{5}{22/25}{Key Concepts}{0}}
+\headcommand {\beamer@framepages {22}{25}}
 \headcommand {\slideentry {2}{2}{6}{26/26}{Key Concepts}{0}}
 \headcommand {\beamer@framepages {26}{26}}
 \headcommand {\slideentry {2}{2}{7}{27/29}{Key Concepts}{0}}
@@ -85,120 +81,116 @@
 \headcommand {\beamer@framepages {42}{42}}
 \headcommand {\slideentry {2}{2}{19}{43/47}{Key Concepts}{0}}
 \headcommand {\beamer@framepages {43}{47}}
-\headcommand {\beamer@subsectionpages {15}{47}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{48}{Performance}}
-\headcommand {\slideentry {2}{3}{1}{48/48}{Performance}{0}}
+\headcommand {\beamer@sectionpages {10}{47}}
+\headcommand {\beamer@subsectionpages {14}{47}}
+\headcommand {\sectionentry {3}{rANS}{48}{rANS}{0}}
+\headcommand {\slideentry {3}{0}{1}{48/48}{}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\beamer@sectionpages {11}{48}}
-\headcommand {\beamer@subsectionpages {48}{48}}
-\headcommand {\sectionentry {3}{rANS}{49}{rANS}{0}}
-\headcommand {\slideentry {3}{0}{1}{49/49}{}{0}}
+\headcommand {\slideentry {3}{0}{2}{49/49}{}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {3}{0}{2}{50/50}{}{0}}
+\headcommand {\beamer@subsectionpages {48}{49}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{50}{Key Concepts}}
+\headcommand {\slideentry {3}{1}{1}{50/50}{Key Concepts}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\beamer@subsectionpages {49}{50}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{51}{Key Concepts}}
-\headcommand {\slideentry {3}{1}{1}{51/51}{Key Concepts}{0}}
+\headcommand {\beamer@subsectionpages {50}{50}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{51}{Example: 101110}}
+\headcommand {\slideentry {3}{2}{1}{51/51}{Example: 101110}{0}}
 \headcommand {\beamer@framepages {51}{51}}
-\headcommand {\beamer@subsectionpages {51}{51}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{52}{Example: 101110}}
-\headcommand {\slideentry {3}{2}{1}{52/52}{Example: 101110}{0}}
+\headcommand {\slideentry {3}{2}{2}{52/52}{Example: 101110}{0}}
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {3}{2}{2}{53/53}{Example: 101110}{0}}
+\headcommand {\beamer@subsectionpages {51}{52}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{53}{Notations}}
+\headcommand {\slideentry {3}{3}{1}{53/53}{Notations}{0}}
 \headcommand {\beamer@framepages {53}{53}}
-\headcommand {\beamer@subsectionpages {52}{53}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{54}{Notations}}
-\headcommand {\slideentry {3}{3}{1}{54/54}{Notations}{0}}
+\headcommand {\beamer@subsectionpages {53}{53}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{54}{Encoding Function}}
+\headcommand {\slideentry {3}{4}{1}{54/54}{Encoding Function}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\beamer@subsectionpages {54}{54}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{55}{Encoding Function}}
-\headcommand {\slideentry {3}{4}{1}{55/55}{Encoding Function}{0}}
+\headcommand {\slideentry {3}{4}{2}{55/55}{Encoding Function}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\slideentry {3}{4}{2}{56/56}{Encoding Function}{0}}
+\headcommand {\beamer@subsectionpages {54}{55}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{56}{Implementation of Encoder}}
+\headcommand {\slideentry {3}{5}{1}{56/56}{Implementation of Encoder}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\beamer@subsectionpages {55}{56}}
-\headcommand {\beamer@subsectionentry {0}{3}{5}{57}{Implementation of Encoder}}
-\headcommand {\slideentry {3}{5}{1}{57/57}{Implementation of Encoder}{0}}
+\headcommand {\beamer@subsectionpages {56}{56}}
+\headcommand {\beamer@subsectionentry {0}{3}{6}{57}{Decoding Function}}
+\headcommand {\slideentry {3}{6}{1}{57/57}{Decoding Function}{0}}
 \headcommand {\beamer@framepages {57}{57}}
-\headcommand {\beamer@subsectionpages {57}{57}}
-\headcommand {\beamer@subsectionentry {0}{3}{6}{58}{Decoding Function}}
-\headcommand {\slideentry {3}{6}{1}{58/58}{Decoding Function}{0}}
+\headcommand {\slideentry {3}{6}{2}{58/58}{Decoding Function}{0}}
 \headcommand {\beamer@framepages {58}{58}}
-\headcommand {\slideentry {3}{6}{2}{59/59}{Decoding Function}{0}}
+\headcommand {\beamer@subsectionpages {57}{58}}
+\headcommand {\beamer@subsectionentry {0}{3}{7}{59}{Implemenation of Decoder}}
+\headcommand {\slideentry {3}{7}{1}{59/59}{Implemenation of Decoder}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\beamer@subsectionpages {58}{59}}
-\headcommand {\beamer@subsectionentry {0}{3}{7}{60}{Implemenation of Decoder}}
-\headcommand {\slideentry {3}{7}{1}{60/60}{Implemenation of Decoder}{0}}
+\headcommand {\beamer@sectionpages {48}{59}}
+\headcommand {\beamer@subsectionpages {59}{59}}
+\headcommand {\sectionentry {4}{Streaming-rANS}{60}{Streaming-rANS}{0}}
+\headcommand {\slideentry {4}{0}{1}{60/60}{}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\beamer@sectionpages {49}{60}}
-\headcommand {\beamer@subsectionpages {60}{60}}
-\headcommand {\sectionentry {4}{Streaming-rANS}{61}{Streaming-rANS}{0}}
-\headcommand {\slideentry {4}{0}{1}{61/61}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{61/61}{}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {4}{0}{2}{62/62}{}{0}}
+\headcommand {\slideentry {4}{0}{3}{62/62}{}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {4}{0}{3}{63/63}{}{0}}
+\headcommand {\beamer@subsectionpages {60}{62}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{63}{Problem}}
+\headcommand {\slideentry {4}{1}{1}{63/63}{Problem}{0}}
 \headcommand {\beamer@framepages {63}{63}}
-\headcommand {\beamer@subsectionpages {61}{63}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{64}{Problem}}
-\headcommand {\slideentry {4}{1}{1}{64/64}{Problem}{0}}
+\headcommand {\slideentry {4}{1}{2}{64/64}{Problem}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\slideentry {4}{1}{2}{65/65}{Problem}{0}}
+\headcommand {\beamer@subsectionpages {63}{64}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{65}{Idea}}
+\headcommand {\slideentry {4}{2}{1}{65/65}{Idea}{0}}
 \headcommand {\beamer@framepages {65}{65}}
-\headcommand {\beamer@subsectionpages {64}{65}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{66}{Idea}}
-\headcommand {\slideentry {4}{2}{1}{66/66}{Idea}{0}}
+\headcommand {\beamer@subsectionpages {65}{65}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{66}{Solution}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{1}{66}{Renormalization}}
+\headcommand {\slideentry {4}{3}{1}{66/66}{Solution}{0}}
 \headcommand {\beamer@framepages {66}{66}}
-\headcommand {\beamer@subsectionpages {66}{66}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{67}{Solution}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{1}{67}{Renormalization}}
-\headcommand {\slideentry {4}{3}{1}{67/67}{Solution}{0}}
+\headcommand {\slideentry {4}{3}{2}{67/67}{Solution}{0}}
 \headcommand {\beamer@framepages {67}{67}}
-\headcommand {\slideentry {4}{3}{2}{68/68}{Solution}{0}}
+\headcommand {\slideentry {4}{3}{3}{68/68}{Solution}{0}}
 \headcommand {\beamer@framepages {68}{68}}
-\headcommand {\slideentry {4}{3}{3}{69/69}{Solution}{0}}
+\headcommand {\slideentry {4}{3}{4}{69/69}{Solution}{0}}
 \headcommand {\beamer@framepages {69}{69}}
-\headcommand {\slideentry {4}{3}{4}{70/70}{Solution}{0}}
+\headcommand {\slideentry {4}{3}{5}{70/70}{Solution}{0}}
 \headcommand {\beamer@framepages {70}{70}}
-\headcommand {\slideentry {4}{3}{5}{71/71}{Solution}{0}}
+\headcommand {\slideentry {4}{3}{6}{71/71}{Solution}{0}}
 \headcommand {\beamer@framepages {71}{71}}
-\headcommand {\slideentry {4}{3}{6}{72/72}{Solution}{0}}
+\headcommand {\slideentry {4}{3}{7}{72/72}{Solution}{0}}
 \headcommand {\beamer@framepages {72}{72}}
-\headcommand {\slideentry {4}{3}{7}{73/73}{Solution}{0}}
+\headcommand {\beamer@subsectionpages {66}{72}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{73}{Implementation}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{1}{73}{Encoding}}
+\headcommand {\slideentry {4}{4}{1}{73/73}{Implementation}{0}}
 \headcommand {\beamer@framepages {73}{73}}
-\headcommand {\beamer@subsectionpages {67}{73}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{74}{Implementation}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{1}{74}{Encoding}}
-\headcommand {\slideentry {4}{4}{1}{74/74}{Implementation}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{2}{74}{Dncoding}}
+\headcommand {\slideentry {4}{4}{2}{74/74}{Implementation}{0}}
 \headcommand {\beamer@framepages {74}{74}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{2}{75}{Dncoding}}
-\headcommand {\slideentry {4}{4}{2}{75/75}{Implementation}{0}}
+\headcommand {\beamer@sectionpages {60}{74}}
+\headcommand {\beamer@subsectionpages {73}{74}}
+\headcommand {\sectionentry {5}{Summary}{75}{Summary}{0}}
+\headcommand {\slideentry {5}{0}{1}{75/75}{}{0}}
 \headcommand {\beamer@framepages {75}{75}}
-\headcommand {\beamer@sectionpages {61}{75}}
-\headcommand {\beamer@subsectionpages {74}{75}}
-\headcommand {\sectionentry {5}{Summary}{76}{Summary}{0}}
-\headcommand {\slideentry {5}{0}{1}{76/76}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{76/76}{}{0}}
 \headcommand {\beamer@framepages {76}{76}}
-\headcommand {\slideentry {5}{0}{2}{77/77}{}{0}}
+\headcommand {\beamer@sectionpages {75}{76}}
+\headcommand {\beamer@subsectionpages {75}{76}}
+\headcommand {\sectionentry {6}{Further Study}{77}{Further Study}{0}}
+\headcommand {\slideentry {6}{0}{1}{77/77}{}{0}}
 \headcommand {\beamer@framepages {77}{77}}
-\headcommand {\beamer@sectionpages {76}{77}}
-\headcommand {\beamer@subsectionpages {76}{77}}
-\headcommand {\sectionentry {6}{Further Study}{78}{Further Study}{0}}
-\headcommand {\slideentry {6}{0}{1}{78/78}{}{0}}
+\headcommand {\slideentry {6}{0}{2}{78/78}{}{0}}
 \headcommand {\beamer@framepages {78}{78}}
-\headcommand {\slideentry {6}{0}{2}{79/79}{}{0}}
+\headcommand {\beamer@sectionpages {77}{78}}
+\headcommand {\beamer@subsectionpages {77}{78}}
+\headcommand {\sectionentry {7}{Intro}{79}{Reference}{0}}
+\headcommand {\slideentry {7}{0}{1}{79/79}{}{0}}
 \headcommand {\beamer@framepages {79}{79}}
-\headcommand {\beamer@sectionpages {78}{79}}
-\headcommand {\beamer@subsectionpages {78}{79}}
-\headcommand {\sectionentry {7}{Intro}{80}{Reference}{0}}
-\headcommand {\slideentry {7}{0}{1}{80/80}{}{0}}
+\headcommand {\slideentry {7}{0}{2}{80/80}{}{0}}
 \headcommand {\beamer@framepages {80}{80}}
-\headcommand {\slideentry {7}{0}{2}{81/81}{}{0}}
+\headcommand {\slideentry {7}{0}{3}{81/81}{}{0}}
 \headcommand {\beamer@framepages {81}{81}}
-\headcommand {\slideentry {7}{0}{3}{82/82}{}{0}}
-\headcommand {\beamer@framepages {82}{82}}
-\headcommand {\beamer@partpages {1}{82}}
-\headcommand {\beamer@subsectionpages {80}{82}}
-\headcommand {\beamer@sectionpages {80}{82}}
-\headcommand {\beamer@documentpages {82}}
-\headcommand {\gdef \inserttotalframenumber {68}}
+\headcommand {\beamer@partpages {1}{81}}
+\headcommand {\beamer@subsectionpages {79}{81}}
+\headcommand {\beamer@sectionpages {79}{81}}
+\headcommand {\beamer@documentpages {81}}
+\headcommand {\gdef \inserttotalframenumber {66}}
