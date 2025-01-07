@@ -25,5 +25,8 @@
 \beamer@subsubsectionintoc {4}{4}{1}{Encoding}{91}{0}{4}
 \beamer@subsubsectionintoc {4}{4}{2}{Dncoding}{92}{0}{4}
 \beamer@sectionintoc {5}{Summary}{93}{0}{5}
-\beamer@sectionintoc {6}{Further Study}{95}{0}{6}
-\beamer@sectionintoc {7}{Reference}{97}{0}{7}
+\beamer@subsectionintoc {5}{1}{ANS}{94}{0}{5}
+\beamer@subsectionintoc {5}{2}{rANS}{95}{0}{5}
+\beamer@subsectionintoc {5}{3}{Streaming-rANS}{96}{0}{5}
+\beamer@sectionintoc {6}{Further Study}{97}{0}{6}
+\beamer@sectionintoc {7}{Reference}{99}{0}{7}
