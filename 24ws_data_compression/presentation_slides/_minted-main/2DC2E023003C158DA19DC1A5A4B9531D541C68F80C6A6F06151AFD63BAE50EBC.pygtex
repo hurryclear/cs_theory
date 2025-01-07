@@ -4,10 +4,10 @@
                 \PYG{n}{sum\PYGZus{}freq} \PYG{o}{=} \PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} m}
                 \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} initial state}
                 \PYG{n}{output} \PYG{o}{=} \PYG{p}{[]} \PYG{c+c1}{\PYGZsh{} list to store encoded (symbols, state)}
-
                 \PYG{k}{for} \PYG{n}{count} \PYG{o+ow}{in} \PYG{n}{symbol\PYGZus{}counts}\PYG{p}{:}
                     \PYG{n}{cumul\PYGZus{}freq}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{sum\PYGZus{}freq}\PYG{p}{)}
                     \PYG{n}{sum\PYGZus{}freq} \PYG{o}{+=} \PYG{n}{count}
+
                 \PYG{k}{for} \PYG{n}{s} \PYG{o+ow}{in} \PYG{n}{s\PYGZus{}input}\PYG{p}{:}
                     \PYG{n}{F\PYGZus{}s} \PYG{o}{=} \PYG{n}{symbol\PYGZus{}counts}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]}
                     \PYG{n}{c\PYGZus{}s} \PYG{o}{=} \PYG{n}{cumul\PYGZus{}freq}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]}

@@ -9,30 +9,16 @@
         subsubsectionstyle=show/hide/show]
 \end{frame}
 
-\subsection{Motivation}
-    \begin{frame}[fragile]{Motivation}
-        \begin{itemize}
-            \item Huffman coding is efficient for symbol-based compression but cannot achieve optimal compression in many cases due to its restriction to integer-length codes
-            \item Arithmetic coding achieves near-optimal compression but has a higher computational cost, especially in encoding and decoding ( it uses multiplication and division operations for each encoded symbol)
-            \item ANS combines the compression ratio of \href{https://en.wikipedia.org/wiki/Arithmetic_coding}{arithmetic coding} (integer arithmetic, modular arithmetic, and table lookups), with a processing cost similar to that of \href{https://en.wikipedia.org/wiki/Huffman_coding}{Huffman coding} \refer{4}
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}[fragile]{Motivation}
-        \includegraphics[width=1\textwidth]{../24ws_ANS.assets/table1.png}
-    \end{frame}
-
-\subsection{Key Concepts}
-    \begin{frame}[fragile]{Key Concepts}
+\begin{frame}[fragile]{Key Concepts}
         \begin{itemize}
             \item<1-> \textbf{Symbol spread function} $\rightarrow$ \textcolor{blue}{"Numeral System"}, e.g. standard binary system 
             \item<2-> \textbf{Representation of information}, e.g. standard decimal system \\
             represents an entire message as a single number
             \item<3-> \textbf{Symmetric or \textcolor{blue}{"Asymmetric"}}
         \end{itemize}
-    \end{frame}
+\end{frame}
 
-\subsubsection{Symbol spread function}
+\subsection{Symbol spread function}
     \begin{frame}[fragile]{Symbol spread function}
         \begin{itemize}
             \item<1-> the function that determines the split of the $\mathbb{N}$ subsets corresponding to different symbols \refer{3}
@@ -42,7 +28,7 @@
     \end{frame}
 
     \begin{frame}[fragile]{Symbol spread function (Exa. 1)}
-        $\mathcal{A}=\{0,1\}$, $\bar{\mathit{s}}(x) = \text{mod}(\mathit{x},2)$
+        $\mathcal{A}=\{0,1\}$, $\bar{\mathit{s}}(\mathit{x}) = \text{mod}(\mathit{x},2)$
         \begin{center}
             \includegraphics[width=1\textwidth]{../24ws_ANS.assets/fig1.png}
         \end{center}
@@ -55,7 +41,14 @@
         \end{center}
     \end{frame}
 
-\subsubsection{Representation of information}    
+\subsection{Representation of information}
+    \begin{frame}[fragile]{Representation of information}
+        \begin{itemize}
+            \item Huffman coding: every symbol will be represented by a interger-length code
+            \item Arithmetic coding: represents an entire message as a single number within a range (fractional number)
+            \item Asymmetric Numeral System: represents an entire message as a single interger number 
+        \end{itemize}
+    \end{frame}
     \begin{frame}[fragile]{Representation of information (Exa. 2)}
         \begin{itemize}
             \item<1-> a finite sequence of symbols/digits: $$\mathcal{A}=\{0,1,2,3,4,5,6,7,8,9\}$$
@@ -64,33 +57,30 @@
             \item<4-> The easiest way is to concatenate the symbols/digits: $$\mathit{x}_{out} = 2025$$
         \end{itemize}
     \end{frame}
-
     \begin{frame}[fragile]{Representation of Information (Exa. 2)}
         \begin{itemize}
             \item<1-> encoding the sequence of digits $\mathit{S}_{in}=(2,0,2,5)$
             \[
             \begin{aligned}
                 \mathit{x}_{\text{init}} &= 0 \\
-                \mathit{x}_1 &= \mathit{x}_{\text{init}} \times 10 + 2 = 2 \\
-                \mathit{x}_2 &= \mathit{x}_1 \times 10 + 0 = 20 \\
-                \mathit{x}_3 &= \mathit{x}_2 \times 10 + 2 = 202 \\
-                \mathit{x}_{\text{out}} &= \mathit{x}_3 \times 10 + 5 = 2025
+                \mathit{x}_1 &= \mathit{x}_{\text{init}} \cdot 10 + 2 = 2 \\
+                \mathit{x}_2 &= \mathit{x}_1 \cdot 10 + 0 = 20 \\
+                \mathit{x}_3 &= \mathit{x}_2 \cdot 10 + 2 = 202 \\
+                \mathit{x}_{\text{out}} &= \mathit{x}_3 \cdot 10 + 5 = 2025
             \end{aligned}
             \]
         \end{itemize}
     \end{frame}
-
     \begin{frame}[fragile]{Representation of Information (Exa. 2)}
         \begin{itemize}
             \item<1-> \textcolor{red}{What is the encoding function?}
             \item<2-> Encoding function
-            $$\mathit{x_{i+1} = x_i} \times 10 + \mathit{s_i}$$
+            $$\mathit{x_{i+1} = x_i} \cdot 10 + \mathit{s}$$
             \item<3-> \textcolor{blue}{$\mathit{x_{i+1}}$ is the $\mathit{x_i}$ -th appearance of symbol $\mathit{s}$ \refer{3}}
             $$\mathit{x_{i+1}} = \textcolor{orange}{\mathit{C(s, x_i)= x_i} \cdot 10 + \mathit{s}} $$
         \end{itemize}
     \end{frame}
-
-    \begin{frame}[fragile]{Representation of Information (Exa. 2)}
+    \begin{frame}[fragile]{Representation of information (Exa. 2)}
         \begin{center}
             \includegraphics[width=0.85\textwidth]{../24ws_ANS.assets/fig3.png}    
         \end{center}
@@ -108,7 +98,7 @@
         \end{center}
     \end{frame}
 
-\subsubsection{Symmetric or Asymmetric}
+\subsection{Symmetric or Asymmetric}
     \begin{frame}[fragile]{}
         \begin{center}
             \fontsize{16pt}{12pt}\selectfont \textcolor{red}{What is asymmetric?}
@@ -116,16 +106,17 @@
     \end{frame}
     \begin{frame}[fragile]{}
         \begin{center}
-            \includegraphics[width=0.75\textwidth]{../24ws_ANS.assets/fig6.png}  
+            \includegraphics[width=0.8\textwidth]{../24ws_ANS.assets/fig6.png}  
         \end{center}
     \end{frame}
 
     \begin{frame}[fragile]{Exa. 3: Asymmetric Binary System \refer{3}}
         \begin{itemize}
             \item<1-> Let $\mathcal{A} = \{0,1\}$
-            \item<1-> $\mathit{Pr}(0) = 1/4, \mathit{Pr}(1)= 3/4$ 
-            \item<2-> a cycle of length 4, which contains 1 zero and 3 ones
-            \item<3-> Assumption: $$\textcolor{red}{\mathit{x_{i+1} = C(s,x_i) \approx x_i/p_s}} \text{, where } \mathit{p_s} \text{ is the probability of symbol } \mathit{s}$$
+            \item<1-> $\mathit{Pr}(0) = 1/4, \mathit{Pr}(1)= 3/4$
+            \item<2-> \textcolor{red}{What is the symbol spread function? How can we split $\mathbb{N}$ into subsets according to the symbols?}
+            \item<3-> a cycle of length 4, which contains 1 zero and 3 ones
+            \item<4-> Assumption: $$\textcolor{red}{\mathit{x_{i+1} = C(s,x_i) \approx x_i/p_s}} \text{, where } \mathit{p_s} \text{ is the probability of symbol } \mathit{s}$$
         \end{itemize}
     \end{frame}
     \begin{frame}[fragile]{Exa. 3: Asymmetric Binary System \refer{3}}
@@ -146,7 +137,7 @@
     \begin{frame}[fragile]{Exa. 3: Asymmetric Binary System \refer{3}}
         \begin{center}
             \includegraphics[width=1\textwidth]{../24ws_ANS.assets/fig7.png} 
-            We refine even/odd number by changing their densities
+            % We refine even/odd number by changing their densities
         \end{center}
     \end{frame}
     \begin{frame}[fragile]{Symmetric or Asymmetric}
@@ -155,12 +146,12 @@
             \item Asymmetric: non-uniform distribution
         \end{itemize}
     \end{frame}
-    \begin{frame}[fragile]{Symmetric or Asymmetric}
+    \begin{frame}[fragile]{Symmetric or Asymmetric \refer{3}}
         Assumption: $\textcolor{red}{\mathit{x_{i+1} = C(s,x_i) \approx x_i/p_s}} \text{, where } \mathit{p_s} \text{ is the probability of symbol } \mathit{s}$
         \begin{itemize}
             \item<1-> To change the symmetric behavior so that the information added to $\mathit{x_i}$ by coding a new symbol depends on the probability distribution of the symbols
             \item<2-> $\mathit{log}_2(\mathit{x_i})$ bits
-            \item<3-> A symbol of probability pcarries $\mathit{log}_2(1/\mathit{p})$ bits of information (Shannon)
+            \item<3-> A symbol of probability $\mathit{p}$ carries $\mathit{log}_2(1/\mathit{p})$ bits of information (Shannon)
             \item<4-> How many bits of new information? $\mathit{log}_2\mathit{x_i} + \mathit{log}_2(1/\mathit{p}) \rightarrow \mathit{log}_2\mathit{x_{i+1}}$
             \item<5-> $\mathit{log}_2\mathit{x_{i+1}} = \mathit{log}_2\mathit{x_i} + \mathit{log}_2(1/\mathit{p}) = \mathit{log}_2(\mathit{x_i/p}) \Rightarrow$
             {\fontsize{14pt}{12pt}\selectfont \textbf{\textcolor{orange}{ $\mathit{x_{i+1}} \approx \mathit{x_i/p}$}}}
