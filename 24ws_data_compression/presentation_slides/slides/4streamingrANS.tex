@@ -13,13 +13,13 @@
 \subsection{Problem}
     \begin{frame}[fragile]{Problem}
         \begin{itemize}
-            \item<1-> ANS uses a single integer $\mathit{x}$, known as the “state,” to represent the encoded data
+            \item<1-> ANS uses a single integer $\mathit{x}$, known as the “state”, to represent the encoded data
             \item<2-> The state $\mathit{x}$ can grow arbitrarily large. This can lead to:
             \begin{itemize}
                 \item Overflow: If the value exceeds the precision limits of your system (e.g., a 32-bit or 64-bit register).
                 \item Inefficient Encoding: A larger $\mathit{x}$ means you need more memory or bits to represent it.
             \end{itemize}
-            \item<3-> To avoid using large number arithmetic, in practice \textbf{stream variants} are used, which enforce by \textcolor{orange}{renormalization}: sending the least significant bits of $\mathit{x}$ to or from the bitstream (usually $\mathit{L}$ and $\mathit{b}$ are powers of 2). \refer{4}
+            \item<3-> To avoid using large number arithmetic, in practice \textbf{stream variants} are used, which enforce by \textcolor{orange}{renormalization}\refer{4}
         \end{itemize}
     \end{frame}
 
@@ -32,8 +32,9 @@
 \begin{frame}[fragile]{}
     \begin{itemize}
         \item<1-> In Arithmetic Coding this process avoids numerical precision issues and ensures efficient implementation, especially in software or hardware with limited resources
-        \item<2-> Specifically, we will enforce $\mathit{x}$ to remain in some fixed range $\mathit{I}$ by transferring the least significant bits to the stream. For generality, let us transfer a base $\mathit{b}$ digit, for example $\mathit{b}= 2$ means transferring single bits, while $\mathit{b} = 2^8$ means transferring complete bytes \refer{3}
-        \item<3-> In rANS: 
+        \item<2-> Specifically, we will enforce $\mathit{x}$ to remain in some fixed range $\mathit{I}$  \textcolor{orange}{by transferring the least significant bits to the stream} \refer{3}
+        \item<3-> For generality, let us transfer a base $\mathit{b}$ digit, for example $\mathit{b}= 2$ means transferring single bits, while $\mathit{b} = 2^8$ means transferring complete bytes \refer{3}
+        \item<4-> In rANS: 
         \begin{itemize}
             \item range $\mathit{[L, H]}$
             \item Encoding: shrink the current state $\mathit{x}$ until it is in the range $\mathit{[L, H]}$ 
@@ -56,20 +57,20 @@
         $\mathit{x=C(s,x)}$ \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# encode with the shrunk x}}
     }
 \end{frame}
-\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{maxX[s]}$?}}
+\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{maxX[s]}$? \refer{5}}}
     \begin{center}
         \includegraphics[width=0.8\textwidth,keepaspectratio]{../24ws_ANS.assets/fig10.png}
     \end{center}
 \end{frame}
-\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{maxX[s]}$?}}
+\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{maxX[s]}$? \refer{5}}}
     \begin{center}
         \includegraphics[width=0.5\textwidth,keepaspectratio]{../24ws_ANS.assets/fig10.png}
     \end{center}
     \begin{itemize}
-        \item Assume that $\mathit{x_i = H_s +1}$ and it will be shrunk to $\mathit{x_i'=\lfloor x_i/b \rfloor}$
-        \item $\mathit{x_i' = \lfloor x_i/b \rfloor = \lfloor (H_s + 1)/b \rfloor >= L_s}$
-        \item $\mathit{ L_s <= \lfloor (H_s + 1)/b \rfloor <= (H_s + 1)/b}$
-        \item $\mathit{H_s >= b \cdot L_s - 1}$, $\forall \mathit{s} \in \mathcal{A}$ \textcolor{blue}{(Constraint 1)}
+        \item<1-> Assume that $\mathit{x_i = H_s +1}$ and it will be shrunk to $\mathit{x_i'=\lfloor x_i/b \rfloor}$
+        \item<2-> $\mathit{x_i' = \lfloor x_i/b \rfloor = \lfloor (H_s + 1)/b \rfloor >= L_s}$
+        \item<3-> $\mathit{ L_s <= \lfloor (H_s + 1)/b \rfloor <= (H_s + 1)/b}$
+        \item<4-> $\mathit{H_s >= b \cdot L_s - 1}$, $\forall \mathit{s} \in \mathcal{A}$ \textcolor{blue}{(Constraint 1)}
     \end{itemize}
 \end{frame}
 \subsubsection{Renormalization: Expand}
@@ -84,24 +85,24 @@
         \textcolor{gray}{\fontsize{9}{12}\selectfont\textit{\# return the new state}}
     }
 \end{frame}
-\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{L,H}$ ?}}
+\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{L,H}$ ? \refer{5}}}
     \begin{center}
         \includegraphics[width=0.8\textwidth,keepaspectratio]{../24ws_ANS.assets/fig11.png}
     \end{center}
 \end{frame}
-\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{L,H}$ ?}}
+\begin{frame}[fragile]{\textcolor{red}{What is $\mathit{L,H}$ ? \refer{5}}}
     \begin{itemize}
-        \item $\mathit{x_i' = b \cdot x_{i} + \text{bit}}$
-        \item Either $\mathit{x_i'}$ in $\mathit{[L, H]}$ or $\mathit{x_{i}}$ in $\mathit{[L, H]}$. Assume $\mathit{x_{i}}$ in $\mathit{[L, H]}$.
+        \item<1-> $\mathit{x_i' = b \cdot x_{i} + \text{bit}}$
+        \item<1-> Either $\mathit{x_i'}$ in $\mathit{[L, H]}$ or $\mathit{x_{i}}$ in $\mathit{[L, H]}$. Assume that $\mathit{x_{i}}$ in $\mathit{[L, H]}$ \refer{6}:
             \begin{itemize}
-                \item $\mathit{x_{i} >= L}$
-                \item $\mathit{x_i' >= b \cdot L + bit >= b \cdot L}$
-                \item $\mathit{x_i'}$ can't be in $\mathit{[L, H]}$
-                \item $\Longrightarrow \mathit{H <= b\cdot L -1}$
+                \item<2-> $\mathit{x_{i} >= L}$
+                \item<3-> $\mathit{x_i' >= b \cdot L + bit >= b \cdot L}$
+                \item<4-> $\mathit{x_i'}$ can't be in $\mathit{[L, H]}$
+                \item<5-> $\Longrightarrow \mathit{H <= b\cdot L -1}$
             \end{itemize}
-        \item $\mathcal{I}=\mathit{[L,H]}$, where $\mathit{H <= b\cdot L -1}$ \textcolor{blue}{(Constraint 2)}
-        \item $\mathcal{I}\mathit{=\{L, ..., b\cdot L -1\}}$, which is defined by Jarek Duda \textbf{$\mathit{b}$-unique interval} and $\mathit{L \in \mathbb{N}^+}$
-        \item This will ensure that the loop in Method 1 will always return to the original value
+        \item<6-> $\mathcal{I}=\mathit{[L,H]}$, where $\mathit{H <= b\cdot L -1}$ \textcolor{blue}{(Constraint 2)}
+        \item<7-> $\mathcal{I}\mathit{=\{L, ..., b\cdot L -1\}}$, which is defined by Jarek Duda \textbf{$\mathit{b}$-unique interval} and $\mathit{L \in \mathbb{N}^+}$
+        \item<8-> This will ensure that the loop in Method 1 will always return to the original value
     \end{itemize}
 \end{frame}
 \begin{frame}[fragile]{Final Form of $[L,H]$ in practice}

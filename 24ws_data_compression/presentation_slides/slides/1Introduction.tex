@@ -31,8 +31,7 @@
 \begin{frame}[fragile]{Entropy Coding}
     \begin{itemize}
         \item Implementation of Shannon's Source Coding Theorem
-        \item High-probability symbols get shorter codes
-        \item Low-probability symbols get longer codes.
+        \item High-probability symbols get shorter codes\\Low-probability symbols get longer codes
         \item A method that attempts to approach the lower bound $\mathit{H(X)}$
         \item Entropy Coding Family
         \begin{itemize}
@@ -58,9 +57,9 @@
 \subsection{Motivation}
     \begin{frame}[fragile]{Motivation}
         \begin{itemize}
-            \item Huffman coding is efficient for symbol-based compression but cannot achieve optimal compression in many cases due to its restriction to \textbf{integer-length codes}
-            \item Arithmetic coding achieves near-optimal compression but has a higher computational cost, especially in encoding and decoding ( it uses \textbf{multiplication and division operations for each encoded symbol})
-            \item Asymmetric Numberal System introduced by Jarek Duda from Jagiellonian University in 2013\\ ANS combines the compression ratio of \href{https://en.wikipedia.org/wiki/Arithmetic_coding}{arithmetic coding} (integer arithmetic, modular arithmetic, and table lookups), with a processing cost similar to that of \href{https://en.wikipedia.org/wiki/Huffman_coding}{Huffman coding} \refer{4}
+            \item<1-> Huffman coding is efficient for symbol-based compression but cannot achieve optimal compression in many cases due to its restriction to \textbf{integer-length codes}
+            \item<2-> Arithmetic coding achieves near-optimal compression but has a higher computational cost, especially in encoding and decoding ( it uses \textbf{multiplication and division operations for each encoded symbol})
+            \item<3-> Asymmetric Numberal System introduced by Jarek Duda from Jagiellonian University in 2013\\ \textcolor{orange}{ANS combines the compression ratio of arithmetic coding (integer arithmetic, modular arithmetic, and table lookups), with a processing cost similar to that of Huffman coding\refer{4}}
         \end{itemize}
     \end{frame}
 
